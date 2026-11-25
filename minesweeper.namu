@@ -1,0 +1,1328 @@
+{{{#!if calc_706=time()%2147483646, seed=calc_706+1
+}}}{{{#!if r1=seed*48271%2147483647
+}}}{{{#!if a=r1%25
+}}}{{{#!if r2=r1*48271%2147483647
+}}}{{{#!if calc_706=r2%25, arg_2=a==calc_706?(calc_706+1)%25:calc_706, calc_706=a==arg_2?(arg_2+1)%25:arg_2
+}}}{{{#!if arg_2=a==calc_706?(calc_706+1)%25:calc_706, b=a==arg_2?(arg_2+1)%25:arg_2
+}}}{{{#!if r3=r2*48271%2147483647
+}}}{{{#!if calc_706=r3%25, arg_2=a==calc_706, calc_707=arg_2||b==calc_706, arg_2=calc_707
+}}}{{{#!if arg_2
+{{{#!if calc_707=(calc_706+1)%25, result_710=calc_707
+}}}}}}{{{#!if !arg_2
+{{{#!if result_710=calc_706
+}}}}}}{{{#!if calc_707=result_710, arg_2=a==calc_707, calc_706=arg_2||b==calc_707, result_710=calc_706
+}}}{{{#!if result_710
+{{{#!if arg_2=(calc_707+1)%25, calc_706=arg_2
+}}}}}}{{{#!if !result_710
+{{{#!if calc_706=calc_707
+}}}}}}{{{#!if arg_2=calc_706, result_710=a==arg_2, calc_707=result_710||b==arg_2, calc_706=calc_707
+}}}{{{#!if calc_706
+{{{#!if result_710=(arg_2+1)%25, calc_707=result_710
+}}}}}}{{{#!if !calc_706
+{{{#!if calc_707=arg_2
+}}}}}}{{{#!if result_710=calc_707, calc_706=a==result_710, arg_2=calc_706||b==result_710, calc_707=arg_2
+}}}{{{#!if calc_707
+{{{#!if calc_706=(result_710+1)%25, arg_2=calc_706
+}}}}}}{{{#!if !calc_707
+{{{#!if arg_2=result_710
+}}}}}}{{{#!if c=arg_2
+}}}{{{#!if r4=r3*48271%2147483647
+}}}{{{#!if calc_706=r4%25, calc_707=a==calc_706, result_710=calc_707||b==calc_706, arg_2=result_710||c==calc_706
+}}}{{{#!if calc_707=arg_2
+}}}{{{#!if calc_707
+{{{#!if result_710=(calc_706+1)%25, arg_2=result_710
+}}}}}}{{{#!if !calc_707
+{{{#!if arg_2=calc_706
+}}}}}}{{{#!if result_710=arg_2, calc_707=a==result_710, calc_706=calc_707||b==result_710, arg_2=calc_706||c==result_710
+}}}{{{#!if calc_707=arg_2
+}}}{{{#!if calc_707
+{{{#!if calc_706=(result_710+1)%25, arg_2=calc_706
+}}}}}}{{{#!if !calc_707
+{{{#!if arg_2=result_710
+}}}}}}{{{#!if calc_706=arg_2, calc_707=a==calc_706, result_710=calc_707||b==calc_706, arg_2=result_710||c==calc_706
+}}}{{{#!if calc_707=arg_2
+}}}{{{#!if calc_707
+{{{#!if result_710=(calc_706+1)%25, arg_2=result_710
+}}}}}}{{{#!if !calc_707
+{{{#!if arg_2=calc_706
+}}}}}}{{{#!if result_710=arg_2, calc_707=a==result_710, calc_706=calc_707||b==result_710, arg_2=calc_706||c==result_710
+}}}{{{#!if calc_707=arg_2
+}}}{{{#!if calc_707
+{{{#!if calc_706=(result_710+1)%25, arg_2=calc_706
+}}}}}}{{{#!if !calc_707
+{{{#!if arg_2=result_710
+}}}}}}{{{#!if d=arg_2
+}}}{{{#!if mines_0=0==a||0==b||0==c||0==d?1:0, mines_1=1==a||1==b||1==c||1==d?1:0
+}}}{{{#!if mines_2=2==a||2==b||2==c||2==d?1:0, mines_3=3==a||3==b||3==c||3==d?1:0
+}}}{{{#!if mines_4=4==a||4==b||4==c||4==d?1:0
+}}}{{{#!if mines_5=5==a||5==b||5==c||5==d?1:0, mines_6=6==a||6==b||6==c||6==d?1:0
+}}}{{{#!if mines_7=7==a||7==b||7==c||7==d?1:0, mines_8=8==a||8==b||8==c||8==d?1:0
+}}}{{{#!if mines_9=9==a||9==b||9==c||9==d?1:0
+}}}{{{#!if mines_10=10==a||10==b||10==c||10==d?1:0, mines_11=11==a||11==b||11==c||11==d?1:0
+}}}{{{#!if mines_12=12==a||12==b||12==c||12==d?1:0, mines_13=13==a||13==b||13==c||13==d?1:0
+}}}{{{#!if mines_14=14==a||14==b||14==c||14==d?1:0
+}}}{{{#!if mines_15=15==a||15==b||15==c||15==d?1:0, mines_16=16==a||16==b||16==c||16==d?1:0
+}}}{{{#!if mines_17=17==a||17==b||17==c||17==d?1:0, mines_18=18==a||18==b||18==c||18==d?1:0
+}}}{{{#!if mines_19=19==a||19==b||19==c||19==d?1:0
+}}}{{{#!if mines_20=20==a||20==b||20==c||20==d?1:0, mines_21=21==a||21==b||21==c||21==d?1:0
+}}}{{{#!if mines_22=22==a||22==b||22==c||22==d?1:0, mines_23=23==a||23==b||23==c||23==d?1:0
+}}}{{{#!if mines_24=24==a||24==b||24==c||24==d?1:0
+}}}{{{#!if calc_706=0+mines_1, calc_707=calc_706+mines_5, counts_0=calc_707+mines_6, result_710=0+mines_0
+}}}{{{#!if arg_2=result_710+mines_2, calc_706=arg_2+mines_5, calc_707=calc_706+mines_6, counts_1=calc_707+mines_7
+}}}{{{#!if result_710=0+mines_1, arg_2=result_710+mines_3, calc_706=arg_2+mines_6, calc_707=calc_706+mines_7
+}}}{{{#!if counts_2=calc_707+mines_8, result_710=0+mines_2, arg_2=result_710+mines_4, calc_706=arg_2+mines_7
+}}}{{{#!if calc_707=calc_706+mines_8, counts_3=calc_707+mines_9, result_710=0+mines_3, arg_2=result_710+mines_8
+}}}{{{#!if counts_4=arg_2+mines_9
+}}}{{{#!if calc_706=0+mines_0, calc_707=calc_706+mines_1, result_710=calc_707+mines_6, arg_2=result_710+mines_10
+}}}{{{#!if counts_5=arg_2+mines_11, calc_706=0+mines_0, calc_707=calc_706+mines_1, result_710=calc_707+mines_2
+}}}{{{#!if arg_2=result_710+mines_5, calc_706=arg_2+mines_7, calc_707=calc_706+mines_10, result_710=calc_707+mines_11
+}}}{{{#!if counts_6=result_710+mines_12, arg_2=0+mines_1, calc_706=arg_2+mines_2, calc_707=calc_706+mines_3
+}}}{{{#!if result_710=calc_707+mines_6, arg_2=result_710+mines_8, calc_706=arg_2+mines_11, calc_707=calc_706+mines_12
+}}}{{{#!if counts_7=calc_707+mines_13, result_710=0+mines_2, arg_2=result_710+mines_3, calc_706=arg_2+mines_4
+}}}{{{#!if calc_707=calc_706+mines_7, result_710=calc_707+mines_9, arg_2=result_710+mines_12, calc_706=arg_2+mines_13
+}}}{{{#!if counts_8=calc_706+mines_14, calc_707=0+mines_3, result_710=calc_707+mines_4, arg_2=result_710+mines_8
+}}}{{{#!if calc_706=arg_2+mines_13, counts_9=calc_706+mines_14
+}}}{{{#!if calc_707=0+mines_5, result_710=calc_707+mines_6, arg_2=result_710+mines_11, calc_706=arg_2+mines_15
+}}}{{{#!if counts_10=calc_706+mines_16, calc_707=0+mines_5, result_710=calc_707+mines_6, arg_2=result_710+mines_7
+}}}{{{#!if calc_706=arg_2+mines_10, calc_707=calc_706+mines_12, result_710=calc_707+mines_15
+}}}{{{#!if arg_2=result_710+mines_16, counts_11=arg_2+mines_17, calc_706=0+mines_6, calc_707=calc_706+mines_7
+}}}{{{#!if result_710=calc_707+mines_8, arg_2=result_710+mines_11, calc_706=arg_2+mines_13
+}}}{{{#!if calc_707=calc_706+mines_16, result_710=calc_707+mines_17, counts_12=result_710+mines_18, arg_2=0+mines_7
+}}}{{{#!if calc_706=arg_2+mines_8, calc_707=calc_706+mines_9, result_710=calc_707+mines_12, arg_2=result_710+mines_14
+}}}{{{#!if calc_706=arg_2+mines_17, calc_707=calc_706+mines_18, counts_13=calc_707+mines_19, result_710=0+mines_8
+}}}{{{#!if arg_2=result_710+mines_9, calc_706=arg_2+mines_13, calc_707=calc_706+mines_18
+}}}{{{#!if counts_14=calc_707+mines_19
+}}}{{{#!if result_710=0+mines_10, arg_2=result_710+mines_11, calc_706=arg_2+mines_16
+}}}{{{#!if calc_707=calc_706+mines_20, counts_15=calc_707+mines_21, result_710=0+mines_10
+}}}{{{#!if arg_2=result_710+mines_11, calc_706=arg_2+mines_12, calc_707=calc_706+mines_15
+}}}{{{#!if result_710=calc_707+mines_17, arg_2=result_710+mines_20, calc_706=arg_2+mines_21
+}}}{{{#!if counts_16=calc_706+mines_22, calc_707=0+mines_11, result_710=calc_707+mines_12
+}}}{{{#!if arg_2=result_710+mines_13, calc_706=arg_2+mines_16, calc_707=calc_706+mines_18
+}}}{{{#!if result_710=calc_707+mines_21, arg_2=result_710+mines_22, counts_17=arg_2+mines_23
+}}}{{{#!if calc_706=0+mines_12, calc_707=calc_706+mines_13, result_710=calc_707+mines_14
+}}}{{{#!if arg_2=result_710+mines_17, calc_706=arg_2+mines_19, calc_707=calc_706+mines_22
+}}}{{{#!if result_710=calc_707+mines_23, counts_18=result_710+mines_24, arg_2=0+mines_13
+}}}{{{#!if calc_706=arg_2+mines_14, calc_707=calc_706+mines_18, result_710=calc_707+mines_23
+}}}{{{#!if counts_19=result_710+mines_24
+}}}{{{#!if arg_2=0+mines_15, calc_706=arg_2+mines_16, counts_20=calc_706+mines_21, calc_707=0+mines_15
+}}}{{{#!if result_710=calc_707+mines_16, arg_2=result_710+mines_17, calc_706=arg_2+mines_20
+}}}{{{#!if counts_21=calc_706+mines_22, calc_707=0+mines_16, result_710=calc_707+mines_17
+}}}{{{#!if arg_2=result_710+mines_18, calc_706=arg_2+mines_21, counts_22=calc_706+mines_23
+}}}{{{#!if calc_707=0+mines_17, result_710=calc_707+mines_18, arg_2=result_710+mines_19
+}}}{{{#!if calc_706=arg_2+mines_22, counts_23=calc_706+mines_24, calc_707=0+mines_18
+}}}{{{#!if result_710=calc_707+mines_19, counts_24=result_710+mines_23
+}}}{{{#!if arg_2=0|(!mines_0&&!counts_0?1:0), calc_706=arg_2|(!mines_1&&!counts_1?2:0)
+}}}{{{#!if calc_707=calc_706|(!mines_2&&!counts_2?4:0), result_710=calc_707|(!mines_3&&!counts_3?8:0)
+}}}{{{#!if arg_2=result_710|(!mines_4&&!counts_4?16:0), calc_706=arg_2|(!mines_5&&!counts_5?32:0)
+}}}{{{#!if calc_707=calc_706|(!mines_6&&!counts_6?64:0), result_710=calc_707|(!mines_7&&!counts_7?128:0)
+}}}{{{#!if arg_2=result_710|(!mines_8&&!counts_8?256:0), calc_706=arg_2|(!mines_9&&!counts_9?512:0)
+}}}{{{#!if calc_707=calc_706|(!mines_10&&!counts_10?1024:0)
+}}}{{{#!if result_710=calc_707|(!mines_11&&!counts_11?2048:0)
+}}}{{{#!if arg_2=result_710|(!mines_12&&!counts_12?4096:0)
+}}}{{{#!if calc_706=arg_2|(!mines_13&&!counts_13?8192:0)
+}}}{{{#!if calc_707=calc_706|(!mines_14&&!counts_14?16384:0)
+}}}{{{#!if result_710=calc_707|(!mines_15&&!counts_15?32768:0)
+}}}{{{#!if arg_2=result_710|(!mines_16&&!counts_16?65536:0)
+}}}{{{#!if calc_706=arg_2|(!mines_17&&!counts_17?131072:0)
+}}}{{{#!if calc_707=calc_706|(!mines_18&&!counts_18?262144:0)
+}}}{{{#!if result_710=calc_707|(!mines_19&&!counts_19?524288:0)
+}}}{{{#!if arg_2=result_710|(!mines_20&&!counts_20?1048576:0)
+}}}{{{#!if calc_706=arg_2|(!mines_21&&!counts_21?2097152:0)
+}}}{{{#!if calc_707=calc_706|(!mines_22&&!counts_22?4194304:0)
+}}}{{{#!if result_710=calc_707|(!mines_23&&!counts_23?8388608:0)
+}}}{{{#!if zeros=result_710|(!mines_24&&!counts_24?16777216:0)
+}}}{{{#!if arg_2=zeros&-zeros, calc_706=(arg_2&16236015)<<1, calc_707=arg_2|calc_706
+}}}{{{#!if result_710=(arg_2&32472030)>>1, calc_706=calc_707|result_710|arg_2<<5
+}}}{{{#!if result_710=(arg_2&16236015)<<6, calc_707=calc_706|result_710, result_710=(arg_2&32472030)<<4
+}}}{{{#!if calc_706=calc_707|result_710|arg_2>>5, result_710=(arg_2&16236015)>>4
+}}}{{{#!if calc_707=calc_706|result_710, result_710=(arg_2&32472030)>>6
+}}}{{{#!if calc_706=(calc_707|result_710)&33554431, arg_2=calc_706&zeros
+}}}{{{#!if result_710=(arg_2&16236015)<<1, calc_707=arg_2|result_710, calc_706=(arg_2&32472030)>>1
+}}}{{{#!if result_710=calc_707|calc_706|arg_2<<5, calc_706=(arg_2&16236015)<<6
+}}}{{{#!if calc_707=result_710|calc_706, calc_706=(arg_2&32472030)<<4
+}}}{{{#!if result_710=calc_707|calc_706|arg_2>>5, calc_706=(arg_2&16236015)>>4
+}}}{{{#!if calc_707=result_710|calc_706, calc_706=(arg_2&32472030)>>6
+}}}{{{#!if result_710=(calc_707|calc_706)&33554431, arg_2=result_710&zeros
+}}}{{{#!if calc_706=(arg_2&16236015)<<1, calc_707=arg_2|calc_706, result_710=(arg_2&32472030)>>1
+}}}{{{#!if calc_706=calc_707|result_710|arg_2<<5, result_710=(arg_2&16236015)<<6
+}}}{{{#!if calc_707=calc_706|result_710, result_710=(arg_2&32472030)<<4
+}}}{{{#!if calc_706=calc_707|result_710|arg_2>>5, result_710=(arg_2&16236015)>>4
+}}}{{{#!if calc_707=calc_706|result_710, result_710=(arg_2&32472030)>>6
+}}}{{{#!if calc_706=(calc_707|result_710)&33554431, arg_2=calc_706&zeros
+}}}{{{#!if result_710=(arg_2&16236015)<<1, calc_707=arg_2|result_710, calc_706=(arg_2&32472030)>>1
+}}}{{{#!if result_710=calc_707|calc_706|arg_2<<5, calc_706=(arg_2&16236015)<<6
+}}}{{{#!if calc_707=result_710|calc_706, calc_706=(arg_2&32472030)<<4
+}}}{{{#!if result_710=calc_707|calc_706|arg_2>>5, calc_706=(arg_2&16236015)>>4
+}}}{{{#!if calc_707=result_710|calc_706, calc_706=(arg_2&32472030)>>6
+}}}{{{#!if result_710=(calc_707|calc_706)&33554431, arg_2=result_710&zeros
+}}}{{{#!if calc_706=(arg_2&16236015)<<1, calc_707=arg_2|calc_706, result_710=(arg_2&32472030)>>1
+}}}{{{#!if calc_706=calc_707|result_710|arg_2<<5, result_710=(arg_2&16236015)<<6
+}}}{{{#!if calc_707=calc_706|result_710, result_710=(arg_2&32472030)<<4
+}}}{{{#!if calc_706=calc_707|result_710|arg_2>>5, result_710=(arg_2&16236015)>>4
+}}}{{{#!if calc_707=calc_706|result_710, result_710=(arg_2&32472030)>>6
+}}}{{{#!if calc_706=(calc_707|result_710)&33554431, arg_2=calc_706&zeros
+}}}{{{#!if result_710=(arg_2&16236015)<<1, calc_707=arg_2|result_710, calc_706=(arg_2&32472030)>>1
+}}}{{{#!if result_710=calc_707|calc_706|arg_2<<5, calc_706=(arg_2&16236015)<<6
+}}}{{{#!if calc_707=result_710|calc_706, calc_706=(arg_2&32472030)<<4
+}}}{{{#!if result_710=calc_707|calc_706|arg_2>>5, calc_706=(arg_2&16236015)>>4
+}}}{{{#!if calc_707=result_710|calc_706, calc_706=(arg_2&32472030)>>6
+}}}{{{#!if result_710=(calc_707|calc_706)&33554431, arg_2=result_710&zeros
+}}}{{{#!if calc_706=(arg_2&16236015)<<1, calc_707=arg_2|calc_706, result_710=(arg_2&32472030)>>1
+}}}{{{#!if calc_706=calc_707|result_710|arg_2<<5, result_710=(arg_2&16236015)<<6
+}}}{{{#!if calc_707=calc_706|result_710, result_710=(arg_2&32472030)<<4
+}}}{{{#!if calc_706=calc_707|result_710|arg_2>>5, result_710=(arg_2&16236015)>>4
+}}}{{{#!if calc_707=calc_706|result_710, result_710=(arg_2&32472030)>>6
+}}}{{{#!if calc_706=(calc_707|result_710)&33554431, arg_2=calc_706&zeros
+}}}{{{#!if result_710=(arg_2&16236015)<<1, calc_707=arg_2|result_710, calc_706=(arg_2&32472030)>>1
+}}}{{{#!if result_710=calc_707|calc_706|arg_2<<5, calc_706=(arg_2&16236015)<<6
+}}}{{{#!if calc_707=result_710|calc_706, calc_706=(arg_2&32472030)<<4
+}}}{{{#!if result_710=calc_707|calc_706|arg_2>>5, calc_706=(arg_2&16236015)>>4
+}}}{{{#!if calc_707=result_710|calc_706, calc_706=(arg_2&32472030)>>6
+}}}{{{#!if result_710=(calc_707|calc_706)&33554431, arg_2=result_710&zeros
+}}}{{{#!if calc_706=(arg_2&16236015)<<1, calc_707=arg_2|calc_706, result_710=(arg_2&32472030)>>1
+}}}{{{#!if calc_706=calc_707|result_710|arg_2<<5, result_710=(arg_2&16236015)<<6
+}}}{{{#!if calc_707=calc_706|result_710, result_710=(arg_2&32472030)<<4
+}}}{{{#!if calc_706=calc_707|result_710|arg_2>>5, result_710=(arg_2&16236015)>>4
+}}}{{{#!if calc_707=calc_706|result_710, result_710=(arg_2&32472030)>>6
+}}}{{{#!if calc_706=(calc_707|result_710)&33554431, arg_2=calc_706&zeros
+}}}{{{#!if result_710=(arg_2&16236015)<<1, calc_707=arg_2|result_710, calc_706=(arg_2&32472030)>>1
+}}}{{{#!if result_710=calc_707|calc_706|arg_2<<5, calc_706=(arg_2&16236015)<<6
+}}}{{{#!if calc_707=result_710|calc_706, calc_706=(arg_2&32472030)<<4
+}}}{{{#!if result_710=calc_707|calc_706|arg_2>>5, calc_706=(arg_2&16236015)>>4
+}}}{{{#!if calc_707=result_710|calc_706, calc_706=(arg_2&32472030)>>6
+}}}{{{#!if result_710=(calc_707|calc_706)&33554431, group0=result_710&zeros
+}}}{{{#!if rest0=zeros&~group0
+}}}{{{#!if arg_2=rest0&-rest0, calc_706=(arg_2&16236015)<<1, calc_707=arg_2|calc_706
+}}}{{{#!if result_710=(arg_2&32472030)>>1, calc_706=calc_707|result_710|arg_2<<5
+}}}{{{#!if result_710=(arg_2&16236015)<<6, calc_707=calc_706|result_710, result_710=(arg_2&32472030)<<4
+}}}{{{#!if calc_706=calc_707|result_710|arg_2>>5, result_710=(arg_2&16236015)>>4
+}}}{{{#!if calc_707=calc_706|result_710, result_710=(arg_2&32472030)>>6
+}}}{{{#!if calc_706=(calc_707|result_710)&33554431, arg_2=calc_706&rest0
+}}}{{{#!if result_710=(arg_2&16236015)<<1, calc_707=arg_2|result_710, calc_706=(arg_2&32472030)>>1
+}}}{{{#!if result_710=calc_707|calc_706|arg_2<<5, calc_706=(arg_2&16236015)<<6
+}}}{{{#!if calc_707=result_710|calc_706, calc_706=(arg_2&32472030)<<4
+}}}{{{#!if result_710=calc_707|calc_706|arg_2>>5, calc_706=(arg_2&16236015)>>4
+}}}{{{#!if calc_707=result_710|calc_706, calc_706=(arg_2&32472030)>>6
+}}}{{{#!if result_710=(calc_707|calc_706)&33554431, arg_2=result_710&rest0
+}}}{{{#!if calc_706=(arg_2&16236015)<<1, calc_707=arg_2|calc_706, result_710=(arg_2&32472030)>>1
+}}}{{{#!if calc_706=calc_707|result_710|arg_2<<5, result_710=(arg_2&16236015)<<6
+}}}{{{#!if calc_707=calc_706|result_710, result_710=(arg_2&32472030)<<4
+}}}{{{#!if calc_706=calc_707|result_710|arg_2>>5, result_710=(arg_2&16236015)>>4
+}}}{{{#!if calc_707=calc_706|result_710, result_710=(arg_2&32472030)>>6
+}}}{{{#!if calc_706=(calc_707|result_710)&33554431, arg_2=calc_706&rest0
+}}}{{{#!if result_710=(arg_2&16236015)<<1, calc_707=arg_2|result_710, calc_706=(arg_2&32472030)>>1
+}}}{{{#!if result_710=calc_707|calc_706|arg_2<<5, calc_706=(arg_2&16236015)<<6
+}}}{{{#!if calc_707=result_710|calc_706, calc_706=(arg_2&32472030)<<4
+}}}{{{#!if result_710=calc_707|calc_706|arg_2>>5, calc_706=(arg_2&16236015)>>4
+}}}{{{#!if calc_707=result_710|calc_706, calc_706=(arg_2&32472030)>>6
+}}}{{{#!if result_710=(calc_707|calc_706)&33554431, arg_2=result_710&rest0
+}}}{{{#!if calc_706=(arg_2&16236015)<<1, calc_707=arg_2|calc_706, result_710=(arg_2&32472030)>>1
+}}}{{{#!if calc_706=calc_707|result_710|arg_2<<5, result_710=(arg_2&16236015)<<6
+}}}{{{#!if calc_707=calc_706|result_710, result_710=(arg_2&32472030)<<4
+}}}{{{#!if calc_706=calc_707|result_710|arg_2>>5, result_710=(arg_2&16236015)>>4
+}}}{{{#!if calc_707=calc_706|result_710, result_710=(arg_2&32472030)>>6
+}}}{{{#!if calc_706=(calc_707|result_710)&33554431, arg_2=calc_706&rest0
+}}}{{{#!if result_710=(arg_2&16236015)<<1, calc_707=arg_2|result_710, calc_706=(arg_2&32472030)>>1
+}}}{{{#!if result_710=calc_707|calc_706|arg_2<<5, calc_706=(arg_2&16236015)<<6
+}}}{{{#!if calc_707=result_710|calc_706, calc_706=(arg_2&32472030)<<4
+}}}{{{#!if result_710=calc_707|calc_706|arg_2>>5, calc_706=(arg_2&16236015)>>4
+}}}{{{#!if calc_707=result_710|calc_706, calc_706=(arg_2&32472030)>>6
+}}}{{{#!if result_710=(calc_707|calc_706)&33554431, arg_2=result_710&rest0
+}}}{{{#!if calc_706=(arg_2&16236015)<<1, calc_707=arg_2|calc_706, result_710=(arg_2&32472030)>>1
+}}}{{{#!if calc_706=calc_707|result_710|arg_2<<5, result_710=(arg_2&16236015)<<6
+}}}{{{#!if calc_707=calc_706|result_710, result_710=(arg_2&32472030)<<4
+}}}{{{#!if calc_706=calc_707|result_710|arg_2>>5, result_710=(arg_2&16236015)>>4
+}}}{{{#!if calc_707=calc_706|result_710, result_710=(arg_2&32472030)>>6
+}}}{{{#!if calc_706=(calc_707|result_710)&33554431, arg_2=calc_706&rest0
+}}}{{{#!if result_710=(arg_2&16236015)<<1, calc_707=arg_2|result_710, calc_706=(arg_2&32472030)>>1
+}}}{{{#!if result_710=calc_707|calc_706|arg_2<<5, calc_706=(arg_2&16236015)<<6
+}}}{{{#!if calc_707=result_710|calc_706, calc_706=(arg_2&32472030)<<4
+}}}{{{#!if result_710=calc_707|calc_706|arg_2>>5, calc_706=(arg_2&16236015)>>4
+}}}{{{#!if calc_707=result_710|calc_706, calc_706=(arg_2&32472030)>>6
+}}}{{{#!if result_710=(calc_707|calc_706)&33554431, arg_2=result_710&rest0
+}}}{{{#!if calc_706=(arg_2&16236015)<<1, calc_707=arg_2|calc_706, result_710=(arg_2&32472030)>>1
+}}}{{{#!if calc_706=calc_707|result_710|arg_2<<5, result_710=(arg_2&16236015)<<6
+}}}{{{#!if calc_707=calc_706|result_710, result_710=(arg_2&32472030)<<4
+}}}{{{#!if calc_706=calc_707|result_710|arg_2>>5, result_710=(arg_2&16236015)>>4
+}}}{{{#!if calc_707=calc_706|result_710, result_710=(arg_2&32472030)>>6
+}}}{{{#!if calc_706=(calc_707|result_710)&33554431, arg_2=calc_706&rest0
+}}}{{{#!if result_710=(arg_2&16236015)<<1, calc_707=arg_2|result_710, calc_706=(arg_2&32472030)>>1
+}}}{{{#!if result_710=calc_707|calc_706|arg_2<<5, calc_706=(arg_2&16236015)<<6
+}}}{{{#!if calc_707=result_710|calc_706, calc_706=(arg_2&32472030)<<4
+}}}{{{#!if result_710=calc_707|calc_706|arg_2>>5, calc_706=(arg_2&16236015)>>4
+}}}{{{#!if calc_707=result_710|calc_706, calc_706=(arg_2&32472030)>>6
+}}}{{{#!if result_710=(calc_707|calc_706)&33554431, group1=result_710&rest0
+}}}{{{#!if rest1=rest0&~group1
+}}}{{{#!if arg_2=rest1&-rest1, calc_706=(arg_2&16236015)<<1, calc_707=arg_2|calc_706
+}}}{{{#!if result_710=(arg_2&32472030)>>1, calc_706=calc_707|result_710|arg_2<<5
+}}}{{{#!if result_710=(arg_2&16236015)<<6, calc_707=calc_706|result_710, result_710=(arg_2&32472030)<<4
+}}}{{{#!if calc_706=calc_707|result_710|arg_2>>5, result_710=(arg_2&16236015)>>4
+}}}{{{#!if calc_707=calc_706|result_710, result_710=(arg_2&32472030)>>6
+}}}{{{#!if calc_706=(calc_707|result_710)&33554431, arg_2=calc_706&rest1
+}}}{{{#!if result_710=(arg_2&16236015)<<1, calc_707=arg_2|result_710, calc_706=(arg_2&32472030)>>1
+}}}{{{#!if result_710=calc_707|calc_706|arg_2<<5, calc_706=(arg_2&16236015)<<6
+}}}{{{#!if calc_707=result_710|calc_706, calc_706=(arg_2&32472030)<<4
+}}}{{{#!if result_710=calc_707|calc_706|arg_2>>5, calc_706=(arg_2&16236015)>>4
+}}}{{{#!if calc_707=result_710|calc_706, calc_706=(arg_2&32472030)>>6
+}}}{{{#!if result_710=(calc_707|calc_706)&33554431, arg_2=result_710&rest1
+}}}{{{#!if calc_706=(arg_2&16236015)<<1, calc_707=arg_2|calc_706
+}}}{{{#!if result_710=(arg_2&32472030)>>1, calc_706=calc_707|result_710|arg_2<<5
+}}}{{{#!if result_710=(arg_2&16236015)<<6, calc_707=calc_706|result_710
+}}}{{{#!if result_710=(arg_2&32472030)<<4, calc_706=calc_707|result_710|arg_2>>5
+}}}{{{#!if result_710=(arg_2&16236015)>>4, calc_707=calc_706|result_710
+}}}{{{#!if result_710=(arg_2&32472030)>>6, calc_706=(calc_707|result_710)&33554431
+}}}{{{#!if arg_2=calc_706&rest1, result_710=(arg_2&16236015)<<1, calc_707=arg_2|result_710
+}}}{{{#!if calc_706=(arg_2&32472030)>>1, result_710=calc_707|calc_706|arg_2<<5
+}}}{{{#!if calc_706=(arg_2&16236015)<<6, calc_707=result_710|calc_706
+}}}{{{#!if calc_706=(arg_2&32472030)<<4, result_710=calc_707|calc_706|arg_2>>5
+}}}{{{#!if calc_706=(arg_2&16236015)>>4, calc_707=result_710|calc_706
+}}}{{{#!if calc_706=(arg_2&32472030)>>6, result_710=(calc_707|calc_706)&33554431
+}}}{{{#!if arg_2=result_710&rest1, calc_706=(arg_2&16236015)<<1, calc_707=arg_2|calc_706
+}}}{{{#!if result_710=(arg_2&32472030)>>1, calc_706=calc_707|result_710|arg_2<<5
+}}}{{{#!if result_710=(arg_2&16236015)<<6, calc_707=calc_706|result_710
+}}}{{{#!if result_710=(arg_2&32472030)<<4, calc_706=calc_707|result_710|arg_2>>5
+}}}{{{#!if result_710=(arg_2&16236015)>>4, calc_707=calc_706|result_710
+}}}{{{#!if result_710=(arg_2&32472030)>>6, calc_706=(calc_707|result_710)&33554431
+}}}{{{#!if arg_2=calc_706&rest1, result_710=(arg_2&16236015)<<1, calc_707=arg_2|result_710
+}}}{{{#!if calc_706=(arg_2&32472030)>>1, result_710=calc_707|calc_706|arg_2<<5
+}}}{{{#!if calc_706=(arg_2&16236015)<<6, calc_707=result_710|calc_706
+}}}{{{#!if calc_706=(arg_2&32472030)<<4, result_710=calc_707|calc_706|arg_2>>5
+}}}{{{#!if calc_706=(arg_2&16236015)>>4, calc_707=result_710|calc_706
+}}}{{{#!if calc_706=(arg_2&32472030)>>6, result_710=(calc_707|calc_706)&33554431
+}}}{{{#!if arg_2=result_710&rest1, calc_706=(arg_2&16236015)<<1, calc_707=arg_2|calc_706
+}}}{{{#!if result_710=(arg_2&32472030)>>1, calc_706=calc_707|result_710|arg_2<<5
+}}}{{{#!if result_710=(arg_2&16236015)<<6, calc_707=calc_706|result_710
+}}}{{{#!if result_710=(arg_2&32472030)<<4, calc_706=calc_707|result_710|arg_2>>5
+}}}{{{#!if result_710=(arg_2&16236015)>>4, calc_707=calc_706|result_710
+}}}{{{#!if result_710=(arg_2&32472030)>>6, calc_706=(calc_707|result_710)&33554431
+}}}{{{#!if arg_2=calc_706&rest1, result_710=(arg_2&16236015)<<1, calc_707=arg_2|result_710
+}}}{{{#!if calc_706=(arg_2&32472030)>>1, result_710=calc_707|calc_706|arg_2<<5
+}}}{{{#!if calc_706=(arg_2&16236015)<<6, calc_707=result_710|calc_706
+}}}{{{#!if calc_706=(arg_2&32472030)<<4, result_710=calc_707|calc_706|arg_2>>5
+}}}{{{#!if calc_706=(arg_2&16236015)>>4, calc_707=result_710|calc_706
+}}}{{{#!if calc_706=(arg_2&32472030)>>6, result_710=(calc_707|calc_706)&33554431
+}}}{{{#!if arg_2=result_710&rest1, calc_706=(arg_2&16236015)<<1, calc_707=arg_2|calc_706
+}}}{{{#!if result_710=(arg_2&32472030)>>1, calc_706=calc_707|result_710|arg_2<<5
+}}}{{{#!if result_710=(arg_2&16236015)<<6, calc_707=calc_706|result_710
+}}}{{{#!if result_710=(arg_2&32472030)<<4, calc_706=calc_707|result_710|arg_2>>5
+}}}{{{#!if result_710=(arg_2&16236015)>>4, calc_707=calc_706|result_710
+}}}{{{#!if result_710=(arg_2&32472030)>>6, calc_706=(calc_707|result_710)&33554431
+}}}{{{#!if arg_2=calc_706&rest1, result_710=(arg_2&16236015)<<1, calc_707=arg_2|result_710
+}}}{{{#!if calc_706=(arg_2&32472030)>>1, result_710=calc_707|calc_706|arg_2<<5
+}}}{{{#!if calc_706=(arg_2&16236015)<<6, calc_707=result_710|calc_706
+}}}{{{#!if calc_706=(arg_2&32472030)<<4, result_710=calc_707|calc_706|arg_2>>5
+}}}{{{#!if calc_706=(arg_2&16236015)>>4, calc_707=result_710|calc_706
+}}}{{{#!if calc_706=(arg_2&32472030)>>6, result_710=(calc_707|calc_706)&33554431
+}}}{{{#!if group2=result_710&rest1
+}}}{{{#!if rest2=rest1&~group2
+}}}{{{#!if arg_2=rest2&-rest2, calc_706=(arg_2&16236015)<<1, calc_707=arg_2|calc_706
+}}}{{{#!if result_710=(arg_2&32472030)>>1, calc_706=calc_707|result_710|arg_2<<5
+}}}{{{#!if result_710=(arg_2&16236015)<<6, calc_707=calc_706|result_710
+}}}{{{#!if result_710=(arg_2&32472030)<<4, calc_706=calc_707|result_710|arg_2>>5
+}}}{{{#!if result_710=(arg_2&16236015)>>4, calc_707=calc_706|result_710
+}}}{{{#!if result_710=(arg_2&32472030)>>6, calc_706=(calc_707|result_710)&33554431
+}}}{{{#!if arg_2=calc_706&rest2, result_710=(arg_2&16236015)<<1, calc_707=arg_2|result_710
+}}}{{{#!if calc_706=(arg_2&32472030)>>1, result_710=calc_707|calc_706|arg_2<<5
+}}}{{{#!if calc_706=(arg_2&16236015)<<6, calc_707=result_710|calc_706
+}}}{{{#!if calc_706=(arg_2&32472030)<<4, result_710=calc_707|calc_706|arg_2>>5
+}}}{{{#!if calc_706=(arg_2&16236015)>>4, calc_707=result_710|calc_706
+}}}{{{#!if calc_706=(arg_2&32472030)>>6, result_710=(calc_707|calc_706)&33554431
+}}}{{{#!if arg_2=result_710&rest2, calc_706=(arg_2&16236015)<<1, calc_707=arg_2|calc_706
+}}}{{{#!if result_710=(arg_2&32472030)>>1, calc_706=calc_707|result_710|arg_2<<5
+}}}{{{#!if result_710=(arg_2&16236015)<<6, calc_707=calc_706|result_710
+}}}{{{#!if result_710=(arg_2&32472030)<<4, calc_706=calc_707|result_710|arg_2>>5
+}}}{{{#!if result_710=(arg_2&16236015)>>4, calc_707=calc_706|result_710
+}}}{{{#!if result_710=(arg_2&32472030)>>6, calc_706=(calc_707|result_710)&33554431
+}}}{{{#!if arg_2=calc_706&rest2, result_710=(arg_2&16236015)<<1, calc_707=arg_2|result_710
+}}}{{{#!if calc_706=(arg_2&32472030)>>1, result_710=calc_707|calc_706|arg_2<<5
+}}}{{{#!if calc_706=(arg_2&16236015)<<6, calc_707=result_710|calc_706
+}}}{{{#!if calc_706=(arg_2&32472030)<<4, result_710=calc_707|calc_706|arg_2>>5
+}}}{{{#!if calc_706=(arg_2&16236015)>>4, calc_707=result_710|calc_706
+}}}{{{#!if calc_706=(arg_2&32472030)>>6, result_710=(calc_707|calc_706)&33554431
+}}}{{{#!if arg_2=result_710&rest2, calc_706=(arg_2&16236015)<<1, calc_707=arg_2|calc_706
+}}}{{{#!if result_710=(arg_2&32472030)>>1, calc_706=calc_707|result_710|arg_2<<5
+}}}{{{#!if result_710=(arg_2&16236015)<<6, calc_707=calc_706|result_710
+}}}{{{#!if result_710=(arg_2&32472030)<<4, calc_706=calc_707|result_710|arg_2>>5
+}}}{{{#!if result_710=(arg_2&16236015)>>4, calc_707=calc_706|result_710
+}}}{{{#!if result_710=(arg_2&32472030)>>6, calc_706=(calc_707|result_710)&33554431
+}}}{{{#!if arg_2=calc_706&rest2, result_710=(arg_2&16236015)<<1, calc_707=arg_2|result_710
+}}}{{{#!if calc_706=(arg_2&32472030)>>1, result_710=calc_707|calc_706|arg_2<<5
+}}}{{{#!if calc_706=(arg_2&16236015)<<6, calc_707=result_710|calc_706
+}}}{{{#!if calc_706=(arg_2&32472030)<<4, result_710=calc_707|calc_706|arg_2>>5
+}}}{{{#!if calc_706=(arg_2&16236015)>>4, calc_707=result_710|calc_706
+}}}{{{#!if calc_706=(arg_2&32472030)>>6, result_710=(calc_707|calc_706)&33554431
+}}}{{{#!if arg_2=result_710&rest2, calc_706=(arg_2&16236015)<<1, calc_707=arg_2|calc_706
+}}}{{{#!if result_710=(arg_2&32472030)>>1, calc_706=calc_707|result_710|arg_2<<5
+}}}{{{#!if result_710=(arg_2&16236015)<<6, calc_707=calc_706|result_710
+}}}{{{#!if result_710=(arg_2&32472030)<<4, calc_706=calc_707|result_710|arg_2>>5
+}}}{{{#!if result_710=(arg_2&16236015)>>4, calc_707=calc_706|result_710
+}}}{{{#!if result_710=(arg_2&32472030)>>6, calc_706=(calc_707|result_710)&33554431
+}}}{{{#!if arg_2=calc_706&rest2, result_710=(arg_2&16236015)<<1, calc_707=arg_2|result_710
+}}}{{{#!if calc_706=(arg_2&32472030)>>1, result_710=calc_707|calc_706|arg_2<<5
+}}}{{{#!if calc_706=(arg_2&16236015)<<6, calc_707=result_710|calc_706
+}}}{{{#!if calc_706=(arg_2&32472030)<<4, result_710=calc_707|calc_706|arg_2>>5
+}}}{{{#!if calc_706=(arg_2&16236015)>>4, calc_707=result_710|calc_706
+}}}{{{#!if calc_706=(arg_2&32472030)>>6, result_710=(calc_707|calc_706)&33554431
+}}}{{{#!if arg_2=result_710&rest2, calc_706=(arg_2&16236015)<<1, calc_707=arg_2|calc_706
+}}}{{{#!if result_710=(arg_2&32472030)>>1, calc_706=calc_707|result_710|arg_2<<5
+}}}{{{#!if result_710=(arg_2&16236015)<<6, calc_707=calc_706|result_710
+}}}{{{#!if result_710=(arg_2&32472030)<<4, calc_706=calc_707|result_710|arg_2>>5
+}}}{{{#!if result_710=(arg_2&16236015)>>4, calc_707=calc_706|result_710
+}}}{{{#!if result_710=(arg_2&32472030)>>6, calc_706=(calc_707|result_710)&33554431
+}}}{{{#!if arg_2=calc_706&rest2, result_710=(arg_2&16236015)<<1, calc_707=arg_2|result_710
+}}}{{{#!if calc_706=(arg_2&32472030)>>1, result_710=calc_707|calc_706|arg_2<<5
+}}}{{{#!if calc_706=(arg_2&16236015)<<6, calc_707=result_710|calc_706
+}}}{{{#!if calc_706=(arg_2&32472030)<<4, result_710=calc_707|calc_706|arg_2>>5
+}}}{{{#!if calc_706=(arg_2&16236015)>>4, calc_707=result_710|calc_706
+}}}{{{#!if calc_706=(arg_2&32472030)>>6, result_710=(calc_707|calc_706)&33554431
+}}}{{{#!if group3=result_710&rest2
+}}}{{{#!if rest3=rest2&~group3
+}}}{{{#!if arg_2=rest3&-rest3, calc_706=(arg_2&16236015)<<1, calc_707=arg_2|calc_706
+}}}{{{#!if result_710=(arg_2&32472030)>>1, calc_706=calc_707|result_710|arg_2<<5
+}}}{{{#!if result_710=(arg_2&16236015)<<6, calc_707=calc_706|result_710
+}}}{{{#!if result_710=(arg_2&32472030)<<4, calc_706=calc_707|result_710|arg_2>>5
+}}}{{{#!if result_710=(arg_2&16236015)>>4, calc_707=calc_706|result_710
+}}}{{{#!if result_710=(arg_2&32472030)>>6, calc_706=(calc_707|result_710)&33554431
+}}}{{{#!if arg_2=calc_706&rest3, result_710=(arg_2&16236015)<<1, calc_707=arg_2|result_710
+}}}{{{#!if calc_706=(arg_2&32472030)>>1, result_710=calc_707|calc_706|arg_2<<5
+}}}{{{#!if calc_706=(arg_2&16236015)<<6, calc_707=result_710|calc_706
+}}}{{{#!if calc_706=(arg_2&32472030)<<4, result_710=calc_707|calc_706|arg_2>>5
+}}}{{{#!if calc_706=(arg_2&16236015)>>4, calc_707=result_710|calc_706
+}}}{{{#!if calc_706=(arg_2&32472030)>>6, result_710=(calc_707|calc_706)&33554431
+}}}{{{#!if arg_2=result_710&rest3, calc_706=(arg_2&16236015)<<1, calc_707=arg_2|calc_706
+}}}{{{#!if result_710=(arg_2&32472030)>>1, calc_706=calc_707|result_710|arg_2<<5
+}}}{{{#!if result_710=(arg_2&16236015)<<6, calc_707=calc_706|result_710
+}}}{{{#!if result_710=(arg_2&32472030)<<4, calc_706=calc_707|result_710|arg_2>>5
+}}}{{{#!if result_710=(arg_2&16236015)>>4, calc_707=calc_706|result_710
+}}}{{{#!if result_710=(arg_2&32472030)>>6, calc_706=(calc_707|result_710)&33554431
+}}}{{{#!if arg_2=calc_706&rest3, result_710=(arg_2&16236015)<<1, calc_707=arg_2|result_710
+}}}{{{#!if calc_706=(arg_2&32472030)>>1, result_710=calc_707|calc_706|arg_2<<5
+}}}{{{#!if calc_706=(arg_2&16236015)<<6, calc_707=result_710|calc_706
+}}}{{{#!if calc_706=(arg_2&32472030)<<4, result_710=calc_707|calc_706|arg_2>>5
+}}}{{{#!if calc_706=(arg_2&16236015)>>4, calc_707=result_710|calc_706
+}}}{{{#!if calc_706=(arg_2&32472030)>>6, result_710=(calc_707|calc_706)&33554431
+}}}{{{#!if arg_2=result_710&rest3, calc_706=(arg_2&16236015)<<1, calc_707=arg_2|calc_706
+}}}{{{#!if result_710=(arg_2&32472030)>>1, calc_706=calc_707|result_710|arg_2<<5
+}}}{{{#!if result_710=(arg_2&16236015)<<6, calc_707=calc_706|result_710
+}}}{{{#!if result_710=(arg_2&32472030)<<4, calc_706=calc_707|result_710|arg_2>>5
+}}}{{{#!if result_710=(arg_2&16236015)>>4, calc_707=calc_706|result_710
+}}}{{{#!if result_710=(arg_2&32472030)>>6, calc_706=(calc_707|result_710)&33554431
+}}}{{{#!if arg_2=calc_706&rest3, result_710=(arg_2&16236015)<<1, calc_707=arg_2|result_710
+}}}{{{#!if calc_706=(arg_2&32472030)>>1, result_710=calc_707|calc_706|arg_2<<5
+}}}{{{#!if calc_706=(arg_2&16236015)<<6, calc_707=result_710|calc_706
+}}}{{{#!if calc_706=(arg_2&32472030)<<4, result_710=calc_707|calc_706|arg_2>>5
+}}}{{{#!if calc_706=(arg_2&16236015)>>4, calc_707=result_710|calc_706
+}}}{{{#!if calc_706=(arg_2&32472030)>>6, result_710=(calc_707|calc_706)&33554431
+}}}{{{#!if arg_2=result_710&rest3, calc_706=(arg_2&16236015)<<1, calc_707=arg_2|calc_706
+}}}{{{#!if result_710=(arg_2&32472030)>>1, calc_706=calc_707|result_710|arg_2<<5
+}}}{{{#!if result_710=(arg_2&16236015)<<6, calc_707=calc_706|result_710
+}}}{{{#!if result_710=(arg_2&32472030)<<4, calc_706=calc_707|result_710|arg_2>>5
+}}}{{{#!if result_710=(arg_2&16236015)>>4, calc_707=calc_706|result_710
+}}}{{{#!if result_710=(arg_2&32472030)>>6, calc_706=(calc_707|result_710)&33554431
+}}}{{{#!if arg_2=calc_706&rest3, result_710=(arg_2&16236015)<<1, calc_707=arg_2|result_710
+}}}{{{#!if calc_706=(arg_2&32472030)>>1, result_710=calc_707|calc_706|arg_2<<5
+}}}{{{#!if calc_706=(arg_2&16236015)<<6, calc_707=result_710|calc_706
+}}}{{{#!if calc_706=(arg_2&32472030)<<4, result_710=calc_707|calc_706|arg_2>>5
+}}}{{{#!if calc_706=(arg_2&16236015)>>4, calc_707=result_710|calc_706
+}}}{{{#!if calc_706=(arg_2&32472030)>>6, result_710=(calc_707|calc_706)&33554431
+}}}{{{#!if arg_2=result_710&rest3, calc_706=(arg_2&16236015)<<1, calc_707=arg_2|calc_706
+}}}{{{#!if result_710=(arg_2&32472030)>>1, calc_706=calc_707|result_710|arg_2<<5
+}}}{{{#!if result_710=(arg_2&16236015)<<6, calc_707=calc_706|result_710
+}}}{{{#!if result_710=(arg_2&32472030)<<4, calc_706=calc_707|result_710|arg_2>>5
+}}}{{{#!if result_710=(arg_2&16236015)>>4, calc_707=calc_706|result_710
+}}}{{{#!if result_710=(arg_2&32472030)>>6, calc_706=(calc_707|result_710)&33554431
+}}}{{{#!if arg_2=calc_706&rest3, result_710=(arg_2&16236015)<<1, calc_707=arg_2|result_710
+}}}{{{#!if calc_706=(arg_2&32472030)>>1, result_710=calc_707|calc_706|arg_2<<5
+}}}{{{#!if calc_706=(arg_2&16236015)<<6, calc_707=result_710|calc_706
+}}}{{{#!if calc_706=(arg_2&32472030)<<4, result_710=calc_707|calc_706|arg_2>>5
+}}}{{{#!if calc_706=(arg_2&16236015)>>4, calc_707=result_710|calc_706
+}}}{{{#!if calc_706=(arg_2&32472030)>>6, result_710=(calc_707|calc_706)&33554431
+}}}{{{#!if group4=result_710&rest3
+}}}{{{#!if reveal_0=!mines_0&&!counts_0?group0&1?(group0|(group0&16236015)<<1|(group0&32472030)>>1|group0<<5|(group0&16236015)<<6|(group0&32472030)<<4|group0>>5|(group0&16236015)>>4|(group0&32472030)>>6)&33554431:group1&1?(group1|(group1&16236015)<<1|(group1&32472030)>>1|group1<<5|(group1&16236015)<<6|(group1&32472030)<<4|group1>>5|(group1&16236015)>>4|(group1&32472030)>>6)&33554431:group2&1?(group2|(group2&16236015)<<1|(group2&32472030)>>1|group2<<5|(group2&16236015)<<6|(group2&32472030)<<4|group2>>5|(group2&16236015)>>4|(group2&32472030)>>6)&33554431:group3&1?(group3|(group3&16236015)<<1|(group3&32472030)>>1|group3<<5|(group3&16236015)<<6|(group3&32472030)<<4|group3>>5|(group3&16236015)>>4|(group3&32472030)>>6)&33554431:(group4|(group4&16236015)<<1|(group4&32472030)>>1|group4<<5|(group4&16236015)<<6|(group4&32472030)<<4|group4>>5|(group4&16236015)>>4|(group4&32472030)>>6)&33554431:1
+}}}{{{#!if reveal_1=!mines_1&&!counts_1?group0&2?(group0|(group0&16236015)<<1|(group0&32472030)>>1|group0<<5|(group0&16236015)<<6|(group0&32472030)<<4|group0>>5|(group0&16236015)>>4|(group0&32472030)>>6)&33554431:group1&2?(group1|(group1&16236015)<<1|(group1&32472030)>>1|group1<<5|(group1&16236015)<<6|(group1&32472030)<<4|group1>>5|(group1&16236015)>>4|(group1&32472030)>>6)&33554431:group2&2?(group2|(group2&16236015)<<1|(group2&32472030)>>1|group2<<5|(group2&16236015)<<6|(group2&32472030)<<4|group2>>5|(group2&16236015)>>4|(group2&32472030)>>6)&33554431:group3&2?(group3|(group3&16236015)<<1|(group3&32472030)>>1|group3<<5|(group3&16236015)<<6|(group3&32472030)<<4|group3>>5|(group3&16236015)>>4|(group3&32472030)>>6)&33554431:(group4|(group4&16236015)<<1|(group4&32472030)>>1|group4<<5|(group4&16236015)<<6|(group4&32472030)<<4|group4>>5|(group4&16236015)>>4|(group4&32472030)>>6)&33554431:2
+}}}{{{#!if reveal_2=!mines_2&&!counts_2?group0&4?(group0|(group0&16236015)<<1|(group0&32472030)>>1|group0<<5|(group0&16236015)<<6|(group0&32472030)<<4|group0>>5|(group0&16236015)>>4|(group0&32472030)>>6)&33554431:group1&4?(group1|(group1&16236015)<<1|(group1&32472030)>>1|group1<<5|(group1&16236015)<<6|(group1&32472030)<<4|group1>>5|(group1&16236015)>>4|(group1&32472030)>>6)&33554431:group2&4?(group2|(group2&16236015)<<1|(group2&32472030)>>1|group2<<5|(group2&16236015)<<6|(group2&32472030)<<4|group2>>5|(group2&16236015)>>4|(group2&32472030)>>6)&33554431:group3&4?(group3|(group3&16236015)<<1|(group3&32472030)>>1|group3<<5|(group3&16236015)<<6|(group3&32472030)<<4|group3>>5|(group3&16236015)>>4|(group3&32472030)>>6)&33554431:(group4|(group4&16236015)<<1|(group4&32472030)>>1|group4<<5|(group4&16236015)<<6|(group4&32472030)<<4|group4>>5|(group4&16236015)>>4|(group4&32472030)>>6)&33554431:4
+}}}{{{#!if reveal_3=!mines_3&&!counts_3?group0&8?(group0|(group0&16236015)<<1|(group0&32472030)>>1|group0<<5|(group0&16236015)<<6|(group0&32472030)<<4|group0>>5|(group0&16236015)>>4|(group0&32472030)>>6)&33554431:group1&8?(group1|(group1&16236015)<<1|(group1&32472030)>>1|group1<<5|(group1&16236015)<<6|(group1&32472030)<<4|group1>>5|(group1&16236015)>>4|(group1&32472030)>>6)&33554431:group2&8?(group2|(group2&16236015)<<1|(group2&32472030)>>1|group2<<5|(group2&16236015)<<6|(group2&32472030)<<4|group2>>5|(group2&16236015)>>4|(group2&32472030)>>6)&33554431:group3&8?(group3|(group3&16236015)<<1|(group3&32472030)>>1|group3<<5|(group3&16236015)<<6|(group3&32472030)<<4|group3>>5|(group3&16236015)>>4|(group3&32472030)>>6)&33554431:(group4|(group4&16236015)<<1|(group4&32472030)>>1|group4<<5|(group4&16236015)<<6|(group4&32472030)<<4|group4>>5|(group4&16236015)>>4|(group4&32472030)>>6)&33554431:8
+}}}{{{#!if reveal_4=!mines_4&&!counts_4?group0&16?(group0|(group0&16236015)<<1|(group0&32472030)>>1|group0<<5|(group0&16236015)<<6|(group0&32472030)<<4|group0>>5|(group0&16236015)>>4|(group0&32472030)>>6)&33554431:group1&16?(group1|(group1&16236015)<<1|(group1&32472030)>>1|group1<<5|(group1&16236015)<<6|(group1&32472030)<<4|group1>>5|(group1&16236015)>>4|(group1&32472030)>>6)&33554431:group2&16?(group2|(group2&16236015)<<1|(group2&32472030)>>1|group2<<5|(group2&16236015)<<6|(group2&32472030)<<4|group2>>5|(group2&16236015)>>4|(group2&32472030)>>6)&33554431:group3&16?(group3|(group3&16236015)<<1|(group3&32472030)>>1|group3<<5|(group3&16236015)<<6|(group3&32472030)<<4|group3>>5|(group3&16236015)>>4|(group3&32472030)>>6)&33554431:(group4|(group4&16236015)<<1|(group4&32472030)>>1|group4<<5|(group4&16236015)<<6|(group4&32472030)<<4|group4>>5|(group4&16236015)>>4|(group4&32472030)>>6)&33554431:16
+}}}{{{#!if reveal_5=!mines_5&&!counts_5?group0&32?(group0|(group0&16236015)<<1|(group0&32472030)>>1|group0<<5|(group0&16236015)<<6|(group0&32472030)<<4|group0>>5|(group0&16236015)>>4|(group0&32472030)>>6)&33554431:group1&32?(group1|(group1&16236015)<<1|(group1&32472030)>>1|group1<<5|(group1&16236015)<<6|(group1&32472030)<<4|group1>>5|(group1&16236015)>>4|(group1&32472030)>>6)&33554431:group2&32?(group2|(group2&16236015)<<1|(group2&32472030)>>1|group2<<5|(group2&16236015)<<6|(group2&32472030)<<4|group2>>5|(group2&16236015)>>4|(group2&32472030)>>6)&33554431:group3&32?(group3|(group3&16236015)<<1|(group3&32472030)>>1|group3<<5|(group3&16236015)<<6|(group3&32472030)<<4|group3>>5|(group3&16236015)>>4|(group3&32472030)>>6)&33554431:(group4|(group4&16236015)<<1|(group4&32472030)>>1|group4<<5|(group4&16236015)<<6|(group4&32472030)<<4|group4>>5|(group4&16236015)>>4|(group4&32472030)>>6)&33554431:32
+}}}{{{#!if reveal_6=!mines_6&&!counts_6?group0&64?(group0|(group0&16236015)<<1|(group0&32472030)>>1|group0<<5|(group0&16236015)<<6|(group0&32472030)<<4|group0>>5|(group0&16236015)>>4|(group0&32472030)>>6)&33554431:group1&64?(group1|(group1&16236015)<<1|(group1&32472030)>>1|group1<<5|(group1&16236015)<<6|(group1&32472030)<<4|group1>>5|(group1&16236015)>>4|(group1&32472030)>>6)&33554431:group2&64?(group2|(group2&16236015)<<1|(group2&32472030)>>1|group2<<5|(group2&16236015)<<6|(group2&32472030)<<4|group2>>5|(group2&16236015)>>4|(group2&32472030)>>6)&33554431:group3&64?(group3|(group3&16236015)<<1|(group3&32472030)>>1|group3<<5|(group3&16236015)<<6|(group3&32472030)<<4|group3>>5|(group3&16236015)>>4|(group3&32472030)>>6)&33554431:(group4|(group4&16236015)<<1|(group4&32472030)>>1|group4<<5|(group4&16236015)<<6|(group4&32472030)<<4|group4>>5|(group4&16236015)>>4|(group4&32472030)>>6)&33554431:64
+}}}{{{#!if reveal_7=!mines_7&&!counts_7?group0&128?(group0|(group0&16236015)<<1|(group0&32472030)>>1|group0<<5|(group0&16236015)<<6|(group0&32472030)<<4|group0>>5|(group0&16236015)>>4|(group0&32472030)>>6)&33554431:group1&128?(group1|(group1&16236015)<<1|(group1&32472030)>>1|group1<<5|(group1&16236015)<<6|(group1&32472030)<<4|group1>>5|(group1&16236015)>>4|(group1&32472030)>>6)&33554431:group2&128?(group2|(group2&16236015)<<1|(group2&32472030)>>1|group2<<5|(group2&16236015)<<6|(group2&32472030)<<4|group2>>5|(group2&16236015)>>4|(group2&32472030)>>6)&33554431:group3&128?(group3|(group3&16236015)<<1|(group3&32472030)>>1|group3<<5|(group3&16236015)<<6|(group3&32472030)<<4|group3>>5|(group3&16236015)>>4|(group3&32472030)>>6)&33554431:(group4|(group4&16236015)<<1|(group4&32472030)>>1|group4<<5|(group4&16236015)<<6|(group4&32472030)<<4|group4>>5|(group4&16236015)>>4|(group4&32472030)>>6)&33554431:128
+}}}{{{#!if reveal_8=!mines_8&&!counts_8?group0&256?(group0|(group0&16236015)<<1|(group0&32472030)>>1|group0<<5|(group0&16236015)<<6|(group0&32472030)<<4|group0>>5|(group0&16236015)>>4|(group0&32472030)>>6)&33554431:group1&256?(group1|(group1&16236015)<<1|(group1&32472030)>>1|group1<<5|(group1&16236015)<<6|(group1&32472030)<<4|group1>>5|(group1&16236015)>>4|(group1&32472030)>>6)&33554431:group2&256?(group2|(group2&16236015)<<1|(group2&32472030)>>1|group2<<5|(group2&16236015)<<6|(group2&32472030)<<4|group2>>5|(group2&16236015)>>4|(group2&32472030)>>6)&33554431:group3&256?(group3|(group3&16236015)<<1|(group3&32472030)>>1|group3<<5|(group3&16236015)<<6|(group3&32472030)<<4|group3>>5|(group3&16236015)>>4|(group3&32472030)>>6)&33554431:(group4|(group4&16236015)<<1|(group4&32472030)>>1|group4<<5|(group4&16236015)<<6|(group4&32472030)<<4|group4>>5|(group4&16236015)>>4|(group4&32472030)>>6)&33554431:256
+}}}{{{#!if reveal_9=!mines_9&&!counts_9?group0&512?(group0|(group0&16236015)<<1|(group0&32472030)>>1|group0<<5|(group0&16236015)<<6|(group0&32472030)<<4|group0>>5|(group0&16236015)>>4|(group0&32472030)>>6)&33554431:group1&512?(group1|(group1&16236015)<<1|(group1&32472030)>>1|group1<<5|(group1&16236015)<<6|(group1&32472030)<<4|group1>>5|(group1&16236015)>>4|(group1&32472030)>>6)&33554431:group2&512?(group2|(group2&16236015)<<1|(group2&32472030)>>1|group2<<5|(group2&16236015)<<6|(group2&32472030)<<4|group2>>5|(group2&16236015)>>4|(group2&32472030)>>6)&33554431:group3&512?(group3|(group3&16236015)<<1|(group3&32472030)>>1|group3<<5|(group3&16236015)<<6|(group3&32472030)<<4|group3>>5|(group3&16236015)>>4|(group3&32472030)>>6)&33554431:(group4|(group4&16236015)<<1|(group4&32472030)>>1|group4<<5|(group4&16236015)<<6|(group4&32472030)<<4|group4>>5|(group4&16236015)>>4|(group4&32472030)>>6)&33554431:512
+}}}{{{#!if reveal_10=!mines_10&&!counts_10?group0&1024?(group0|(group0&16236015)<<1|(group0&32472030)>>1|group0<<5|(group0&16236015)<<6|(group0&32472030)<<4|group0>>5|(group0&16236015)>>4|(group0&32472030)>>6)&33554431:group1&1024?(group1|(group1&16236015)<<1|(group1&32472030)>>1|group1<<5|(group1&16236015)<<6|(group1&32472030)<<4|group1>>5|(group1&16236015)>>4|(group1&32472030)>>6)&33554431:group2&1024?(group2|(group2&16236015)<<1|(group2&32472030)>>1|group2<<5|(group2&16236015)<<6|(group2&32472030)<<4|group2>>5|(group2&16236015)>>4|(group2&32472030)>>6)&33554431:group3&1024?(group3|(group3&16236015)<<1|(group3&32472030)>>1|group3<<5|(group3&16236015)<<6|(group3&32472030)<<4|group3>>5|(group3&16236015)>>4|(group3&32472030)>>6)&33554431:(group4|(group4&16236015)<<1|(group4&32472030)>>1|group4<<5|(group4&16236015)<<6|(group4&32472030)<<4|group4>>5|(group4&16236015)>>4|(group4&32472030)>>6)&33554431:1024
+}}}{{{#!if reveal_11=!mines_11&&!counts_11?group0&2048?(group0|(group0&16236015)<<1|(group0&32472030)>>1|group0<<5|(group0&16236015)<<6|(group0&32472030)<<4|group0>>5|(group0&16236015)>>4|(group0&32472030)>>6)&33554431:group1&2048?(group1|(group1&16236015)<<1|(group1&32472030)>>1|group1<<5|(group1&16236015)<<6|(group1&32472030)<<4|group1>>5|(group1&16236015)>>4|(group1&32472030)>>6)&33554431:group2&2048?(group2|(group2&16236015)<<1|(group2&32472030)>>1|group2<<5|(group2&16236015)<<6|(group2&32472030)<<4|group2>>5|(group2&16236015)>>4|(group2&32472030)>>6)&33554431:group3&2048?(group3|(group3&16236015)<<1|(group3&32472030)>>1|group3<<5|(group3&16236015)<<6|(group3&32472030)<<4|group3>>5|(group3&16236015)>>4|(group3&32472030)>>6)&33554431:(group4|(group4&16236015)<<1|(group4&32472030)>>1|group4<<5|(group4&16236015)<<6|(group4&32472030)<<4|group4>>5|(group4&16236015)>>4|(group4&32472030)>>6)&33554431:2048
+}}}{{{#!if reveal_12=!mines_12&&!counts_12?group0&4096?(group0|(group0&16236015)<<1|(group0&32472030)>>1|group0<<5|(group0&16236015)<<6|(group0&32472030)<<4|group0>>5|(group0&16236015)>>4|(group0&32472030)>>6)&33554431:group1&4096?(group1|(group1&16236015)<<1|(group1&32472030)>>1|group1<<5|(group1&16236015)<<6|(group1&32472030)<<4|group1>>5|(group1&16236015)>>4|(group1&32472030)>>6)&33554431:group2&4096?(group2|(group2&16236015)<<1|(group2&32472030)>>1|group2<<5|(group2&16236015)<<6|(group2&32472030)<<4|group2>>5|(group2&16236015)>>4|(group2&32472030)>>6)&33554431:group3&4096?(group3|(group3&16236015)<<1|(group3&32472030)>>1|group3<<5|(group3&16236015)<<6|(group3&32472030)<<4|group3>>5|(group3&16236015)>>4|(group3&32472030)>>6)&33554431:(group4|(group4&16236015)<<1|(group4&32472030)>>1|group4<<5|(group4&16236015)<<6|(group4&32472030)<<4|group4>>5|(group4&16236015)>>4|(group4&32472030)>>6)&33554431:4096
+}}}{{{#!if reveal_13=!mines_13&&!counts_13?group0&8192?(group0|(group0&16236015)<<1|(group0&32472030)>>1|group0<<5|(group0&16236015)<<6|(group0&32472030)<<4|group0>>5|(group0&16236015)>>4|(group0&32472030)>>6)&33554431:group1&8192?(group1|(group1&16236015)<<1|(group1&32472030)>>1|group1<<5|(group1&16236015)<<6|(group1&32472030)<<4|group1>>5|(group1&16236015)>>4|(group1&32472030)>>6)&33554431:group2&8192?(group2|(group2&16236015)<<1|(group2&32472030)>>1|group2<<5|(group2&16236015)<<6|(group2&32472030)<<4|group2>>5|(group2&16236015)>>4|(group2&32472030)>>6)&33554431:group3&8192?(group3|(group3&16236015)<<1|(group3&32472030)>>1|group3<<5|(group3&16236015)<<6|(group3&32472030)<<4|group3>>5|(group3&16236015)>>4|(group3&32472030)>>6)&33554431:(group4|(group4&16236015)<<1|(group4&32472030)>>1|group4<<5|(group4&16236015)<<6|(group4&32472030)<<4|group4>>5|(group4&16236015)>>4|(group4&32472030)>>6)&33554431:8192
+}}}{{{#!if reveal_14=!mines_14&&!counts_14?group0&16384?(group0|(group0&16236015)<<1|(group0&32472030)>>1|group0<<5|(group0&16236015)<<6|(group0&32472030)<<4|group0>>5|(group0&16236015)>>4|(group0&32472030)>>6)&33554431:group1&16384?(group1|(group1&16236015)<<1|(group1&32472030)>>1|group1<<5|(group1&16236015)<<6|(group1&32472030)<<4|group1>>5|(group1&16236015)>>4|(group1&32472030)>>6)&33554431:group2&16384?(group2|(group2&16236015)<<1|(group2&32472030)>>1|group2<<5|(group2&16236015)<<6|(group2&32472030)<<4|group2>>5|(group2&16236015)>>4|(group2&32472030)>>6)&33554431:group3&16384?(group3|(group3&16236015)<<1|(group3&32472030)>>1|group3<<5|(group3&16236015)<<6|(group3&32472030)<<4|group3>>5|(group3&16236015)>>4|(group3&32472030)>>6)&33554431:(group4|(group4&16236015)<<1|(group4&32472030)>>1|group4<<5|(group4&16236015)<<6|(group4&32472030)<<4|group4>>5|(group4&16236015)>>4|(group4&32472030)>>6)&33554431:16384
+}}}{{{#!if reveal_15=!mines_15&&!counts_15?group0&32768?(group0|(group0&16236015)<<1|(group0&32472030)>>1|group0<<5|(group0&16236015)<<6|(group0&32472030)<<4|group0>>5|(group0&16236015)>>4|(group0&32472030)>>6)&33554431:group1&32768?(group1|(group1&16236015)<<1|(group1&32472030)>>1|group1<<5|(group1&16236015)<<6|(group1&32472030)<<4|group1>>5|(group1&16236015)>>4|(group1&32472030)>>6)&33554431:group2&32768?(group2|(group2&16236015)<<1|(group2&32472030)>>1|group2<<5|(group2&16236015)<<6|(group2&32472030)<<4|group2>>5|(group2&16236015)>>4|(group2&32472030)>>6)&33554431:group3&32768?(group3|(group3&16236015)<<1|(group3&32472030)>>1|group3<<5|(group3&16236015)<<6|(group3&32472030)<<4|group3>>5|(group3&16236015)>>4|(group3&32472030)>>6)&33554431:(group4|(group4&16236015)<<1|(group4&32472030)>>1|group4<<5|(group4&16236015)<<6|(group4&32472030)<<4|group4>>5|(group4&16236015)>>4|(group4&32472030)>>6)&33554431:32768
+}}}{{{#!if reveal_16=!mines_16&&!counts_16?group0&65536?(group0|(group0&16236015)<<1|(group0&32472030)>>1|group0<<5|(group0&16236015)<<6|(group0&32472030)<<4|group0>>5|(group0&16236015)>>4|(group0&32472030)>>6)&33554431:group1&65536?(group1|(group1&16236015)<<1|(group1&32472030)>>1|group1<<5|(group1&16236015)<<6|(group1&32472030)<<4|group1>>5|(group1&16236015)>>4|(group1&32472030)>>6)&33554431:group2&65536?(group2|(group2&16236015)<<1|(group2&32472030)>>1|group2<<5|(group2&16236015)<<6|(group2&32472030)<<4|group2>>5|(group2&16236015)>>4|(group2&32472030)>>6)&33554431:group3&65536?(group3|(group3&16236015)<<1|(group3&32472030)>>1|group3<<5|(group3&16236015)<<6|(group3&32472030)<<4|group3>>5|(group3&16236015)>>4|(group3&32472030)>>6)&33554431:(group4|(group4&16236015)<<1|(group4&32472030)>>1|group4<<5|(group4&16236015)<<6|(group4&32472030)<<4|group4>>5|(group4&16236015)>>4|(group4&32472030)>>6)&33554431:65536
+}}}{{{#!if reveal_17=!mines_17&&!counts_17?group0&131072?(group0|(group0&16236015)<<1|(group0&32472030)>>1|group0<<5|(group0&16236015)<<6|(group0&32472030)<<4|group0>>5|(group0&16236015)>>4|(group0&32472030)>>6)&33554431:group1&131072?(group1|(group1&16236015)<<1|(group1&32472030)>>1|group1<<5|(group1&16236015)<<6|(group1&32472030)<<4|group1>>5|(group1&16236015)>>4|(group1&32472030)>>6)&33554431:group2&131072?(group2|(group2&16236015)<<1|(group2&32472030)>>1|group2<<5|(group2&16236015)<<6|(group2&32472030)<<4|group2>>5|(group2&16236015)>>4|(group2&32472030)>>6)&33554431:group3&131072?(group3|(group3&16236015)<<1|(group3&32472030)>>1|group3<<5|(group3&16236015)<<6|(group3&32472030)<<4|group3>>5|(group3&16236015)>>4|(group3&32472030)>>6)&33554431:(group4|(group4&16236015)<<1|(group4&32472030)>>1|group4<<5|(group4&16236015)<<6|(group4&32472030)<<4|group4>>5|(group4&16236015)>>4|(group4&32472030)>>6)&33554431:131072
+}}}{{{#!if reveal_18=!mines_18&&!counts_18?group0&262144?(group0|(group0&16236015)<<1|(group0&32472030)>>1|group0<<5|(group0&16236015)<<6|(group0&32472030)<<4|group0>>5|(group0&16236015)>>4|(group0&32472030)>>6)&33554431:group1&262144?(group1|(group1&16236015)<<1|(group1&32472030)>>1|group1<<5|(group1&16236015)<<6|(group1&32472030)<<4|group1>>5|(group1&16236015)>>4|(group1&32472030)>>6)&33554431:group2&262144?(group2|(group2&16236015)<<1|(group2&32472030)>>1|group2<<5|(group2&16236015)<<6|(group2&32472030)<<4|group2>>5|(group2&16236015)>>4|(group2&32472030)>>6)&33554431:group3&262144?(group3|(group3&16236015)<<1|(group3&32472030)>>1|group3<<5|(group3&16236015)<<6|(group3&32472030)<<4|group3>>5|(group3&16236015)>>4|(group3&32472030)>>6)&33554431:(group4|(group4&16236015)<<1|(group4&32472030)>>1|group4<<5|(group4&16236015)<<6|(group4&32472030)<<4|group4>>5|(group4&16236015)>>4|(group4&32472030)>>6)&33554431:262144
+}}}{{{#!if reveal_19=!mines_19&&!counts_19?group0&524288?(group0|(group0&16236015)<<1|(group0&32472030)>>1|group0<<5|(group0&16236015)<<6|(group0&32472030)<<4|group0>>5|(group0&16236015)>>4|(group0&32472030)>>6)&33554431:group1&524288?(group1|(group1&16236015)<<1|(group1&32472030)>>1|group1<<5|(group1&16236015)<<6|(group1&32472030)<<4|group1>>5|(group1&16236015)>>4|(group1&32472030)>>6)&33554431:group2&524288?(group2|(group2&16236015)<<1|(group2&32472030)>>1|group2<<5|(group2&16236015)<<6|(group2&32472030)<<4|group2>>5|(group2&16236015)>>4|(group2&32472030)>>6)&33554431:group3&524288?(group3|(group3&16236015)<<1|(group3&32472030)>>1|group3<<5|(group3&16236015)<<6|(group3&32472030)<<4|group3>>5|(group3&16236015)>>4|(group3&32472030)>>6)&33554431:(group4|(group4&16236015)<<1|(group4&32472030)>>1|group4<<5|(group4&16236015)<<6|(group4&32472030)<<4|group4>>5|(group4&16236015)>>4|(group4&32472030)>>6)&33554431:524288
+}}}{{{#!if reveal_20=!mines_20&&!counts_20?group0&1048576?(group0|(group0&16236015)<<1|(group0&32472030)>>1|group0<<5|(group0&16236015)<<6|(group0&32472030)<<4|group0>>5|(group0&16236015)>>4|(group0&32472030)>>6)&33554431:group1&1048576?(group1|(group1&16236015)<<1|(group1&32472030)>>1|group1<<5|(group1&16236015)<<6|(group1&32472030)<<4|group1>>5|(group1&16236015)>>4|(group1&32472030)>>6)&33554431:group2&1048576?(group2|(group2&16236015)<<1|(group2&32472030)>>1|group2<<5|(group2&16236015)<<6|(group2&32472030)<<4|group2>>5|(group2&16236015)>>4|(group2&32472030)>>6)&33554431:group3&1048576?(group3|(group3&16236015)<<1|(group3&32472030)>>1|group3<<5|(group3&16236015)<<6|(group3&32472030)<<4|group3>>5|(group3&16236015)>>4|(group3&32472030)>>6)&33554431:(group4|(group4&16236015)<<1|(group4&32472030)>>1|group4<<5|(group4&16236015)<<6|(group4&32472030)<<4|group4>>5|(group4&16236015)>>4|(group4&32472030)>>6)&33554431:1048576
+}}}{{{#!if reveal_21=!mines_21&&!counts_21?group0&2097152?(group0|(group0&16236015)<<1|(group0&32472030)>>1|group0<<5|(group0&16236015)<<6|(group0&32472030)<<4|group0>>5|(group0&16236015)>>4|(group0&32472030)>>6)&33554431:group1&2097152?(group1|(group1&16236015)<<1|(group1&32472030)>>1|group1<<5|(group1&16236015)<<6|(group1&32472030)<<4|group1>>5|(group1&16236015)>>4|(group1&32472030)>>6)&33554431:group2&2097152?(group2|(group2&16236015)<<1|(group2&32472030)>>1|group2<<5|(group2&16236015)<<6|(group2&32472030)<<4|group2>>5|(group2&16236015)>>4|(group2&32472030)>>6)&33554431:group3&2097152?(group3|(group3&16236015)<<1|(group3&32472030)>>1|group3<<5|(group3&16236015)<<6|(group3&32472030)<<4|group3>>5|(group3&16236015)>>4|(group3&32472030)>>6)&33554431:(group4|(group4&16236015)<<1|(group4&32472030)>>1|group4<<5|(group4&16236015)<<6|(group4&32472030)<<4|group4>>5|(group4&16236015)>>4|(group4&32472030)>>6)&33554431:2097152
+}}}{{{#!if reveal_22=!mines_22&&!counts_22?group0&4194304?(group0|(group0&16236015)<<1|(group0&32472030)>>1|group0<<5|(group0&16236015)<<6|(group0&32472030)<<4|group0>>5|(group0&16236015)>>4|(group0&32472030)>>6)&33554431:group1&4194304?(group1|(group1&16236015)<<1|(group1&32472030)>>1|group1<<5|(group1&16236015)<<6|(group1&32472030)<<4|group1>>5|(group1&16236015)>>4|(group1&32472030)>>6)&33554431:group2&4194304?(group2|(group2&16236015)<<1|(group2&32472030)>>1|group2<<5|(group2&16236015)<<6|(group2&32472030)<<4|group2>>5|(group2&16236015)>>4|(group2&32472030)>>6)&33554431:group3&4194304?(group3|(group3&16236015)<<1|(group3&32472030)>>1|group3<<5|(group3&16236015)<<6|(group3&32472030)<<4|group3>>5|(group3&16236015)>>4|(group3&32472030)>>6)&33554431:(group4|(group4&16236015)<<1|(group4&32472030)>>1|group4<<5|(group4&16236015)<<6|(group4&32472030)<<4|group4>>5|(group4&16236015)>>4|(group4&32472030)>>6)&33554431:4194304
+}}}{{{#!if reveal_23=!mines_23&&!counts_23?group0&8388608?(group0|(group0&16236015)<<1|(group0&32472030)>>1|group0<<5|(group0&16236015)<<6|(group0&32472030)<<4|group0>>5|(group0&16236015)>>4|(group0&32472030)>>6)&33554431:group1&8388608?(group1|(group1&16236015)<<1|(group1&32472030)>>1|group1<<5|(group1&16236015)<<6|(group1&32472030)<<4|group1>>5|(group1&16236015)>>4|(group1&32472030)>>6)&33554431:group2&8388608?(group2|(group2&16236015)<<1|(group2&32472030)>>1|group2<<5|(group2&16236015)<<6|(group2&32472030)<<4|group2>>5|(group2&16236015)>>4|(group2&32472030)>>6)&33554431:group3&8388608?(group3|(group3&16236015)<<1|(group3&32472030)>>1|group3<<5|(group3&16236015)<<6|(group3&32472030)<<4|group3>>5|(group3&16236015)>>4|(group3&32472030)>>6)&33554431:(group4|(group4&16236015)<<1|(group4&32472030)>>1|group4<<5|(group4&16236015)<<6|(group4&32472030)<<4|group4>>5|(group4&16236015)>>4|(group4&32472030)>>6)&33554431:8388608
+}}}{{{#!if reveal_24=!mines_24&&!counts_24?group0&16777216?(group0|(group0&16236015)<<1|(group0&32472030)>>1|group0<<5|(group0&16236015)<<6|(group0&32472030)<<4|group0>>5|(group0&16236015)>>4|(group0&32472030)>>6)&33554431:group1&16777216?(group1|(group1&16236015)<<1|(group1&32472030)>>1|group1<<5|(group1&16236015)<<6|(group1&32472030)<<4|group1>>5|(group1&16236015)>>4|(group1&32472030)>>6)&33554431:group2&16777216?(group2|(group2&16236015)<<1|(group2&32472030)>>1|group2<<5|(group2&16236015)<<6|(group2&32472030)<<4|group2>>5|(group2&16236015)>>4|(group2&32472030)>>6)&33554431:group3&16777216?(group3|(group3&16236015)<<1|(group3&32472030)>>1|group3<<5|(group3&16236015)<<6|(group3&32472030)<<4|group3>>5|(group3&16236015)>>4|(group3&32472030)>>6)&33554431:(group4|(group4&16236015)<<1|(group4&32472030)>>1|group4<<5|(group4&16236015)<<6|(group4&32472030)<<4|group4>>5|(group4&16236015)>>4|(group4&32472030)>>6)&33554431:16777216
+}}}{{{#!if arg_2=mines_0==1, calc_706=mines_1==1, calc_707=mines_2==1, result_710=mines_3==1
+}}}{{{#!if value_226=mines_4==1, value_228=mines_5==1, value_230=mines_6==1, value_232=mines_7==1
+}}}{{{#!if value_234=mines_8==1, value_236=mines_9==1, value_238=mines_10==1, value_240=mines_11==1
+}}}{{{#!if value_242=mines_12==1, value_244=mines_13==1, value_246=mines_14==1, value_248=mines_15==1
+}}}{{{#!if value_250=mines_16==1, value_252=mines_17==1, value_254=mines_18==1, value_256=mines_19==1
+}}}{{{#!if value_258=mines_20==1, value_260=mines_21==1, value_262=mines_22==1, value_264=mines_23==1
+}}}{{{#!if value_266=mines_24==1
+}}}{{{#!if commands_680=";add-class,minesweeper_node_294,minesweeper-lost"
+}}}{{{#!if commands_681=";add-class,minesweeper_node_294,minesweeper-o0"
+}}}{{{#!if commands_682=";add-class,minesweeper_node_294,minesweeper-o1"
+}}}{{{#!if commands_683=";add-class,minesweeper_node_294,minesweeper-o2"
+}}}{{{#!if commands_684=";add-class,minesweeper_node_294,minesweeper-o3"
+}}}{{{#!if commands_685=";add-class,minesweeper_node_294,minesweeper-o4"
+}}}{{{#!if commands_686=";add-class,minesweeper_node_294,minesweeper-o5"
+}}}{{{#!if commands_687=";add-class,minesweeper_node_294,minesweeper-o6"
+}}}{{{#!if commands_688=";add-class,minesweeper_node_294,minesweeper-o7"
+}}}{{{#!if commands_689=";add-class,minesweeper_node_294,minesweeper-o8"
+}}}{{{#!if commands_690=";add-class,minesweeper_node_294,minesweeper-o9"
+}}}{{{#!if commands_691=";add-class,minesweeper_node_294,minesweeper-o10"
+}}}{{{#!if commands_692=";add-class,minesweeper_node_294,minesweeper-o11"
+}}}{{{#!if commands_693=";add-class,minesweeper_node_294,minesweeper-o12"
+}}}{{{#!if commands_694=";add-class,minesweeper_node_294,minesweeper-o13"
+}}}{{{#!if commands_695=";add-class,minesweeper_node_294,minesweeper-o14"
+}}}{{{#!if commands_696=";add-class,minesweeper_node_294,minesweeper-o15"
+}}}{{{#!if commands_697=";add-class,minesweeper_node_294,minesweeper-o16"
+}}}{{{#!if commands_698=";add-class,minesweeper_node_294,minesweeper-o17"
+}}}{{{#!if commands_699=";add-class,minesweeper_node_294,minesweeper-o18"
+}}}{{{#!if commands_700=";add-class,minesweeper_node_294,minesweeper-o19"
+}}}{{{#!if commands_701=";add-class,minesweeper_node_294,minesweeper-o20"
+}}}{{{#!if commands_702=";add-class,minesweeper_node_294,minesweeper-o21"
+}}}{{{#!if commands_703=";add-class,minesweeper_node_294,minesweeper-o22"
+}}}{{{#!if commands_704=";add-class,minesweeper_node_294,minesweeper-o23"
+}}}{{{#!if commands_705=";add-class,minesweeper_node_294,minesweeper-o24"
+}}}{{{#!style
+.minesweeper-game { width: 320px; max-width: 100%; padding: 12px; margin: 12px auto; border: 1px solid #b8c4d4; border-radius: 12px; background: #f1f5f9; color: #17365a; }
+.minesweeper-title { font-size: 20px; font-weight: bold; margin-bottom: 8px; }
+.minesweeper-playing, .minesweeper-won, .minesweeper-lost-message, .minesweeper-help { font-size: 12px; }
+.minesweeper-playing, .minesweeper-won, .minesweeper-lost-message { margin-bottom: 8px; }
+.minesweeper-row { display: flex; gap: 4px; margin-top: 4px; }
+.minesweeper-cell { display: flex; align-items: flex-start; width: 20%; border: 1px solid #b4c6df; border-radius: 5px; overflow: hidden; background: #dce6f2; text-align: center; }
+.minesweeper-face, .minesweeper-answer { display: flex; flex-grow: 1; align-items: center; justify-content: center; height: 42px; padding: 0; font-size: 20px; font-weight: bold; }
+.minesweeper-face { background: #dce6f2; cursor: pointer; }
+.minesweeper-cover:hover { background: #c9d7ea; }
+.minesweeper-pinned { cursor: default; }
+.minesweeper-corner { flex-grow: 0; width: 18px; height: 18px; margin: 2px; border-radius: 4px; background: #f8fafc; color: #64748b; font-size: 11px; }
+.minesweeper-corner:hover { background: #fde68a; color: #b45309; }
+.minesweeper-answer { background: #fee2e2; }
+.minesweeper-safe .minesweeper-answer { background: #fff; }
+.minesweeper-n0 .minesweeper-answer { color: transparent; }
+.minesweeper-n1 .minesweeper-answer { color: #245aff; }
+.minesweeper-n2 .minesweeper-answer { color: #008846; }
+.minesweeper-n3 .minesweeper-answer { color: #cc3030; }
+.minesweeper-n4 .minesweeper-answer { color: #9a46ad; }
+.minesweeper-pinned, .minesweeper-unflag, .minesweeper-answer, .minesweeper-won, .minesweeper-lost-message { display: none; }
+.minesweeper-game .minesweeper-cell.minesweeper-flagged .minesweeper-cover, .minesweeper-game .minesweeper-cell.minesweeper-flagged .minesweeper-mark { display: none; }
+.minesweeper-game .minesweeper-cell.minesweeper-flagged .minesweeper-pinned, .minesweeper-game .minesweeper-cell.minesweeper-flagged .minesweeper-unflag { display: flex; }
+.minesweeper-help { margin-top: 8px; }
+.minesweeper-game.minesweeper-o0 .minesweeper-cell.minesweeper-c0.minesweeper-safe .minesweeper-face { display: none; }
+.minesweeper-game.minesweeper-o0 .minesweeper-cell.minesweeper-c0.minesweeper-safe .minesweeper-answer { display: flex; }
+.minesweeper-game.minesweeper-o1 .minesweeper-cell.minesweeper-c1.minesweeper-safe .minesweeper-face { display: none; }
+.minesweeper-game.minesweeper-o1 .minesweeper-cell.minesweeper-c1.minesweeper-safe .minesweeper-answer { display: flex; }
+.minesweeper-game.minesweeper-o2 .minesweeper-cell.minesweeper-c2.minesweeper-safe .minesweeper-face { display: none; }
+.minesweeper-game.minesweeper-o2 .minesweeper-cell.minesweeper-c2.minesweeper-safe .minesweeper-answer { display: flex; }
+.minesweeper-game.minesweeper-o3 .minesweeper-cell.minesweeper-c3.minesweeper-safe .minesweeper-face { display: none; }
+.minesweeper-game.minesweeper-o3 .minesweeper-cell.minesweeper-c3.minesweeper-safe .minesweeper-answer { display: flex; }
+.minesweeper-game.minesweeper-o4 .minesweeper-cell.minesweeper-c4.minesweeper-safe .minesweeper-face { display: none; }
+.minesweeper-game.minesweeper-o4 .minesweeper-cell.minesweeper-c4.minesweeper-safe .minesweeper-answer { display: flex; }
+.minesweeper-game.minesweeper-o5 .minesweeper-cell.minesweeper-c5.minesweeper-safe .minesweeper-face { display: none; }
+.minesweeper-game.minesweeper-o5 .minesweeper-cell.minesweeper-c5.minesweeper-safe .minesweeper-answer { display: flex; }
+.minesweeper-game.minesweeper-o6 .minesweeper-cell.minesweeper-c6.minesweeper-safe .minesweeper-face { display: none; }
+.minesweeper-game.minesweeper-o6 .minesweeper-cell.minesweeper-c6.minesweeper-safe .minesweeper-answer { display: flex; }
+.minesweeper-game.minesweeper-o7 .minesweeper-cell.minesweeper-c7.minesweeper-safe .minesweeper-face { display: none; }
+.minesweeper-game.minesweeper-o7 .minesweeper-cell.minesweeper-c7.minesweeper-safe .minesweeper-answer { display: flex; }
+.minesweeper-game.minesweeper-o8 .minesweeper-cell.minesweeper-c8.minesweeper-safe .minesweeper-face { display: none; }
+.minesweeper-game.minesweeper-o8 .minesweeper-cell.minesweeper-c8.minesweeper-safe .minesweeper-answer { display: flex; }
+.minesweeper-game.minesweeper-o9 .minesweeper-cell.minesweeper-c9.minesweeper-safe .minesweeper-face { display: none; }
+.minesweeper-game.minesweeper-o9 .minesweeper-cell.minesweeper-c9.minesweeper-safe .minesweeper-answer { display: flex; }
+.minesweeper-game.minesweeper-o10 .minesweeper-cell.minesweeper-c10.minesweeper-safe .minesweeper-face { display: none; }
+.minesweeper-game.minesweeper-o10 .minesweeper-cell.minesweeper-c10.minesweeper-safe .minesweeper-answer { display: flex; }
+.minesweeper-game.minesweeper-o11 .minesweeper-cell.minesweeper-c11.minesweeper-safe .minesweeper-face { display: none; }
+.minesweeper-game.minesweeper-o11 .minesweeper-cell.minesweeper-c11.minesweeper-safe .minesweeper-answer { display: flex; }
+.minesweeper-game.minesweeper-o12 .minesweeper-cell.minesweeper-c12.minesweeper-safe .minesweeper-face { display: none; }
+.minesweeper-game.minesweeper-o12 .minesweeper-cell.minesweeper-c12.minesweeper-safe .minesweeper-answer { display: flex; }
+.minesweeper-game.minesweeper-o13 .minesweeper-cell.minesweeper-c13.minesweeper-safe .minesweeper-face { display: none; }
+.minesweeper-game.minesweeper-o13 .minesweeper-cell.minesweeper-c13.minesweeper-safe .minesweeper-answer { display: flex; }
+.minesweeper-game.minesweeper-o14 .minesweeper-cell.minesweeper-c14.minesweeper-safe .minesweeper-face { display: none; }
+.minesweeper-game.minesweeper-o14 .minesweeper-cell.minesweeper-c14.minesweeper-safe .minesweeper-answer { display: flex; }
+.minesweeper-game.minesweeper-o15 .minesweeper-cell.minesweeper-c15.minesweeper-safe .minesweeper-face { display: none; }
+.minesweeper-game.minesweeper-o15 .minesweeper-cell.minesweeper-c15.minesweeper-safe .minesweeper-answer { display: flex; }
+.minesweeper-game.minesweeper-o16 .minesweeper-cell.minesweeper-c16.minesweeper-safe .minesweeper-face { display: none; }
+.minesweeper-game.minesweeper-o16 .minesweeper-cell.minesweeper-c16.minesweeper-safe .minesweeper-answer { display: flex; }
+.minesweeper-game.minesweeper-o17 .minesweeper-cell.minesweeper-c17.minesweeper-safe .minesweeper-face { display: none; }
+.minesweeper-game.minesweeper-o17 .minesweeper-cell.minesweeper-c17.minesweeper-safe .minesweeper-answer { display: flex; }
+.minesweeper-game.minesweeper-o18 .minesweeper-cell.minesweeper-c18.minesweeper-safe .minesweeper-face { display: none; }
+.minesweeper-game.minesweeper-o18 .minesweeper-cell.minesweeper-c18.minesweeper-safe .minesweeper-answer { display: flex; }
+.minesweeper-game.minesweeper-o19 .minesweeper-cell.minesweeper-c19.minesweeper-safe .minesweeper-face { display: none; }
+.minesweeper-game.minesweeper-o19 .minesweeper-cell.minesweeper-c19.minesweeper-safe .minesweeper-answer { display: flex; }
+.minesweeper-game.minesweeper-o20 .minesweeper-cell.minesweeper-c20.minesweeper-safe .minesweeper-face { display: none; }
+.minesweeper-game.minesweeper-o20 .minesweeper-cell.minesweeper-c20.minesweeper-safe .minesweeper-answer { display: flex; }
+.minesweeper-game.minesweeper-o21 .minesweeper-cell.minesweeper-c21.minesweeper-safe .minesweeper-face { display: none; }
+.minesweeper-game.minesweeper-o21 .minesweeper-cell.minesweeper-c21.minesweeper-safe .minesweeper-answer { display: flex; }
+.minesweeper-game.minesweeper-o22 .minesweeper-cell.minesweeper-c22.minesweeper-safe .minesweeper-face { display: none; }
+.minesweeper-game.minesweeper-o22 .minesweeper-cell.minesweeper-c22.minesweeper-safe .minesweeper-answer { display: flex; }
+.minesweeper-game.minesweeper-o23 .minesweeper-cell.minesweeper-c23.minesweeper-safe .minesweeper-face { display: none; }
+.minesweeper-game.minesweeper-o23 .minesweeper-cell.minesweeper-c23.minesweeper-safe .minesweeper-answer { display: flex; }
+.minesweeper-game.minesweeper-o24 .minesweeper-cell.minesweeper-c24.minesweeper-safe .minesweeper-face { display: none; }
+.minesweeper-game.minesweeper-o24 .minesweeper-cell.minesweeper-c24.minesweeper-safe .minesweeper-answer { display: flex; }
+.minesweeper-game.minesweeper-o0.minesweeper-o1.minesweeper-o2.minesweeper-o3.minesweeper-o4.minesweeper-o5.minesweeper-o6.minesweeper-o7.minesweeper-o8.minesweeper-o9.minesweeper-o10.minesweeper-o11.minesweeper-o12.minesweeper-o13.minesweeper-o14.minesweeper-o15.minesweeper-o16.minesweeper-o17.minesweeper-o18.minesweeper-o19.minesweeper-o20.minesweeper-o21.minesweeper-o22.minesweeper-o23.minesweeper-o24 .minesweeper-cell .minesweeper-face, .minesweeper-game.minesweeper-lost .minesweeper-cell .minesweeper-face { display: none; }
+.minesweeper-game.minesweeper-o0.minesweeper-o1.minesweeper-o2.minesweeper-o3.minesweeper-o4.minesweeper-o5.minesweeper-o6.minesweeper-o7.minesweeper-o8.minesweeper-o9.minesweeper-o10.minesweeper-o11.minesweeper-o12.minesweeper-o13.minesweeper-o14.minesweeper-o15.minesweeper-o16.minesweeper-o17.minesweeper-o18.minesweeper-o19.minesweeper-o20.minesweeper-o21.minesweeper-o22.minesweeper-o23.minesweeper-o24 .minesweeper-cell .minesweeper-answer, .minesweeper-game.minesweeper-lost .minesweeper-cell .minesweeper-answer { display: flex; }
+.minesweeper-game.minesweeper-o0.minesweeper-o1.minesweeper-o2.minesweeper-o3.minesweeper-o4.minesweeper-o5.minesweeper-o6.minesweeper-o7.minesweeper-o8.minesweeper-o9.minesweeper-o10.minesweeper-o11.minesweeper-o12.minesweeper-o13.minesweeper-o14.minesweeper-o15.minesweeper-o16.minesweeper-o17.minesweeper-o18.minesweeper-o19.minesweeper-o20.minesweeper-o21.minesweeper-o22.minesweeper-o23.minesweeper-o24 .minesweeper-playing, .minesweeper-game.minesweeper-o0.minesweeper-o1.minesweeper-o2.minesweeper-o3.minesweeper-o4.minesweeper-o5.minesweeper-o6.minesweeper-o7.minesweeper-o8.minesweeper-o9.minesweeper-o10.minesweeper-o11.minesweeper-o12.minesweeper-o13.minesweeper-o14.minesweeper-o15.minesweeper-o16.minesweeper-o17.minesweeper-o18.minesweeper-o19.minesweeper-o20.minesweeper-o21.minesweeper-o22.minesweeper-o23.minesweeper-o24 .minesweeper-help, .minesweeper-game.minesweeper-lost .minesweeper-playing, .minesweeper-game.minesweeper-lost .minesweeper-help { display: none; }
+.minesweeper-game.minesweeper-o0.minesweeper-o1.minesweeper-o2.minesweeper-o3.minesweeper-o4.minesweeper-o5.minesweeper-o6.minesweeper-o7.minesweeper-o8.minesweeper-o9.minesweeper-o10.minesweeper-o11.minesweeper-o12.minesweeper-o13.minesweeper-o14.minesweeper-o15.minesweeper-o16.minesweeper-o17.minesweeper-o18.minesweeper-o19.minesweeper-o20.minesweeper-o21.minesweeper-o22.minesweeper-o23.minesweeper-o24 .minesweeper-won, .minesweeper-game.minesweeper-lost .minesweeper-lost-message { display: block; }
+.minesweeper-game.minesweeper-lost .minesweeper-won { display: none; }
+
+}}}{{{#!if class_295=arg_2?"minesweeper-o0":"", arg_2=calc_706?"minesweeper-o1":""
+}}}{{{#!if calc_706=calc_707?"minesweeper-o2":"", calc_707=result_710?"minesweeper-o3":""
+}}}{{{#!if result_710=value_226?"minesweeper-o4":"", value_226=value_228?"minesweeper-o5":""
+}}}{{{#!if value_228=value_230?"minesweeper-o6":"", value_230=value_232?"minesweeper-o7":""
+}}}{{{#!if value_232=value_234?"minesweeper-o8":"", value_234=value_236?"minesweeper-o9":""
+}}}{{{#!if value_236=value_238?"minesweeper-o10":"", value_238=value_240?"minesweeper-o11":""
+}}}{{{#!if value_240=value_242?"minesweeper-o12":"", value_242=value_244?"minesweeper-o13":""
+}}}{{{#!if value_244=value_246?"minesweeper-o14":"", value_246=value_248?"minesweeper-o15":""
+}}}{{{#!if value_248=value_250?"minesweeper-o16":"", value_250=value_252?"minesweeper-o17":""
+}}}{{{#!if value_252=value_254?"minesweeper-o18":"", value_254=value_256?"minesweeper-o19":""
+}}}{{{#!if value_256=value_258?"minesweeper-o20":"", value_258=value_260?"minesweeper-o21":""
+}}}{{{#!if value_260=value_262?"minesweeper-o22":"", value_262=value_264?"minesweeper-o23":""
+}}}{{{#!if value_264=value_266?"minesweeper-o24":""
+}}}{{{#!wiki class="minesweeper_node_294 minesweeper-game @class_295@ @arg_2@ @calc_706@ @calc_707@ @result_710@ @value_226@ @value_228@ @value_230@ @value_232@ @value_234@ @value_236@ @value_238@ @value_240@ @value_242@ @value_244@ @value_246@ @value_248@ @value_250@ @value_252@ @value_254@ @value_256@ @value_258@ @value_260@ @value_262@ @value_264@"
+{{{#!wiki class="minesweeper_node_320 minesweeper-title"
+미니 지뢰찾기}}}{{{#!wiki class="minesweeper_node_321 minesweeper-playing"
+5 × 5 · 지뢰 4개를 피해 안전한 21칸을 열어보세요.}}}{{{#!wiki class="minesweeper_node_322 minesweeper-won"
+🎉 성공! 모든 안전한 칸을 열었습니다.}}}{{{#!wiki class="minesweeper_node_323 minesweeper-lost-message"
+💥 지뢰입니다! 다시 도전해 보세요.}}}{{{#!wiki class="minesweeper_node_324 minesweeper-row"
+{{{#!if value_264=mines_0==0?"minesweeper-safe":""
+}}}{{{#!if value_262=mines_0==0&&counts_0==0?"minesweeper-n0":""
+}}}{{{#!if value_260=counts_0==1?"minesweeper-n1":"", value_258=counts_0==2?"minesweeper-n2":""
+}}}{{{#!if value_256=counts_0==3?"minesweeper-n3":"", value_254=counts_0==4?"minesweeper-n4":""
+}}}{{{#!wiki class="minesweeper_node_325 minesweeper-cell minesweeper-c0 @value_264@ @value_262@ @value_260@ @value_258@ @value_256@ @value_254@"
+{{{#!if value_252=mines_0
+}}}{{{#!if value_252
+{{{#!if value_250=commands_680
+}}}}}}{{{#!if !value_252
+{{{#!if value_248=(reveal_0&1?commands_681:"")+(reveal_0&2?commands_682:"")+(reveal_0&4?commands_683:"")
+}}}{{{#!if value_246=value_248+(reveal_0&8?commands_684:"")+(reveal_0&16?commands_685:"")
+}}}{{{#!if value_244=value_246+(reveal_0&32?commands_686:"")+(reveal_0&64?commands_687:"")
+}}}{{{#!if value_242=value_244+(reveal_0&128?commands_688:"")+(reveal_0&256?commands_689:"")
+}}}{{{#!if value_240=value_242+(reveal_0&512?commands_690:"")+(reveal_0&1024?commands_691:"")
+}}}{{{#!if value_238=value_240+(reveal_0&2048?commands_692:"")+(reveal_0&4096?commands_693:"")
+}}}{{{#!if value_236=value_238+(reveal_0&8192?commands_694:"")+(reveal_0&16384?commands_695:"")
+}}}{{{#!if value_234=value_236+(reveal_0&32768?commands_696:"")+(reveal_0&65536?commands_697:"")
+}}}{{{#!if value_232=value_234+(reveal_0&131072?commands_698:"")+(reveal_0&262144?commands_699:"")
+}}}{{{#!if value_230=value_232+(reveal_0&524288?commands_700:"")+(reveal_0&1048576?commands_701:"")
+}}}{{{#!if value_228=value_230+(reveal_0&2097152?commands_702:"")+(reveal_0&4194304?commands_703:"")
+}}}{{{#!if value_226=value_228+(reveal_0&8388608?commands_704:"")+(reveal_0&16777216?commands_705:"")
+}}}{{{#!if value_250=value_226
+}}}}}}{{{#!if result_710=value_250, calc_707=result_710.substring(1)
+}}}{{{#!wiki class="minesweeper_node_332 minesweeper-face minesweeper-cover" onclick="@calc_707@"
+}}}{{{#!wiki class="minesweeper_node_333 minesweeper-face minesweeper-pinned"
+🚩}}}{{{#!wiki class="minesweeper_node_334 minesweeper-face minesweeper-corner minesweeper-mark" onclick="add-class,minesweeper_node_325,minesweeper-flagged"
+⚑}}}{{{#!wiki class="minesweeper_node_335 minesweeper-face minesweeper-corner minesweeper-unflag" onclick="remove-class,minesweeper_node_325,minesweeper-flagged"
+✕}}}{{{#!wiki class="minesweeper_node_336 minesweeper-answer"
+{{{#!if calc_706=mines_0?"💣":counts_0
+}}}@calc_706@}}}}}}{{{#!if arg_2=mines_1==0?"minesweeper-safe":""
+}}}{{{#!if class_295=mines_1==0&&counts_1==0?"minesweeper-n0":""
+}}}{{{#!if value_266=counts_1==1?"minesweeper-n1":"", value_254=counts_1==2?"minesweeper-n2":""
+}}}{{{#!if value_256=counts_1==3?"minesweeper-n3":"", value_258=counts_1==4?"minesweeper-n4":""
+}}}{{{#!wiki class="minesweeper_node_338 minesweeper-cell minesweeper-c1 @arg_2@ @class_295@ @value_266@ @value_254@ @value_256@ @value_258@"
+{{{#!if value_260=mines_1
+}}}{{{#!if value_260
+{{{#!if value_262=commands_680
+}}}}}}{{{#!if !value_260
+{{{#!if value_264=(reveal_1&1?commands_681:"")+(reveal_1&2?commands_682:"")+(reveal_1&4?commands_683:"")
+}}}{{{#!if value_252=value_264+(reveal_1&8?commands_684:"")+(reveal_1&16?commands_685:"")
+}}}{{{#!if value_248=value_252+(reveal_1&32?commands_686:"")+(reveal_1&64?commands_687:"")
+}}}{{{#!if value_246=value_248+(reveal_1&128?commands_688:"")+(reveal_1&256?commands_689:"")
+}}}{{{#!if value_244=value_246+(reveal_1&512?commands_690:"")+(reveal_1&1024?commands_691:"")
+}}}{{{#!if value_242=value_244+(reveal_1&2048?commands_692:"")+(reveal_1&4096?commands_693:"")
+}}}{{{#!if value_240=value_242+(reveal_1&8192?commands_694:"")+(reveal_1&16384?commands_695:"")
+}}}{{{#!if value_238=value_240+(reveal_1&32768?commands_696:"")+(reveal_1&65536?commands_697:"")
+}}}{{{#!if value_236=value_238+(reveal_1&131072?commands_698:"")+(reveal_1&262144?commands_699:"")
+}}}{{{#!if value_234=value_236+(reveal_1&524288?commands_700:"")+(reveal_1&1048576?commands_701:"")
+}}}{{{#!if value_232=value_234+(reveal_1&2097152?commands_702:"")+(reveal_1&4194304?commands_703:"")
+}}}{{{#!if value_230=value_232+(reveal_1&8388608?commands_704:"")+(reveal_1&16777216?commands_705:"")
+}}}{{{#!if value_262=value_230
+}}}}}}{{{#!if value_226=value_262, value_228=value_226.substring(1)
+}}}{{{#!wiki class="minesweeper_node_345 minesweeper-face minesweeper-cover" onclick="@value_228@"
+}}}{{{#!wiki class="minesweeper_node_346 minesweeper-face minesweeper-pinned"
+🚩}}}{{{#!wiki class="minesweeper_node_347 minesweeper-face minesweeper-corner minesweeper-mark" onclick="add-class,minesweeper_node_338,minesweeper-flagged"
+⚑}}}{{{#!wiki class="minesweeper_node_348 minesweeper-face minesweeper-corner minesweeper-unflag" onclick="remove-class,minesweeper_node_338,minesweeper-flagged"
+✕}}}{{{#!wiki class="minesweeper_node_349 minesweeper-answer"
+{{{#!if value_250=mines_1?"💣":counts_1
+}}}@value_250@}}}}}}{{{#!if calc_707=mines_2==0?"minesweeper-safe":""
+}}}{{{#!if result_710=mines_2==0&&counts_2==0?"minesweeper-n0":""
+}}}{{{#!if calc_706=counts_2==1?"minesweeper-n1":"", value_258=counts_2==2?"minesweeper-n2":""
+}}}{{{#!if value_256=counts_2==3?"minesweeper-n3":"", value_254=counts_2==4?"minesweeper-n4":""
+}}}{{{#!wiki class="minesweeper_node_351 minesweeper-cell minesweeper-c2 @calc_707@ @result_710@ @calc_706@ @value_258@ @value_256@ @value_254@"
+{{{#!if value_266=mines_2
+}}}{{{#!if value_266
+{{{#!if class_295=commands_680
+}}}}}}{{{#!if !value_266
+{{{#!if arg_2=(reveal_2&1?commands_681:"")+(reveal_2&2?commands_682:"")+(reveal_2&4?commands_683:"")
+}}}{{{#!if value_260=arg_2+(reveal_2&8?commands_684:"")+(reveal_2&16?commands_685:"")
+}}}{{{#!if value_264=value_260+(reveal_2&32?commands_686:"")+(reveal_2&64?commands_687:"")
+}}}{{{#!if value_252=value_264+(reveal_2&128?commands_688:"")+(reveal_2&256?commands_689:"")
+}}}{{{#!if value_248=value_252+(reveal_2&512?commands_690:"")+(reveal_2&1024?commands_691:"")
+}}}{{{#!if value_246=value_248+(reveal_2&2048?commands_692:"")+(reveal_2&4096?commands_693:"")
+}}}{{{#!if value_244=value_246+(reveal_2&8192?commands_694:"")+(reveal_2&16384?commands_695:"")
+}}}{{{#!if value_242=value_244+(reveal_2&32768?commands_696:"")+(reveal_2&65536?commands_697:"")
+}}}{{{#!if value_240=value_242+(reveal_2&131072?commands_698:"")+(reveal_2&262144?commands_699:"")
+}}}{{{#!if value_238=value_240+(reveal_2&524288?commands_700:"")+(reveal_2&1048576?commands_701:"")
+}}}{{{#!if value_236=value_238+(reveal_2&2097152?commands_702:"")+(reveal_2&4194304?commands_703:"")
+}}}{{{#!if value_234=value_236+(reveal_2&8388608?commands_704:"")+(reveal_2&16777216?commands_705:"")
+}}}{{{#!if class_295=value_234
+}}}}}}{{{#!if value_230=class_295, value_232=value_230.substring(1)
+}}}{{{#!wiki class="minesweeper_node_358 minesweeper-face minesweeper-cover" onclick="@value_232@"
+}}}{{{#!wiki class="minesweeper_node_359 minesweeper-face minesweeper-pinned"
+🚩}}}{{{#!wiki class="minesweeper_node_360 minesweeper-face minesweeper-corner minesweeper-mark" onclick="add-class,minesweeper_node_351,minesweeper-flagged"
+⚑}}}{{{#!wiki class="minesweeper_node_361 minesweeper-face minesweeper-corner minesweeper-unflag" onclick="remove-class,minesweeper_node_351,minesweeper-flagged"
+✕}}}{{{#!wiki class="minesweeper_node_362 minesweeper-answer"
+{{{#!if value_262=mines_2?"💣":counts_2
+}}}@value_262@}}}}}}{{{#!if value_228=mines_3==0?"minesweeper-safe":""
+}}}{{{#!if value_226=mines_3==0&&counts_3==0?"minesweeper-n0":""
+}}}{{{#!if value_250=counts_3==1?"minesweeper-n1":"", value_254=counts_3==2?"minesweeper-n2":""
+}}}{{{#!if value_256=counts_3==3?"minesweeper-n3":"", value_258=counts_3==4?"minesweeper-n4":""
+}}}{{{#!wiki class="minesweeper_node_364 minesweeper-cell minesweeper-c3 @value_228@ @value_226@ @value_250@ @value_254@ @value_256@ @value_258@"
+{{{#!if calc_706=mines_3
+}}}{{{#!if calc_706
+{{{#!if result_710=commands_680
+}}}}}}{{{#!if !calc_706
+{{{#!if calc_707=(reveal_3&1?commands_681:"")+(reveal_3&2?commands_682:"")+(reveal_3&4?commands_683:"")
+}}}{{{#!if value_266=calc_707+(reveal_3&8?commands_684:"")+(reveal_3&16?commands_685:"")
+}}}{{{#!if arg_2=value_266+(reveal_3&32?commands_686:"")+(reveal_3&64?commands_687:"")
+}}}{{{#!if value_260=arg_2+(reveal_3&128?commands_688:"")+(reveal_3&256?commands_689:"")
+}}}{{{#!if value_264=value_260+(reveal_3&512?commands_690:"")+(reveal_3&1024?commands_691:"")
+}}}{{{#!if value_252=value_264+(reveal_3&2048?commands_692:"")+(reveal_3&4096?commands_693:"")
+}}}{{{#!if value_248=value_252+(reveal_3&8192?commands_694:"")+(reveal_3&16384?commands_695:"")
+}}}{{{#!if value_246=value_248+(reveal_3&32768?commands_696:"")+(reveal_3&65536?commands_697:"")
+}}}{{{#!if value_244=value_246+(reveal_3&131072?commands_698:"")+(reveal_3&262144?commands_699:"")
+}}}{{{#!if value_242=value_244+(reveal_3&524288?commands_700:"")+(reveal_3&1048576?commands_701:"")
+}}}{{{#!if value_240=value_242+(reveal_3&2097152?commands_702:"")+(reveal_3&4194304?commands_703:"")
+}}}{{{#!if value_238=value_240+(reveal_3&8388608?commands_704:"")+(reveal_3&16777216?commands_705:"")
+}}}{{{#!if result_710=value_238
+}}}}}}{{{#!if value_234=result_710, value_236=value_234.substring(1)
+}}}{{{#!wiki class="minesweeper_node_371 minesweeper-face minesweeper-cover" onclick="@value_236@"
+}}}{{{#!wiki class="minesweeper_node_372 minesweeper-face minesweeper-pinned"
+🚩}}}{{{#!wiki class="minesweeper_node_373 minesweeper-face minesweeper-corner minesweeper-mark" onclick="add-class,minesweeper_node_364,minesweeper-flagged"
+⚑}}}{{{#!wiki class="minesweeper_node_374 minesweeper-face minesweeper-corner minesweeper-unflag" onclick="remove-class,minesweeper_node_364,minesweeper-flagged"
+✕}}}{{{#!wiki class="minesweeper_node_375 minesweeper-answer"
+{{{#!if class_295=mines_3?"💣":counts_3
+}}}@class_295@}}}}}}{{{#!if value_232=mines_4==0?"minesweeper-safe":""
+}}}{{{#!if value_230=mines_4==0&&counts_4==0?"minesweeper-n0":""
+}}}{{{#!if value_262=counts_4==1?"minesweeper-n1":"", value_258=counts_4==2?"minesweeper-n2":""
+}}}{{{#!if value_256=counts_4==3?"minesweeper-n3":"", value_254=counts_4==4?"minesweeper-n4":""
+}}}{{{#!wiki class="minesweeper_node_377 minesweeper-cell minesweeper-c4 @value_232@ @value_230@ @value_262@ @value_258@ @value_256@ @value_254@"
+{{{#!if value_250=mines_4
+}}}{{{#!if value_250
+{{{#!if value_226=commands_680
+}}}}}}{{{#!if !value_250
+{{{#!if value_228=(reveal_4&1?commands_681:"")+(reveal_4&2?commands_682:"")+(reveal_4&4?commands_683:"")
+}}}{{{#!if calc_706=value_228+(reveal_4&8?commands_684:"")+(reveal_4&16?commands_685:"")
+}}}{{{#!if calc_707=calc_706+(reveal_4&32?commands_686:"")+(reveal_4&64?commands_687:"")
+}}}{{{#!if value_266=calc_707+(reveal_4&128?commands_688:"")+(reveal_4&256?commands_689:"")
+}}}{{{#!if arg_2=value_266+(reveal_4&512?commands_690:"")+(reveal_4&1024?commands_691:"")
+}}}{{{#!if value_260=arg_2+(reveal_4&2048?commands_692:"")+(reveal_4&4096?commands_693:"")
+}}}{{{#!if value_264=value_260+(reveal_4&8192?commands_694:"")+(reveal_4&16384?commands_695:"")
+}}}{{{#!if value_252=value_264+(reveal_4&32768?commands_696:"")+(reveal_4&65536?commands_697:"")
+}}}{{{#!if value_248=value_252+(reveal_4&131072?commands_698:"")+(reveal_4&262144?commands_699:"")
+}}}{{{#!if value_246=value_248+(reveal_4&524288?commands_700:"")+(reveal_4&1048576?commands_701:"")
+}}}{{{#!if value_244=value_246+(reveal_4&2097152?commands_702:"")+(reveal_4&4194304?commands_703:"")
+}}}{{{#!if value_242=value_244+(reveal_4&8388608?commands_704:"")+(reveal_4&16777216?commands_705:"")
+}}}{{{#!if value_226=value_242
+}}}}}}{{{#!if value_238=value_226, value_240=value_238.substring(1)
+}}}{{{#!wiki class="minesweeper_node_384 minesweeper-face minesweeper-cover" onclick="@value_240@"
+}}}{{{#!wiki class="minesweeper_node_385 minesweeper-face minesweeper-pinned"
+🚩}}}{{{#!wiki class="minesweeper_node_386 minesweeper-face minesweeper-corner minesweeper-mark" onclick="add-class,minesweeper_node_377,minesweeper-flagged"
+⚑}}}{{{#!wiki class="minesweeper_node_387 minesweeper-face minesweeper-corner minesweeper-unflag" onclick="remove-class,minesweeper_node_377,minesweeper-flagged"
+✕}}}{{{#!wiki class="minesweeper_node_388 minesweeper-answer"
+{{{#!if result_710=mines_4?"💣":counts_4
+}}}@result_710@}}}}}}}}}{{{#!wiki class="minesweeper_node_390 minesweeper-row"
+{{{#!if value_236=mines_5==0?"minesweeper-safe":""
+}}}{{{#!if value_234=mines_5==0&&counts_5==0?"minesweeper-n0":""
+}}}{{{#!if class_295=counts_5==1?"minesweeper-n1":"", value_254=counts_5==2?"minesweeper-n2":""
+}}}{{{#!if value_256=counts_5==3?"minesweeper-n3":"", value_258=counts_5==4?"minesweeper-n4":""
+}}}{{{#!wiki class="minesweeper_node_391 minesweeper-cell minesweeper-c5 @value_236@ @value_234@ @class_295@ @value_254@ @value_256@ @value_258@"
+{{{#!if value_262=mines_5
+}}}{{{#!if value_262
+{{{#!if value_230=commands_680
+}}}}}}{{{#!if !value_262
+{{{#!if value_232=(reveal_5&1?commands_681:"")+(reveal_5&2?commands_682:"")+(reveal_5&4?commands_683:"")
+}}}{{{#!if value_250=value_232+(reveal_5&8?commands_684:"")+(reveal_5&16?commands_685:"")
+}}}{{{#!if value_228=value_250+(reveal_5&32?commands_686:"")+(reveal_5&64?commands_687:"")
+}}}{{{#!if calc_706=value_228+(reveal_5&128?commands_688:"")+(reveal_5&256?commands_689:"")
+}}}{{{#!if calc_707=calc_706+(reveal_5&512?commands_690:"")+(reveal_5&1024?commands_691:"")
+}}}{{{#!if value_266=calc_707+(reveal_5&2048?commands_692:"")+(reveal_5&4096?commands_693:"")
+}}}{{{#!if arg_2=value_266+(reveal_5&8192?commands_694:"")+(reveal_5&16384?commands_695:"")
+}}}{{{#!if value_260=arg_2+(reveal_5&32768?commands_696:"")+(reveal_5&65536?commands_697:"")
+}}}{{{#!if value_264=value_260+(reveal_5&131072?commands_698:"")+(reveal_5&262144?commands_699:"")
+}}}{{{#!if value_252=value_264+(reveal_5&524288?commands_700:"")+(reveal_5&1048576?commands_701:"")
+}}}{{{#!if value_248=value_252+(reveal_5&2097152?commands_702:"")+(reveal_5&4194304?commands_703:"")
+}}}{{{#!if value_246=value_248+(reveal_5&8388608?commands_704:"")+(reveal_5&16777216?commands_705:"")
+}}}{{{#!if value_230=value_246
+}}}}}}{{{#!if value_242=value_230, value_244=value_242.substring(1)
+}}}{{{#!wiki class="minesweeper_node_398 minesweeper-face minesweeper-cover" onclick="@value_244@"
+}}}{{{#!wiki class="minesweeper_node_399 minesweeper-face minesweeper-pinned"
+🚩}}}{{{#!wiki class="minesweeper_node_400 minesweeper-face minesweeper-corner minesweeper-mark" onclick="add-class,minesweeper_node_391,minesweeper-flagged"
+⚑}}}{{{#!wiki class="minesweeper_node_401 minesweeper-face minesweeper-corner minesweeper-unflag" onclick="remove-class,minesweeper_node_391,minesweeper-flagged"
+✕}}}{{{#!wiki class="minesweeper_node_402 minesweeper-answer"
+{{{#!if value_226=mines_5?"💣":counts_5
+}}}@value_226@}}}}}}{{{#!if value_240=mines_6==0?"minesweeper-safe":""
+}}}{{{#!if value_238=mines_6==0&&counts_6==0?"minesweeper-n0":""
+}}}{{{#!if result_710=counts_6==1?"minesweeper-n1":"", value_258=counts_6==2?"minesweeper-n2":""
+}}}{{{#!if value_256=counts_6==3?"minesweeper-n3":"", value_254=counts_6==4?"minesweeper-n4":""
+}}}{{{#!wiki class="minesweeper_node_404 minesweeper-cell minesweeper-c6 @value_240@ @value_238@ @result_710@ @value_258@ @value_256@ @value_254@"
+{{{#!if class_295=mines_6
+}}}{{{#!if class_295
+{{{#!if value_234=commands_680
+}}}}}}{{{#!if !class_295
+{{{#!if value_236=(reveal_6&1?commands_681:"")+(reveal_6&2?commands_682:"")+(reveal_6&4?commands_683:"")
+}}}{{{#!if value_262=value_236+(reveal_6&8?commands_684:"")+(reveal_6&16?commands_685:"")
+}}}{{{#!if value_232=value_262+(reveal_6&32?commands_686:"")+(reveal_6&64?commands_687:"")
+}}}{{{#!if value_250=value_232+(reveal_6&128?commands_688:"")+(reveal_6&256?commands_689:"")
+}}}{{{#!if value_228=value_250+(reveal_6&512?commands_690:"")+(reveal_6&1024?commands_691:"")
+}}}{{{#!if calc_706=value_228+(reveal_6&2048?commands_692:"")+(reveal_6&4096?commands_693:"")
+}}}{{{#!if calc_707=calc_706+(reveal_6&8192?commands_694:"")+(reveal_6&16384?commands_695:"")
+}}}{{{#!if value_266=calc_707+(reveal_6&32768?commands_696:"")+(reveal_6&65536?commands_697:"")
+}}}{{{#!if arg_2=value_266+(reveal_6&131072?commands_698:"")+(reveal_6&262144?commands_699:"")
+}}}{{{#!if value_260=arg_2+(reveal_6&524288?commands_700:"")+(reveal_6&1048576?commands_701:"")
+}}}{{{#!if value_264=value_260+(reveal_6&2097152?commands_702:"")+(reveal_6&4194304?commands_703:"")
+}}}{{{#!if value_252=value_264+(reveal_6&8388608?commands_704:"")+(reveal_6&16777216?commands_705:"")
+}}}{{{#!if value_234=value_252
+}}}}}}{{{#!if value_246=value_234, value_248=value_246.substring(1)
+}}}{{{#!wiki class="minesweeper_node_411 minesweeper-face minesweeper-cover" onclick="@value_248@"
+}}}{{{#!wiki class="minesweeper_node_412 minesweeper-face minesweeper-pinned"
+🚩}}}{{{#!wiki class="minesweeper_node_413 minesweeper-face minesweeper-corner minesweeper-mark" onclick="add-class,minesweeper_node_404,minesweeper-flagged"
+⚑}}}{{{#!wiki class="minesweeper_node_414 minesweeper-face minesweeper-corner minesweeper-unflag" onclick="remove-class,minesweeper_node_404,minesweeper-flagged"
+✕}}}{{{#!wiki class="minesweeper_node_415 minesweeper-answer"
+{{{#!if value_230=mines_6?"💣":counts_6
+}}}@value_230@}}}}}}{{{#!if value_244=mines_7==0?"minesweeper-safe":""
+}}}{{{#!if value_242=mines_7==0&&counts_7==0?"minesweeper-n0":""
+}}}{{{#!if value_226=counts_7==1?"minesweeper-n1":"", value_254=counts_7==2?"minesweeper-n2":""
+}}}{{{#!if value_256=counts_7==3?"minesweeper-n3":"", value_258=counts_7==4?"minesweeper-n4":""
+}}}{{{#!wiki class="minesweeper_node_417 minesweeper-cell minesweeper-c7 @value_244@ @value_242@ @value_226@ @value_254@ @value_256@ @value_258@"
+{{{#!if result_710=mines_7
+}}}{{{#!if result_710
+{{{#!if value_238=commands_680
+}}}}}}{{{#!if !result_710
+{{{#!if value_240=(reveal_7&1?commands_681:"")+(reveal_7&2?commands_682:"")+(reveal_7&4?commands_683:"")
+}}}{{{#!if class_295=value_240+(reveal_7&8?commands_684:"")+(reveal_7&16?commands_685:"")
+}}}{{{#!if value_236=class_295+(reveal_7&32?commands_686:"")+(reveal_7&64?commands_687:"")
+}}}{{{#!if value_262=value_236+(reveal_7&128?commands_688:"")+(reveal_7&256?commands_689:"")
+}}}{{{#!if value_232=value_262+(reveal_7&512?commands_690:"")+(reveal_7&1024?commands_691:"")
+}}}{{{#!if value_250=value_232+(reveal_7&2048?commands_692:"")+(reveal_7&4096?commands_693:"")
+}}}{{{#!if value_228=value_250+(reveal_7&8192?commands_694:"")+(reveal_7&16384?commands_695:"")
+}}}{{{#!if calc_706=value_228+(reveal_7&32768?commands_696:"")+(reveal_7&65536?commands_697:"")
+}}}{{{#!if calc_707=calc_706+(reveal_7&131072?commands_698:"")+(reveal_7&262144?commands_699:"")
+}}}{{{#!if value_266=calc_707+(reveal_7&524288?commands_700:"")+(reveal_7&1048576?commands_701:"")
+}}}{{{#!if arg_2=value_266+(reveal_7&2097152?commands_702:"")+(reveal_7&4194304?commands_703:"")
+}}}{{{#!if value_260=arg_2+(reveal_7&8388608?commands_704:"")+(reveal_7&16777216?commands_705:"")
+}}}{{{#!if value_238=value_260
+}}}}}}{{{#!if value_252=value_238, value_264=value_252.substring(1)
+}}}{{{#!wiki class="minesweeper_node_424 minesweeper-face minesweeper-cover" onclick="@value_264@"
+}}}{{{#!wiki class="minesweeper_node_425 minesweeper-face minesweeper-pinned"
+🚩}}}{{{#!wiki class="minesweeper_node_426 minesweeper-face minesweeper-corner minesweeper-mark" onclick="add-class,minesweeper_node_417,minesweeper-flagged"
+⚑}}}{{{#!wiki class="minesweeper_node_427 minesweeper-face minesweeper-corner minesweeper-unflag" onclick="remove-class,minesweeper_node_417,minesweeper-flagged"
+✕}}}{{{#!wiki class="minesweeper_node_428 minesweeper-answer"
+{{{#!if value_234=mines_7?"💣":counts_7
+}}}@value_234@}}}}}}{{{#!if value_248=mines_8==0?"minesweeper-safe":""
+}}}{{{#!if value_246=mines_8==0&&counts_8==0?"minesweeper-n0":""
+}}}{{{#!if value_230=counts_8==1?"minesweeper-n1":"", value_258=counts_8==2?"minesweeper-n2":""
+}}}{{{#!if value_256=counts_8==3?"minesweeper-n3":"", value_254=counts_8==4?"minesweeper-n4":""
+}}}{{{#!wiki class="minesweeper_node_430 minesweeper-cell minesweeper-c8 @value_248@ @value_246@ @value_230@ @value_258@ @value_256@ @value_254@"
+{{{#!if value_226=mines_8
+}}}{{{#!if value_226
+{{{#!if value_242=commands_680
+}}}}}}{{{#!if !value_226
+{{{#!if value_244=(reveal_8&1?commands_681:"")+(reveal_8&2?commands_682:"")+(reveal_8&4?commands_683:"")
+}}}{{{#!if result_710=value_244+(reveal_8&8?commands_684:"")+(reveal_8&16?commands_685:"")
+}}}{{{#!if value_240=result_710+(reveal_8&32?commands_686:"")+(reveal_8&64?commands_687:"")
+}}}{{{#!if class_295=value_240+(reveal_8&128?commands_688:"")+(reveal_8&256?commands_689:"")
+}}}{{{#!if value_236=class_295+(reveal_8&512?commands_690:"")+(reveal_8&1024?commands_691:"")
+}}}{{{#!if value_262=value_236+(reveal_8&2048?commands_692:"")+(reveal_8&4096?commands_693:"")
+}}}{{{#!if value_232=value_262+(reveal_8&8192?commands_694:"")+(reveal_8&16384?commands_695:"")
+}}}{{{#!if value_250=value_232+(reveal_8&32768?commands_696:"")+(reveal_8&65536?commands_697:"")
+}}}{{{#!if value_228=value_250+(reveal_8&131072?commands_698:"")+(reveal_8&262144?commands_699:"")
+}}}{{{#!if calc_706=value_228+(reveal_8&524288?commands_700:"")+(reveal_8&1048576?commands_701:"")
+}}}{{{#!if calc_707=calc_706+(reveal_8&2097152?commands_702:"")+(reveal_8&4194304?commands_703:"")
+}}}{{{#!if value_266=calc_707+(reveal_8&8388608?commands_704:"")+(reveal_8&16777216?commands_705:"")
+}}}{{{#!if value_242=value_266
+}}}}}}{{{#!if value_260=value_242, arg_2=value_260.substring(1)
+}}}{{{#!wiki class="minesweeper_node_437 minesweeper-face minesweeper-cover" onclick="@arg_2@"
+}}}{{{#!wiki class="minesweeper_node_438 minesweeper-face minesweeper-pinned"
+🚩}}}{{{#!wiki class="minesweeper_node_439 minesweeper-face minesweeper-corner minesweeper-mark" onclick="add-class,minesweeper_node_430,minesweeper-flagged"
+⚑}}}{{{#!wiki class="minesweeper_node_440 minesweeper-face minesweeper-corner minesweeper-unflag" onclick="remove-class,minesweeper_node_430,minesweeper-flagged"
+✕}}}{{{#!wiki class="minesweeper_node_441 minesweeper-answer"
+{{{#!if value_238=mines_8?"💣":counts_8
+}}}@value_238@}}}}}}{{{#!if value_264=mines_9==0?"minesweeper-safe":""
+}}}{{{#!if value_252=mines_9==0&&counts_9==0?"minesweeper-n0":""
+}}}{{{#!if value_234=counts_9==1?"minesweeper-n1":"", value_254=counts_9==2?"minesweeper-n2":""
+}}}{{{#!if value_256=counts_9==3?"minesweeper-n3":"", value_258=counts_9==4?"minesweeper-n4":""
+}}}{{{#!wiki class="minesweeper_node_443 minesweeper-cell minesweeper-c9 @value_264@ @value_252@ @value_234@ @value_254@ @value_256@ @value_258@"
+{{{#!if value_230=mines_9
+}}}{{{#!if value_230
+{{{#!if value_246=commands_680
+}}}}}}{{{#!if !value_230
+{{{#!if value_248=(reveal_9&1?commands_681:"")+(reveal_9&2?commands_682:"")+(reveal_9&4?commands_683:"")
+}}}{{{#!if value_226=value_248+(reveal_9&8?commands_684:"")+(reveal_9&16?commands_685:"")
+}}}{{{#!if value_244=value_226+(reveal_9&32?commands_686:"")+(reveal_9&64?commands_687:"")
+}}}{{{#!if result_710=value_244+(reveal_9&128?commands_688:"")+(reveal_9&256?commands_689:"")
+}}}{{{#!if value_240=result_710+(reveal_9&512?commands_690:"")+(reveal_9&1024?commands_691:"")
+}}}{{{#!if class_295=value_240+(reveal_9&2048?commands_692:"")+(reveal_9&4096?commands_693:"")
+}}}{{{#!if value_236=class_295+(reveal_9&8192?commands_694:"")+(reveal_9&16384?commands_695:"")
+}}}{{{#!if value_262=value_236+(reveal_9&32768?commands_696:"")+(reveal_9&65536?commands_697:"")
+}}}{{{#!if value_232=value_262+(reveal_9&131072?commands_698:"")+(reveal_9&262144?commands_699:"")
+}}}{{{#!if value_250=value_232+(reveal_9&524288?commands_700:"")+(reveal_9&1048576?commands_701:"")
+}}}{{{#!if value_228=value_250+(reveal_9&2097152?commands_702:"")+(reveal_9&4194304?commands_703:"")
+}}}{{{#!if calc_706=value_228+(reveal_9&8388608?commands_704:"")+(reveal_9&16777216?commands_705:"")
+}}}{{{#!if value_246=calc_706
+}}}}}}{{{#!if value_266=value_246, calc_707=value_266.substring(1)
+}}}{{{#!wiki class="minesweeper_node_450 minesweeper-face minesweeper-cover" onclick="@calc_707@"
+}}}{{{#!wiki class="minesweeper_node_451 minesweeper-face minesweeper-pinned"
+🚩}}}{{{#!wiki class="minesweeper_node_452 minesweeper-face minesweeper-corner minesweeper-mark" onclick="add-class,minesweeper_node_443,minesweeper-flagged"
+⚑}}}{{{#!wiki class="minesweeper_node_453 minesweeper-face minesweeper-corner minesweeper-unflag" onclick="remove-class,minesweeper_node_443,minesweeper-flagged"
+✕}}}{{{#!wiki class="minesweeper_node_454 minesweeper-answer"
+{{{#!if value_242=mines_9?"💣":counts_9
+}}}@value_242@}}}}}}}}}{{{#!wiki class="minesweeper_node_456 minesweeper-row"
+{{{#!if arg_2=mines_10==0?"minesweeper-safe":""
+}}}{{{#!if value_260=mines_10==0&&counts_10==0?"minesweeper-n0":""
+}}}{{{#!if value_238=counts_10==1?"minesweeper-n1":"", value_258=counts_10==2?"minesweeper-n2":""
+}}}{{{#!if value_256=counts_10==3?"minesweeper-n3":"", value_254=counts_10==4?"minesweeper-n4":""
+}}}{{{#!wiki class="minesweeper_node_457 minesweeper-cell minesweeper-c10 @arg_2@ @value_260@ @value_238@ @value_258@ @value_256@ @value_254@"
+{{{#!if value_234=mines_10
+}}}{{{#!if value_234
+{{{#!if value_252=commands_680
+}}}}}}{{{#!if !value_234
+{{{#!if value_264=(reveal_10&1?commands_681:"")+(reveal_10&2?commands_682:"")+(reveal_10&4?commands_683:"")
+}}}{{{#!if value_230=value_264+(reveal_10&8?commands_684:"")+(reveal_10&16?commands_685:"")
+}}}{{{#!if value_248=value_230+(reveal_10&32?commands_686:"")+(reveal_10&64?commands_687:"")
+}}}{{{#!if value_226=value_248+(reveal_10&128?commands_688:"")+(reveal_10&256?commands_689:"")
+}}}{{{#!if value_244=value_226+(reveal_10&512?commands_690:"")+(reveal_10&1024?commands_691:"")
+}}}{{{#!if result_710=value_244+(reveal_10&2048?commands_692:"")+(reveal_10&4096?commands_693:"")
+}}}{{{#!if value_240=result_710+(reveal_10&8192?commands_694:"")+(reveal_10&16384?commands_695:"")
+}}}{{{#!if class_295=value_240+(reveal_10&32768?commands_696:"")+(reveal_10&65536?commands_697:"")
+}}}{{{#!if value_236=class_295+(reveal_10&131072?commands_698:"")+(reveal_10&262144?commands_699:"")
+}}}{{{#!if value_262=value_236+(reveal_10&524288?commands_700:"")+(reveal_10&1048576?commands_701:"")
+}}}{{{#!if value_232=value_262+(reveal_10&2097152?commands_702:"")+(reveal_10&4194304?commands_703:"")
+}}}{{{#!if value_250=value_232+(reveal_10&8388608?commands_704:"")+(reveal_10&16777216?commands_705:"")
+}}}{{{#!if value_252=value_250
+}}}}}}{{{#!if calc_706=value_252, value_228=calc_706.substring(1)
+}}}{{{#!wiki class="minesweeper_node_464 minesweeper-face minesweeper-cover" onclick="@value_228@"
+}}}{{{#!wiki class="minesweeper_node_465 minesweeper-face minesweeper-pinned"
+🚩}}}{{{#!wiki class="minesweeper_node_466 minesweeper-face minesweeper-corner minesweeper-mark" onclick="add-class,minesweeper_node_457,minesweeper-flagged"
+⚑}}}{{{#!wiki class="minesweeper_node_467 minesweeper-face minesweeper-corner minesweeper-unflag" onclick="remove-class,minesweeper_node_457,minesweeper-flagged"
+✕}}}{{{#!wiki class="minesweeper_node_468 minesweeper-answer"
+{{{#!if value_246=mines_10?"💣":counts_10
+}}}@value_246@}}}}}}{{{#!if calc_707=mines_11==0?"minesweeper-safe":""
+}}}{{{#!if value_266=mines_11==0&&counts_11==0?"minesweeper-n0":""
+}}}{{{#!if value_242=counts_11==1?"minesweeper-n1":"", value_254=counts_11==2?"minesweeper-n2":""
+}}}{{{#!if value_256=counts_11==3?"minesweeper-n3":"", value_258=counts_11==4?"minesweeper-n4":""
+}}}{{{#!wiki class="minesweeper_node_470 minesweeper-cell minesweeper-c11 @calc_707@ @value_266@ @value_242@ @value_254@ @value_256@ @value_258@"
+{{{#!if value_238=mines_11
+}}}{{{#!if value_238
+{{{#!if value_260=commands_680
+}}}}}}{{{#!if !value_238
+{{{#!if arg_2=(reveal_11&1?commands_681:"")+(reveal_11&2?commands_682:"")+(reveal_11&4?commands_683:"")
+}}}{{{#!if value_234=arg_2+(reveal_11&8?commands_684:"")+(reveal_11&16?commands_685:"")
+}}}{{{#!if value_264=value_234+(reveal_11&32?commands_686:"")+(reveal_11&64?commands_687:"")
+}}}{{{#!if value_230=value_264+(reveal_11&128?commands_688:"")+(reveal_11&256?commands_689:"")
+}}}{{{#!if value_248=value_230+(reveal_11&512?commands_690:"")+(reveal_11&1024?commands_691:"")
+}}}{{{#!if value_226=value_248+(reveal_11&2048?commands_692:"")+(reveal_11&4096?commands_693:"")
+}}}{{{#!if value_244=value_226+(reveal_11&8192?commands_694:"")+(reveal_11&16384?commands_695:"")
+}}}{{{#!if result_710=value_244+(reveal_11&32768?commands_696:"")+(reveal_11&65536?commands_697:"")
+}}}{{{#!if value_240=result_710+(reveal_11&131072?commands_698:"")+(reveal_11&262144?commands_699:"")
+}}}{{{#!if class_295=value_240+(reveal_11&524288?commands_700:"")+(reveal_11&1048576?commands_701:"")
+}}}{{{#!if value_236=class_295+(reveal_11&2097152?commands_702:"")+(reveal_11&4194304?commands_703:"")
+}}}{{{#!if value_262=value_236+(reveal_11&8388608?commands_704:"")+(reveal_11&16777216?commands_705:"")
+}}}{{{#!if value_260=value_262
+}}}}}}{{{#!if value_250=value_260, value_232=value_250.substring(1)
+}}}{{{#!wiki class="minesweeper_node_477 minesweeper-face minesweeper-cover" onclick="@value_232@"
+}}}{{{#!wiki class="minesweeper_node_478 minesweeper-face minesweeper-pinned"
+🚩}}}{{{#!wiki class="minesweeper_node_479 minesweeper-face minesweeper-corner minesweeper-mark" onclick="add-class,minesweeper_node_470,minesweeper-flagged"
+⚑}}}{{{#!wiki class="minesweeper_node_480 minesweeper-face minesweeper-corner minesweeper-unflag" onclick="remove-class,minesweeper_node_470,minesweeper-flagged"
+✕}}}{{{#!wiki class="minesweeper_node_481 minesweeper-answer"
+{{{#!if value_252=mines_11?"💣":counts_11
+}}}@value_252@}}}}}}{{{#!if value_228=mines_12==0?"minesweeper-safe":""
+}}}{{{#!if calc_706=mines_12==0&&counts_12==0?"minesweeper-n0":""
+}}}{{{#!if value_246=counts_12==1?"minesweeper-n1":"", value_258=counts_12==2?"minesweeper-n2":""
+}}}{{{#!if value_256=counts_12==3?"minesweeper-n3":"", value_254=counts_12==4?"minesweeper-n4":""
+}}}{{{#!wiki class="minesweeper_node_483 minesweeper-cell minesweeper-c12 @value_228@ @calc_706@ @value_246@ @value_258@ @value_256@ @value_254@"
+{{{#!if value_242=mines_12
+}}}{{{#!if value_242
+{{{#!if value_266=commands_680
+}}}}}}{{{#!if !value_242
+{{{#!if calc_707=(reveal_12&1?commands_681:"")+(reveal_12&2?commands_682:"")+(reveal_12&4?commands_683:"")
+}}}{{{#!if value_238=calc_707+(reveal_12&8?commands_684:"")+(reveal_12&16?commands_685:"")
+}}}{{{#!if arg_2=value_238+(reveal_12&32?commands_686:"")+(reveal_12&64?commands_687:"")
+}}}{{{#!if value_234=arg_2+(reveal_12&128?commands_688:"")+(reveal_12&256?commands_689:"")
+}}}{{{#!if value_264=value_234+(reveal_12&512?commands_690:"")+(reveal_12&1024?commands_691:"")
+}}}{{{#!if value_230=value_264+(reveal_12&2048?commands_692:"")+(reveal_12&4096?commands_693:"")
+}}}{{{#!if value_248=value_230+(reveal_12&8192?commands_694:"")+(reveal_12&16384?commands_695:"")
+}}}{{{#!if value_226=value_248+(reveal_12&32768?commands_696:"")+(reveal_12&65536?commands_697:"")
+}}}{{{#!if value_244=value_226+(reveal_12&131072?commands_698:"")+(reveal_12&262144?commands_699:"")
+}}}{{{#!if result_710=value_244+(reveal_12&524288?commands_700:"")+(reveal_12&1048576?commands_701:"")
+}}}{{{#!if value_240=result_710+(reveal_12&2097152?commands_702:"")+(reveal_12&4194304?commands_703:"")
+}}}{{{#!if class_295=value_240+(reveal_12&8388608?commands_704:"")+(reveal_12&16777216?commands_705:"")
+}}}{{{#!if value_266=class_295
+}}}}}}{{{#!if value_262=value_266, value_236=value_262.substring(1)
+}}}{{{#!wiki class="minesweeper_node_490 minesweeper-face minesweeper-cover" onclick="@value_236@"
+}}}{{{#!wiki class="minesweeper_node_491 minesweeper-face minesweeper-pinned"
+🚩}}}{{{#!wiki class="minesweeper_node_492 minesweeper-face minesweeper-corner minesweeper-mark" onclick="add-class,minesweeper_node_483,minesweeper-flagged"
+⚑}}}{{{#!wiki class="minesweeper_node_493 minesweeper-face minesweeper-corner minesweeper-unflag" onclick="remove-class,minesweeper_node_483,minesweeper-flagged"
+✕}}}{{{#!wiki class="minesweeper_node_494 minesweeper-answer"
+{{{#!if value_260=mines_12?"💣":counts_12
+}}}@value_260@}}}}}}{{{#!if value_232=mines_13==0?"minesweeper-safe":""
+}}}{{{#!if value_250=mines_13==0&&counts_13==0?"minesweeper-n0":""
+}}}{{{#!if value_252=counts_13==1?"minesweeper-n1":"", value_254=counts_13==2?"minesweeper-n2":""
+}}}{{{#!if value_256=counts_13==3?"minesweeper-n3":"", value_258=counts_13==4?"minesweeper-n4":""
+}}}{{{#!wiki class="minesweeper_node_496 minesweeper-cell minesweeper-c13 @value_232@ @value_250@ @value_252@ @value_254@ @value_256@ @value_258@"
+{{{#!if value_246=mines_13
+}}}{{{#!if value_246
+{{{#!if calc_706=commands_680
+}}}}}}{{{#!if !value_246
+{{{#!if value_228=(reveal_13&1?commands_681:"")+(reveal_13&2?commands_682:"")+(reveal_13&4?commands_683:"")
+}}}{{{#!if value_242=value_228+(reveal_13&8?commands_684:"")+(reveal_13&16?commands_685:"")
+}}}{{{#!if calc_707=value_242+(reveal_13&32?commands_686:"")+(reveal_13&64?commands_687:"")
+}}}{{{#!if value_238=calc_707+(reveal_13&128?commands_688:"")+(reveal_13&256?commands_689:"")
+}}}{{{#!if arg_2=value_238+(reveal_13&512?commands_690:"")+(reveal_13&1024?commands_691:"")
+}}}{{{#!if value_234=arg_2+(reveal_13&2048?commands_692:"")+(reveal_13&4096?commands_693:"")
+}}}{{{#!if value_264=value_234+(reveal_13&8192?commands_694:"")+(reveal_13&16384?commands_695:"")
+}}}{{{#!if value_230=value_264+(reveal_13&32768?commands_696:"")+(reveal_13&65536?commands_697:"")
+}}}{{{#!if value_248=value_230+(reveal_13&131072?commands_698:"")+(reveal_13&262144?commands_699:"")
+}}}{{{#!if value_226=value_248+(reveal_13&524288?commands_700:"")+(reveal_13&1048576?commands_701:"")
+}}}{{{#!if value_244=value_226+(reveal_13&2097152?commands_702:"")+(reveal_13&4194304?commands_703:"")
+}}}{{{#!if result_710=value_244+(reveal_13&8388608?commands_704:"")+(reveal_13&16777216?commands_705:"")
+}}}{{{#!if calc_706=result_710
+}}}}}}{{{#!if class_295=calc_706, value_240=class_295.substring(1)
+}}}{{{#!wiki class="minesweeper_node_503 minesweeper-face minesweeper-cover" onclick="@value_240@"
+}}}{{{#!wiki class="minesweeper_node_504 minesweeper-face minesweeper-pinned"
+🚩}}}{{{#!wiki class="minesweeper_node_505 minesweeper-face minesweeper-corner minesweeper-mark" onclick="add-class,minesweeper_node_496,minesweeper-flagged"
+⚑}}}{{{#!wiki class="minesweeper_node_506 minesweeper-face minesweeper-corner minesweeper-unflag" onclick="remove-class,minesweeper_node_496,minesweeper-flagged"
+✕}}}{{{#!wiki class="minesweeper_node_507 minesweeper-answer"
+{{{#!if value_266=mines_13?"💣":counts_13
+}}}@value_266@}}}}}}{{{#!if value_236=mines_14==0?"minesweeper-safe":""
+}}}{{{#!if value_262=mines_14==0&&counts_14==0?"minesweeper-n0":""
+}}}{{{#!if value_260=counts_14==1?"minesweeper-n1":"", value_258=counts_14==2?"minesweeper-n2":""
+}}}{{{#!if value_256=counts_14==3?"minesweeper-n3":"", value_254=counts_14==4?"minesweeper-n4":""
+}}}{{{#!wiki class="minesweeper_node_509 minesweeper-cell minesweeper-c14 @value_236@ @value_262@ @value_260@ @value_258@ @value_256@ @value_254@"
+{{{#!if value_252=mines_14
+}}}{{{#!if value_252
+{{{#!if value_250=commands_680
+}}}}}}{{{#!if !value_252
+{{{#!if value_232=(reveal_14&1?commands_681:"")+(reveal_14&2?commands_682:"")+(reveal_14&4?commands_683:"")
+}}}{{{#!if value_246=value_232+(reveal_14&8?commands_684:"")+(reveal_14&16?commands_685:"")
+}}}{{{#!if value_228=value_246+(reveal_14&32?commands_686:"")+(reveal_14&64?commands_687:"")
+}}}{{{#!if value_242=value_228+(reveal_14&128?commands_688:"")+(reveal_14&256?commands_689:"")
+}}}{{{#!if calc_707=value_242+(reveal_14&512?commands_690:"")+(reveal_14&1024?commands_691:"")
+}}}{{{#!if value_238=calc_707+(reveal_14&2048?commands_692:"")+(reveal_14&4096?commands_693:"")
+}}}{{{#!if arg_2=value_238+(reveal_14&8192?commands_694:"")+(reveal_14&16384?commands_695:"")
+}}}{{{#!if value_234=arg_2+(reveal_14&32768?commands_696:"")+(reveal_14&65536?commands_697:"")
+}}}{{{#!if value_264=value_234+(reveal_14&131072?commands_698:"")+(reveal_14&262144?commands_699:"")
+}}}{{{#!if value_230=value_264+(reveal_14&524288?commands_700:"")+(reveal_14&1048576?commands_701:"")
+}}}{{{#!if value_248=value_230+(reveal_14&2097152?commands_702:"")+(reveal_14&4194304?commands_703:"")
+}}}{{{#!if value_226=value_248+(reveal_14&8388608?commands_704:"")+(reveal_14&16777216?commands_705:"")
+}}}{{{#!if value_250=value_226
+}}}}}}{{{#!if result_710=value_250, value_244=result_710.substring(1)
+}}}{{{#!wiki class="minesweeper_node_516 minesweeper-face minesweeper-cover" onclick="@value_244@"
+}}}{{{#!wiki class="minesweeper_node_517 minesweeper-face minesweeper-pinned"
+🚩}}}{{{#!wiki class="minesweeper_node_518 minesweeper-face minesweeper-corner minesweeper-mark" onclick="add-class,minesweeper_node_509,minesweeper-flagged"
+⚑}}}{{{#!wiki class="minesweeper_node_519 minesweeper-face minesweeper-corner minesweeper-unflag" onclick="remove-class,minesweeper_node_509,minesweeper-flagged"
+✕}}}{{{#!wiki class="minesweeper_node_520 minesweeper-answer"
+{{{#!if calc_706=mines_14?"💣":counts_14
+}}}@calc_706@}}}}}}}}}{{{#!wiki class="minesweeper_node_522 minesweeper-row"
+{{{#!if value_240=mines_15==0?"minesweeper-safe":""
+}}}{{{#!if class_295=mines_15==0&&counts_15==0?"minesweeper-n0":""
+}}}{{{#!if value_266=counts_15==1?"minesweeper-n1":"", value_254=counts_15==2?"minesweeper-n2":""
+}}}{{{#!if value_256=counts_15==3?"minesweeper-n3":"", value_258=counts_15==4?"minesweeper-n4":""
+}}}{{{#!wiki class="minesweeper_node_523 minesweeper-cell minesweeper-c15 @value_240@ @class_295@ @value_266@ @value_254@ @value_256@ @value_258@"
+{{{#!if value_260=mines_15
+}}}{{{#!if value_260
+{{{#!if value_262=commands_680
+}}}}}}{{{#!if !value_260
+{{{#!if value_236=(reveal_15&1?commands_681:"")+(reveal_15&2?commands_682:"")+(reveal_15&4?commands_683:"")
+}}}{{{#!if value_252=value_236+(reveal_15&8?commands_684:"")+(reveal_15&16?commands_685:"")
+}}}{{{#!if value_232=value_252+(reveal_15&32?commands_686:"")+(reveal_15&64?commands_687:"")
+}}}{{{#!if value_246=value_232+(reveal_15&128?commands_688:"")+(reveal_15&256?commands_689:"")
+}}}{{{#!if value_228=value_246+(reveal_15&512?commands_690:"")+(reveal_15&1024?commands_691:"")
+}}}{{{#!if value_242=value_228+(reveal_15&2048?commands_692:"")+(reveal_15&4096?commands_693:"")
+}}}{{{#!if calc_707=value_242+(reveal_15&8192?commands_694:"")+(reveal_15&16384?commands_695:"")
+}}}{{{#!if value_238=calc_707+(reveal_15&32768?commands_696:"")+(reveal_15&65536?commands_697:"")
+}}}{{{#!if arg_2=value_238+(reveal_15&131072?commands_698:"")+(reveal_15&262144?commands_699:"")
+}}}{{{#!if value_234=arg_2+(reveal_15&524288?commands_700:"")+(reveal_15&1048576?commands_701:"")
+}}}{{{#!if value_264=value_234+(reveal_15&2097152?commands_702:"")+(reveal_15&4194304?commands_703:"")
+}}}{{{#!if value_230=value_264+(reveal_15&8388608?commands_704:"")+(reveal_15&16777216?commands_705:"")
+}}}{{{#!if value_262=value_230
+}}}}}}{{{#!if value_226=value_262, value_248=value_226.substring(1)
+}}}{{{#!wiki class="minesweeper_node_530 minesweeper-face minesweeper-cover" onclick="@value_248@"
+}}}{{{#!wiki class="minesweeper_node_531 minesweeper-face minesweeper-pinned"
+🚩}}}{{{#!wiki class="minesweeper_node_532 minesweeper-face minesweeper-corner minesweeper-mark" onclick="add-class,minesweeper_node_523,minesweeper-flagged"
+⚑}}}{{{#!wiki class="minesweeper_node_533 minesweeper-face minesweeper-corner minesweeper-unflag" onclick="remove-class,minesweeper_node_523,minesweeper-flagged"
+✕}}}{{{#!wiki class="minesweeper_node_534 minesweeper-answer"
+{{{#!if value_250=mines_15?"💣":counts_15
+}}}@value_250@}}}}}}{{{#!if value_244=mines_16==0?"minesweeper-safe":""
+}}}{{{#!if result_710=mines_16==0&&counts_16==0?"minesweeper-n0":""
+}}}{{{#!if calc_706=counts_16==1?"minesweeper-n1":"", value_258=counts_16==2?"minesweeper-n2":""
+}}}{{{#!if value_256=counts_16==3?"minesweeper-n3":"", value_254=counts_16==4?"minesweeper-n4":""
+}}}{{{#!wiki class="minesweeper_node_536 minesweeper-cell minesweeper-c16 @value_244@ @result_710@ @calc_706@ @value_258@ @value_256@ @value_254@"
+{{{#!if value_266=mines_16
+}}}{{{#!if value_266
+{{{#!if class_295=commands_680
+}}}}}}{{{#!if !value_266
+{{{#!if value_240=(reveal_16&1?commands_681:"")+(reveal_16&2?commands_682:"")+(reveal_16&4?commands_683:"")
+}}}{{{#!if value_260=value_240+(reveal_16&8?commands_684:"")+(reveal_16&16?commands_685:"")
+}}}{{{#!if value_236=value_260+(reveal_16&32?commands_686:"")+(reveal_16&64?commands_687:"")
+}}}{{{#!if value_252=value_236+(reveal_16&128?commands_688:"")+(reveal_16&256?commands_689:"")
+}}}{{{#!if value_232=value_252+(reveal_16&512?commands_690:"")+(reveal_16&1024?commands_691:"")
+}}}{{{#!if value_246=value_232+(reveal_16&2048?commands_692:"")+(reveal_16&4096?commands_693:"")
+}}}{{{#!if value_228=value_246+(reveal_16&8192?commands_694:"")+(reveal_16&16384?commands_695:"")
+}}}{{{#!if value_242=value_228+(reveal_16&32768?commands_696:"")+(reveal_16&65536?commands_697:"")
+}}}{{{#!if calc_707=value_242+(reveal_16&131072?commands_698:"")+(reveal_16&262144?commands_699:"")
+}}}{{{#!if value_238=calc_707+(reveal_16&524288?commands_700:"")+(reveal_16&1048576?commands_701:"")
+}}}{{{#!if arg_2=value_238+(reveal_16&2097152?commands_702:"")+(reveal_16&4194304?commands_703:"")
+}}}{{{#!if value_234=arg_2+(reveal_16&8388608?commands_704:"")+(reveal_16&16777216?commands_705:"")
+}}}{{{#!if class_295=value_234
+}}}}}}{{{#!if value_230=class_295, value_264=value_230.substring(1)
+}}}{{{#!wiki class="minesweeper_node_543 minesweeper-face minesweeper-cover" onclick="@value_264@"
+}}}{{{#!wiki class="minesweeper_node_544 minesweeper-face minesweeper-pinned"
+🚩}}}{{{#!wiki class="minesweeper_node_545 minesweeper-face minesweeper-corner minesweeper-mark" onclick="add-class,minesweeper_node_536,minesweeper-flagged"
+⚑}}}{{{#!wiki class="minesweeper_node_546 minesweeper-face minesweeper-corner minesweeper-unflag" onclick="remove-class,minesweeper_node_536,minesweeper-flagged"
+✕}}}{{{#!wiki class="minesweeper_node_547 minesweeper-answer"
+{{{#!if value_262=mines_16?"💣":counts_16
+}}}@value_262@}}}}}}{{{#!if value_248=mines_17==0?"minesweeper-safe":""
+}}}{{{#!if value_226=mines_17==0&&counts_17==0?"minesweeper-n0":""
+}}}{{{#!if value_250=counts_17==1?"minesweeper-n1":"", value_254=counts_17==2?"minesweeper-n2":""
+}}}{{{#!if value_256=counts_17==3?"minesweeper-n3":"", value_258=counts_17==4?"minesweeper-n4":""
+}}}{{{#!wiki class="minesweeper_node_549 minesweeper-cell minesweeper-c17 @value_248@ @value_226@ @value_250@ @value_254@ @value_256@ @value_258@"
+{{{#!if calc_706=mines_17
+}}}{{{#!if calc_706
+{{{#!if result_710=commands_680
+}}}}}}{{{#!if !calc_706
+{{{#!if value_244=(reveal_17&1?commands_681:"")+(reveal_17&2?commands_682:"")+(reveal_17&4?commands_683:"")
+}}}{{{#!if value_266=value_244+(reveal_17&8?commands_684:"")+(reveal_17&16?commands_685:"")
+}}}{{{#!if value_240=value_266+(reveal_17&32?commands_686:"")+(reveal_17&64?commands_687:"")
+}}}{{{#!if value_260=value_240+(reveal_17&128?commands_688:"")+(reveal_17&256?commands_689:"")
+}}}{{{#!if value_236=value_260+(reveal_17&512?commands_690:"")+(reveal_17&1024?commands_691:"")
+}}}{{{#!if value_252=value_236+(reveal_17&2048?commands_692:"")+(reveal_17&4096?commands_693:"")
+}}}{{{#!if value_232=value_252+(reveal_17&8192?commands_694:"")+(reveal_17&16384?commands_695:"")
+}}}{{{#!if value_246=value_232+(reveal_17&32768?commands_696:"")+(reveal_17&65536?commands_697:"")
+}}}{{{#!if value_228=value_246+(reveal_17&131072?commands_698:"")+(reveal_17&262144?commands_699:"")
+}}}{{{#!if value_242=value_228+(reveal_17&524288?commands_700:"")+(reveal_17&1048576?commands_701:"")
+}}}{{{#!if calc_707=value_242+(reveal_17&2097152?commands_702:"")+(reveal_17&4194304?commands_703:"")
+}}}{{{#!if value_238=calc_707+(reveal_17&8388608?commands_704:"")+(reveal_17&16777216?commands_705:"")
+}}}{{{#!if result_710=value_238
+}}}}}}{{{#!if value_234=result_710, arg_2=value_234.substring(1)
+}}}{{{#!wiki class="minesweeper_node_556 minesweeper-face minesweeper-cover" onclick="@arg_2@"
+}}}{{{#!wiki class="minesweeper_node_557 minesweeper-face minesweeper-pinned"
+🚩}}}{{{#!wiki class="minesweeper_node_558 minesweeper-face minesweeper-corner minesweeper-mark" onclick="add-class,minesweeper_node_549,minesweeper-flagged"
+⚑}}}{{{#!wiki class="minesweeper_node_559 minesweeper-face minesweeper-corner minesweeper-unflag" onclick="remove-class,minesweeper_node_549,minesweeper-flagged"
+✕}}}{{{#!wiki class="minesweeper_node_560 minesweeper-answer"
+{{{#!if class_295=mines_17?"💣":counts_17
+}}}@class_295@}}}}}}{{{#!if value_264=mines_18==0?"minesweeper-safe":""
+}}}{{{#!if value_230=mines_18==0&&counts_18==0?"minesweeper-n0":""
+}}}{{{#!if value_262=counts_18==1?"minesweeper-n1":"", value_258=counts_18==2?"minesweeper-n2":""
+}}}{{{#!if value_256=counts_18==3?"minesweeper-n3":"", value_254=counts_18==4?"minesweeper-n4":""
+}}}{{{#!wiki class="minesweeper_node_562 minesweeper-cell minesweeper-c18 @value_264@ @value_230@ @value_262@ @value_258@ @value_256@ @value_254@"
+{{{#!if value_250=mines_18
+}}}{{{#!if value_250
+{{{#!if value_226=commands_680
+}}}}}}{{{#!if !value_250
+{{{#!if value_248=(reveal_18&1?commands_681:"")+(reveal_18&2?commands_682:"")+(reveal_18&4?commands_683:"")
+}}}{{{#!if calc_706=value_248+(reveal_18&8?commands_684:"")+(reveal_18&16?commands_685:"")
+}}}{{{#!if value_244=calc_706+(reveal_18&32?commands_686:"")+(reveal_18&64?commands_687:"")
+}}}{{{#!if value_266=value_244+(reveal_18&128?commands_688:"")+(reveal_18&256?commands_689:"")
+}}}{{{#!if value_240=value_266+(reveal_18&512?commands_690:"")+(reveal_18&1024?commands_691:"")
+}}}{{{#!if value_260=value_240+(reveal_18&2048?commands_692:"")+(reveal_18&4096?commands_693:"")
+}}}{{{#!if value_236=value_260+(reveal_18&8192?commands_694:"")+(reveal_18&16384?commands_695:"")
+}}}{{{#!if value_252=value_236+(reveal_18&32768?commands_696:"")+(reveal_18&65536?commands_697:"")
+}}}{{{#!if value_232=value_252+(reveal_18&131072?commands_698:"")+(reveal_18&262144?commands_699:"")
+}}}{{{#!if value_246=value_232+(reveal_18&524288?commands_700:"")+(reveal_18&1048576?commands_701:"")
+}}}{{{#!if value_228=value_246+(reveal_18&2097152?commands_702:"")+(reveal_18&4194304?commands_703:"")
+}}}{{{#!if value_242=value_228+(reveal_18&8388608?commands_704:"")+(reveal_18&16777216?commands_705:"")
+}}}{{{#!if value_226=value_242
+}}}}}}{{{#!if value_238=value_226, calc_707=value_238.substring(1)
+}}}{{{#!wiki class="minesweeper_node_569 minesweeper-face minesweeper-cover" onclick="@calc_707@"
+}}}{{{#!wiki class="minesweeper_node_570 minesweeper-face minesweeper-pinned"
+🚩}}}{{{#!wiki class="minesweeper_node_571 minesweeper-face minesweeper-corner minesweeper-mark" onclick="add-class,minesweeper_node_562,minesweeper-flagged"
+⚑}}}{{{#!wiki class="minesweeper_node_572 minesweeper-face minesweeper-corner minesweeper-unflag" onclick="remove-class,minesweeper_node_562,minesweeper-flagged"
+✕}}}{{{#!wiki class="minesweeper_node_573 minesweeper-answer"
+{{{#!if result_710=mines_18?"💣":counts_18
+}}}@result_710@}}}}}}{{{#!if arg_2=mines_19==0?"minesweeper-safe":""
+}}}{{{#!if value_234=mines_19==0&&counts_19==0?"minesweeper-n0":""
+}}}{{{#!if class_295=counts_19==1?"minesweeper-n1":"", value_254=counts_19==2?"minesweeper-n2":""
+}}}{{{#!if value_256=counts_19==3?"minesweeper-n3":"", value_258=counts_19==4?"minesweeper-n4":""
+}}}{{{#!wiki class="minesweeper_node_575 minesweeper-cell minesweeper-c19 @arg_2@ @value_234@ @class_295@ @value_254@ @value_256@ @value_258@"
+{{{#!if value_262=mines_19
+}}}{{{#!if value_262
+{{{#!if value_230=commands_680
+}}}}}}{{{#!if !value_262
+{{{#!if value_264=(reveal_19&1?commands_681:"")+(reveal_19&2?commands_682:"")+(reveal_19&4?commands_683:"")
+}}}{{{#!if value_250=value_264+(reveal_19&8?commands_684:"")+(reveal_19&16?commands_685:"")
+}}}{{{#!if value_248=value_250+(reveal_19&32?commands_686:"")+(reveal_19&64?commands_687:"")
+}}}{{{#!if calc_706=value_248+(reveal_19&128?commands_688:"")+(reveal_19&256?commands_689:"")
+}}}{{{#!if value_244=calc_706+(reveal_19&512?commands_690:"")+(reveal_19&1024?commands_691:"")
+}}}{{{#!if value_266=value_244+(reveal_19&2048?commands_692:"")+(reveal_19&4096?commands_693:"")
+}}}{{{#!if value_240=value_266+(reveal_19&8192?commands_694:"")+(reveal_19&16384?commands_695:"")
+}}}{{{#!if value_260=value_240+(reveal_19&32768?commands_696:"")+(reveal_19&65536?commands_697:"")
+}}}{{{#!if value_236=value_260+(reveal_19&131072?commands_698:"")+(reveal_19&262144?commands_699:"")
+}}}{{{#!if value_252=value_236+(reveal_19&524288?commands_700:"")+(reveal_19&1048576?commands_701:"")
+}}}{{{#!if value_232=value_252+(reveal_19&2097152?commands_702:"")+(reveal_19&4194304?commands_703:"")
+}}}{{{#!if value_246=value_232+(reveal_19&8388608?commands_704:"")+(reveal_19&16777216?commands_705:"")
+}}}{{{#!if value_230=value_246
+}}}}}}{{{#!if value_242=value_230, value_228=value_242.substring(1)
+}}}{{{#!wiki class="minesweeper_node_582 minesweeper-face minesweeper-cover" onclick="@value_228@"
+}}}{{{#!wiki class="minesweeper_node_583 minesweeper-face minesweeper-pinned"
+🚩}}}{{{#!wiki class="minesweeper_node_584 minesweeper-face minesweeper-corner minesweeper-mark" onclick="add-class,minesweeper_node_575,minesweeper-flagged"
+⚑}}}{{{#!wiki class="minesweeper_node_585 minesweeper-face minesweeper-corner minesweeper-unflag" onclick="remove-class,minesweeper_node_575,minesweeper-flagged"
+✕}}}{{{#!wiki class="minesweeper_node_586 minesweeper-answer"
+{{{#!if value_226=mines_19?"💣":counts_19
+}}}@value_226@}}}}}}}}}{{{#!wiki class="minesweeper_node_588 minesweeper-row"
+{{{#!if calc_707=mines_20==0?"minesweeper-safe":""
+}}}{{{#!if value_238=mines_20==0&&counts_20==0?"minesweeper-n0":""
+}}}{{{#!if result_710=counts_20==1?"minesweeper-n1":"", value_258=counts_20==2?"minesweeper-n2":""
+}}}{{{#!if value_256=counts_20==3?"minesweeper-n3":"", value_254=counts_20==4?"minesweeper-n4":""
+}}}{{{#!wiki class="minesweeper_node_589 minesweeper-cell minesweeper-c20 @calc_707@ @value_238@ @result_710@ @value_258@ @value_256@ @value_254@"
+{{{#!if class_295=mines_20
+}}}{{{#!if class_295
+{{{#!if value_234=commands_680
+}}}}}}{{{#!if !class_295
+{{{#!if arg_2=(reveal_20&1?commands_681:"")+(reveal_20&2?commands_682:"")+(reveal_20&4?commands_683:"")
+}}}{{{#!if value_262=arg_2+(reveal_20&8?commands_684:"")+(reveal_20&16?commands_685:"")
+}}}{{{#!if value_264=value_262+(reveal_20&32?commands_686:"")+(reveal_20&64?commands_687:"")
+}}}{{{#!if value_250=value_264+(reveal_20&128?commands_688:"")+(reveal_20&256?commands_689:"")
+}}}{{{#!if value_248=value_250+(reveal_20&512?commands_690:"")+(reveal_20&1024?commands_691:"")
+}}}{{{#!if calc_706=value_248+(reveal_20&2048?commands_692:"")+(reveal_20&4096?commands_693:"")
+}}}{{{#!if value_244=calc_706+(reveal_20&8192?commands_694:"")+(reveal_20&16384?commands_695:"")
+}}}{{{#!if value_266=value_244+(reveal_20&32768?commands_696:"")+(reveal_20&65536?commands_697:"")
+}}}{{{#!if value_240=value_266+(reveal_20&131072?commands_698:"")+(reveal_20&262144?commands_699:"")
+}}}{{{#!if value_260=value_240+(reveal_20&524288?commands_700:"")+(reveal_20&1048576?commands_701:"")
+}}}{{{#!if value_236=value_260+(reveal_20&2097152?commands_702:"")+(reveal_20&4194304?commands_703:"")
+}}}{{{#!if value_252=value_236+(reveal_20&8388608?commands_704:"")+(reveal_20&16777216?commands_705:"")
+}}}{{{#!if value_234=value_252
+}}}}}}{{{#!if value_246=value_234, value_232=value_246.substring(1)
+}}}{{{#!wiki class="minesweeper_node_596 minesweeper-face minesweeper-cover" onclick="@value_232@"
+}}}{{{#!wiki class="minesweeper_node_597 minesweeper-face minesweeper-pinned"
+🚩}}}{{{#!wiki class="minesweeper_node_598 minesweeper-face minesweeper-corner minesweeper-mark" onclick="add-class,minesweeper_node_589,minesweeper-flagged"
+⚑}}}{{{#!wiki class="minesweeper_node_599 minesweeper-face minesweeper-corner minesweeper-unflag" onclick="remove-class,minesweeper_node_589,minesweeper-flagged"
+✕}}}{{{#!wiki class="minesweeper_node_600 minesweeper-answer"
+{{{#!if value_230=mines_20?"💣":counts_20
+}}}@value_230@}}}}}}{{{#!if value_228=mines_21==0?"minesweeper-safe":""
+}}}{{{#!if value_242=mines_21==0&&counts_21==0?"minesweeper-n0":""
+}}}{{{#!if value_226=counts_21==1?"minesweeper-n1":"", value_254=counts_21==2?"minesweeper-n2":""
+}}}{{{#!if value_256=counts_21==3?"minesweeper-n3":"", value_258=counts_21==4?"minesweeper-n4":""
+}}}{{{#!wiki class="minesweeper_node_602 minesweeper-cell minesweeper-c21 @value_228@ @value_242@ @value_226@ @value_254@ @value_256@ @value_258@"
+{{{#!if result_710=mines_21
+}}}{{{#!if result_710
+{{{#!if value_238=commands_680
+}}}}}}{{{#!if !result_710
+{{{#!if calc_707=(reveal_21&1?commands_681:"")+(reveal_21&2?commands_682:"")+(reveal_21&4?commands_683:"")
+}}}{{{#!if class_295=calc_707+(reveal_21&8?commands_684:"")+(reveal_21&16?commands_685:"")
+}}}{{{#!if arg_2=class_295+(reveal_21&32?commands_686:"")+(reveal_21&64?commands_687:"")
+}}}{{{#!if value_262=arg_2+(reveal_21&128?commands_688:"")+(reveal_21&256?commands_689:"")
+}}}{{{#!if value_264=value_262+(reveal_21&512?commands_690:"")+(reveal_21&1024?commands_691:"")
+}}}{{{#!if value_250=value_264+(reveal_21&2048?commands_692:"")+(reveal_21&4096?commands_693:"")
+}}}{{{#!if value_248=value_250+(reveal_21&8192?commands_694:"")+(reveal_21&16384?commands_695:"")
+}}}{{{#!if calc_706=value_248+(reveal_21&32768?commands_696:"")+(reveal_21&65536?commands_697:"")
+}}}{{{#!if value_244=calc_706+(reveal_21&131072?commands_698:"")+(reveal_21&262144?commands_699:"")
+}}}{{{#!if value_266=value_244+(reveal_21&524288?commands_700:"")+(reveal_21&1048576?commands_701:"")
+}}}{{{#!if value_240=value_266+(reveal_21&2097152?commands_702:"")+(reveal_21&4194304?commands_703:"")
+}}}{{{#!if value_260=value_240+(reveal_21&8388608?commands_704:"")+(reveal_21&16777216?commands_705:"")
+}}}{{{#!if value_238=value_260
+}}}}}}{{{#!if value_252=value_238, value_236=value_252.substring(1)
+}}}{{{#!wiki class="minesweeper_node_609 minesweeper-face minesweeper-cover" onclick="@value_236@"
+}}}{{{#!wiki class="minesweeper_node_610 minesweeper-face minesweeper-pinned"
+🚩}}}{{{#!wiki class="minesweeper_node_611 minesweeper-face minesweeper-corner minesweeper-mark" onclick="add-class,minesweeper_node_602,minesweeper-flagged"
+⚑}}}{{{#!wiki class="minesweeper_node_612 minesweeper-face minesweeper-corner minesweeper-unflag" onclick="remove-class,minesweeper_node_602,minesweeper-flagged"
+✕}}}{{{#!wiki class="minesweeper_node_613 minesweeper-answer"
+{{{#!if value_234=mines_21?"💣":counts_21
+}}}@value_234@}}}}}}{{{#!if value_232=mines_22==0?"minesweeper-safe":""
+}}}{{{#!if value_246=mines_22==0&&counts_22==0?"minesweeper-n0":""
+}}}{{{#!if value_230=counts_22==1?"minesweeper-n1":"", value_258=counts_22==2?"minesweeper-n2":""
+}}}{{{#!if value_256=counts_22==3?"minesweeper-n3":"", value_254=counts_22==4?"minesweeper-n4":""
+}}}{{{#!wiki class="minesweeper_node_615 minesweeper-cell minesweeper-c22 @value_232@ @value_246@ @value_230@ @value_258@ @value_256@ @value_254@"
+{{{#!if value_226=mines_22
+}}}{{{#!if value_226
+{{{#!if value_242=commands_680
+}}}}}}{{{#!if !value_226
+{{{#!if value_228=(reveal_22&1?commands_681:"")+(reveal_22&2?commands_682:"")+(reveal_22&4?commands_683:"")
+}}}{{{#!if result_710=value_228+(reveal_22&8?commands_684:"")+(reveal_22&16?commands_685:"")
+}}}{{{#!if calc_707=result_710+(reveal_22&32?commands_686:"")+(reveal_22&64?commands_687:"")
+}}}{{{#!if class_295=calc_707+(reveal_22&128?commands_688:"")+(reveal_22&256?commands_689:"")
+}}}{{{#!if arg_2=class_295+(reveal_22&512?commands_690:"")+(reveal_22&1024?commands_691:"")
+}}}{{{#!if value_262=arg_2+(reveal_22&2048?commands_692:"")+(reveal_22&4096?commands_693:"")
+}}}{{{#!if value_264=value_262+(reveal_22&8192?commands_694:"")+(reveal_22&16384?commands_695:"")
+}}}{{{#!if value_250=value_264+(reveal_22&32768?commands_696:"")+(reveal_22&65536?commands_697:"")
+}}}{{{#!if value_248=value_250+(reveal_22&131072?commands_698:"")+(reveal_22&262144?commands_699:"")
+}}}{{{#!if calc_706=value_248+(reveal_22&524288?commands_700:"")+(reveal_22&1048576?commands_701:"")
+}}}{{{#!if value_244=calc_706+(reveal_22&2097152?commands_702:"")+(reveal_22&4194304?commands_703:"")
+}}}{{{#!if value_266=value_244+(reveal_22&8388608?commands_704:"")+(reveal_22&16777216?commands_705:"")
+}}}{{{#!if value_242=value_266
+}}}}}}{{{#!if value_260=value_242, value_240=value_260.substring(1)
+}}}{{{#!wiki class="minesweeper_node_622 minesweeper-face minesweeper-cover" onclick="@value_240@"
+}}}{{{#!wiki class="minesweeper_node_623 minesweeper-face minesweeper-pinned"
+🚩}}}{{{#!wiki class="minesweeper_node_624 minesweeper-face minesweeper-corner minesweeper-mark" onclick="add-class,minesweeper_node_615,minesweeper-flagged"
+⚑}}}{{{#!wiki class="minesweeper_node_625 minesweeper-face minesweeper-corner minesweeper-unflag" onclick="remove-class,minesweeper_node_615,minesweeper-flagged"
+✕}}}{{{#!wiki class="minesweeper_node_626 minesweeper-answer"
+{{{#!if value_238=mines_22?"💣":counts_22
+}}}@value_238@}}}}}}{{{#!if value_236=mines_23==0?"minesweeper-safe":""
+}}}{{{#!if value_252=mines_23==0&&counts_23==0?"minesweeper-n0":""
+}}}{{{#!if value_234=counts_23==1?"minesweeper-n1":"", value_254=counts_23==2?"minesweeper-n2":""
+}}}{{{#!if value_256=counts_23==3?"minesweeper-n3":"", value_258=counts_23==4?"minesweeper-n4":""
+}}}{{{#!wiki class="minesweeper_node_628 minesweeper-cell minesweeper-c23 @value_236@ @value_252@ @value_234@ @value_254@ @value_256@ @value_258@"
+{{{#!if value_230=mines_23
+}}}{{{#!if value_230
+{{{#!if value_246=commands_680
+}}}}}}{{{#!if !value_230
+{{{#!if value_232=(reveal_23&1?commands_681:"")+(reveal_23&2?commands_682:"")+(reveal_23&4?commands_683:"")
+}}}{{{#!if value_226=value_232+(reveal_23&8?commands_684:"")+(reveal_23&16?commands_685:"")
+}}}{{{#!if value_228=value_226+(reveal_23&32?commands_686:"")+(reveal_23&64?commands_687:"")
+}}}{{{#!if result_710=value_228+(reveal_23&128?commands_688:"")+(reveal_23&256?commands_689:"")
+}}}{{{#!if calc_707=result_710+(reveal_23&512?commands_690:"")+(reveal_23&1024?commands_691:"")
+}}}{{{#!if class_295=calc_707+(reveal_23&2048?commands_692:"")+(reveal_23&4096?commands_693:"")
+}}}{{{#!if arg_2=class_295+(reveal_23&8192?commands_694:"")+(reveal_23&16384?commands_695:"")
+}}}{{{#!if value_262=arg_2+(reveal_23&32768?commands_696:"")+(reveal_23&65536?commands_697:"")
+}}}{{{#!if value_264=value_262+(reveal_23&131072?commands_698:"")+(reveal_23&262144?commands_699:"")
+}}}{{{#!if value_250=value_264+(reveal_23&524288?commands_700:"")+(reveal_23&1048576?commands_701:"")
+}}}{{{#!if value_248=value_250+(reveal_23&2097152?commands_702:"")+(reveal_23&4194304?commands_703:"")
+}}}{{{#!if calc_706=value_248+(reveal_23&8388608?commands_704:"")+(reveal_23&16777216?commands_705:"")
+}}}{{{#!if value_246=calc_706
+}}}}}}{{{#!if value_266=value_246, value_244=value_266.substring(1)
+}}}{{{#!wiki class="minesweeper_node_635 minesweeper-face minesweeper-cover" onclick="@value_244@"
+}}}{{{#!wiki class="minesweeper_node_636 minesweeper-face minesweeper-pinned"
+🚩}}}{{{#!wiki class="minesweeper_node_637 minesweeper-face minesweeper-corner minesweeper-mark" onclick="add-class,minesweeper_node_628,minesweeper-flagged"
+⚑}}}{{{#!wiki class="minesweeper_node_638 minesweeper-face minesweeper-corner minesweeper-unflag" onclick="remove-class,minesweeper_node_628,minesweeper-flagged"
+✕}}}{{{#!wiki class="minesweeper_node_639 minesweeper-answer"
+{{{#!if value_242=mines_23?"💣":counts_23
+}}}@value_242@}}}}}}{{{#!if value_240=mines_24==0?"minesweeper-safe":""
+}}}{{{#!if value_260=mines_24==0&&counts_24==0?"minesweeper-n0":""
+}}}{{{#!if value_238=counts_24==1?"minesweeper-n1":"", value_258=counts_24==2?"minesweeper-n2":""
+}}}{{{#!if value_256=counts_24==3?"minesweeper-n3":"", value_254=counts_24==4?"minesweeper-n4":""
+}}}{{{#!wiki class="minesweeper_node_641 minesweeper-cell minesweeper-c24 @value_240@ @value_260@ @value_238@ @value_258@ @value_256@ @value_254@"
+{{{#!if value_234=mines_24
+}}}{{{#!if value_234
+{{{#!if value_252=commands_680
+}}}}}}{{{#!if !value_234
+{{{#!if value_236=(reveal_24&1?commands_681:"")+(reveal_24&2?commands_682:"")+(reveal_24&4?commands_683:"")
+}}}{{{#!if value_230=value_236+(reveal_24&8?commands_684:"")+(reveal_24&16?commands_685:"")
+}}}{{{#!if value_232=value_230+(reveal_24&32?commands_686:"")+(reveal_24&64?commands_687:"")
+}}}{{{#!if value_226=value_232+(reveal_24&128?commands_688:"")+(reveal_24&256?commands_689:"")
+}}}{{{#!if value_228=value_226+(reveal_24&512?commands_690:"")+(reveal_24&1024?commands_691:"")
+}}}{{{#!if result_710=value_228+(reveal_24&2048?commands_692:"")+(reveal_24&4096?commands_693:"")
+}}}{{{#!if calc_707=result_710+(reveal_24&8192?commands_694:"")+(reveal_24&16384?commands_695:"")
+}}}{{{#!if class_295=calc_707+(reveal_24&32768?commands_696:"")+(reveal_24&65536?commands_697:"")
+}}}{{{#!if arg_2=class_295+(reveal_24&131072?commands_698:"")+(reveal_24&262144?commands_699:"")
+}}}{{{#!if value_262=arg_2+(reveal_24&524288?commands_700:"")+(reveal_24&1048576?commands_701:"")
+}}}{{{#!if value_264=value_262+(reveal_24&2097152?commands_702:"")+(reveal_24&4194304?commands_703:"")
+}}}{{{#!if value_250=value_264+(reveal_24&8388608?commands_704:"")+(reveal_24&16777216?commands_705:"")
+}}}{{{#!if value_252=value_250
+}}}}}}{{{#!if calc_706=value_252, value_248=calc_706.substring(1)
+}}}{{{#!wiki class="minesweeper_node_648 minesweeper-face minesweeper-cover" onclick="@value_248@"
+}}}{{{#!wiki class="minesweeper_node_649 minesweeper-face minesweeper-pinned"
+🚩}}}{{{#!wiki class="minesweeper_node_650 minesweeper-face minesweeper-corner minesweeper-mark" onclick="add-class,minesweeper_node_641,minesweeper-flagged"
+⚑}}}{{{#!wiki class="minesweeper_node_651 minesweeper-face minesweeper-corner minesweeper-unflag" onclick="remove-class,minesweeper_node_641,minesweeper-flagged"
+✕}}}{{{#!wiki class="minesweeper_node_652 minesweeper-answer"
+{{{#!if value_246=mines_24?"💣":counts_24
+}}}@value_246@}}}}}}}}}{{{#!wiki class="minesweeper_node_654 minesweeper-help"
+칸을 누르면 열립니다. 모서리의 ⚑로 깃발을 꽂고, ✕로 뽑습니다. 깃발 칸은 열리지 않습니다.}}}}}}
