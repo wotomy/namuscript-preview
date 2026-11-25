@@ -1,0 +1,20 @@
+{{{#!if r="toggle-class,pr,",q="add-class,pr,",n="x6",z=r+"x4",s="a@r@b"
+}}}{{{#!style
+.pr .m{display:none}.pr.x1 .m1,.pr.x2 .m2,.pr.x3 .m3,.pr.x4 .m4,.pr.x5 .m5,.pr.x6 .m6,.pr.x7 .m7{display:inline}.pb{display:inline-block;padding:4px 8px;margin:2px;border:1px solid #888;cursor:pointer}
+}}}{{{#!wiki class="pr"
+상태: {{{#!wiki tag="span" class="m m1"
+[x1]}}}{{{#!wiki tag="span" class="m m2"
+[x2]}}}{{{#!wiki tag="span" class="m m3"
+[x3]}}}{{{#!wiki tag="span" class="m m4"
+[x4]}}}{{{#!wiki tag="span" class="m m5"
+[x5]}}}{{{#!wiki tag="span" class="m m6"
+[x6]}}}{{{#!wiki tag="span" class="m m7"
+[x7]}}}
+{{{#!wiki class="pb b1" onclick="@r@x1;@r@x2"
+B1 토글 x1,x2}}}{{{#!wiki class="pb b2" onclick="@q@x3"
+B2 추가 x3}}}{{{#!wiki class="pb b3" onclick="@z@"
+B3 z=r+x4}}}{{{#!wiki class="pb b4" onclick="toggle-class,pr,x5;@r@x7"
+B4 리터럴x5+변수x7}}}{{{#!wiki class="pb b5" onclick="@r@@n@"
+B5 연속 @r@@n@}}}
+문자열 안 치환: [@s@]
+}}}
