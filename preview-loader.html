@@ -1,0 +1,23 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<title>namuscript preview loader</title>
+<!--
+  더시드위키 연습장 미리보기용 전달 페이지. 공개 저장소 namuscript-preview에만 배포한다.
+  연습장 편집 페이지는 CSP(connect-src 'self') 때문에 다른 사이트를 fetch할 수 없지만
+  iframe(child-src *)은 열 수 있다. 이 페이지를 iframe으로 열면 같은 저장소의 .namu 파일을 읽어
+  부모 창(theseed.io)에만 postMessage로 넘긴다.
+  사용: <iframe src="https://wotomy.github.io/namuscript-preview/preview-loader.html?f=hello.namu">
+-->
+<script>
+const file = new URLSearchParams(location.search).get('f') || '';
+const target = 'https://theseed.io';
+if (!/^[\w.-]+\.namu$/.test(file)) {
+  parent.postMessage({ file, error: '같은 폴더의 .namu 파일만 읽을 수 있습니다.' }, target);
+} else {
+  fetch(file, { cache: 'no-store' })
+    .then(r => r.ok ? r.text() : Promise.reject(new Error(`HTTP ${r.status}`)))
+    .then(text => parent.postMessage({ file, text }, target))
+    .catch(e => parent.postMessage({ file, error: String(e.message || e) }, target));
+}
+</script>
