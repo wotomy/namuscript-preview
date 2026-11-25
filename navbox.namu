@@ -1,14 +1,13 @@
 {{{#!style
-.navbox .navbox-navbox { border: 1px solid #8a6d3b; margin: 8px 0; }
-.navbox .navbox-bar { background: #8a6d3b; color: #fff; text-align: center; padding: 4px; }
-.navbox .navbox-toggle { float: right; font-size: 0.85em; cursor: pointer; }
-.navbox .navbox-body { display: none; }
-.navbox .navbox-navbox.navbox-opened .navbox-body { display: block; }
-.navbox .navbox-body table { width: 100%; border-collapse: collapse; }
-.navbox .navbox-name { background: light-dark(#f3ead9, #3d3426); font-weight: bold; text-align: center; width: 20%; }
+.navbox-navbox { border: 1px solid #8a6d3b; margin: 8px 0; }
+.navbox-bar { background: #8a6d3b; color: #fff; text-align: center; padding: 4px; }
+.navbox-toggle { float: right; font-size: 0.85em; cursor: pointer; }
+.navbox-body { display: none; }
+.navbox-navbox.navbox-opened .navbox-body { display: block; }
+.navbox-body table { width: 100%; border-collapse: collapse; }
+.navbox-name { background: light-dark(#f3ead9, #3d3426); font-weight: bold; text-align: center; width: 20%; }
 
-}}}{{{#!wiki class="navbox"
-{{{#!wiki class="navbox_node_2 navbox-navbox"
+}}}{{{#!wiki class="navbox_node_2 navbox-navbox"
 {{{#!wiki class="navbox_node_3 navbox-bar"
 '''[[홍길동전]]'''{{{#!wiki tag="a" class="navbox_node_4 navbox-toggle" onclick="toggle-class,navbox_node_2,navbox-opened"
 \[ 펼치기 · 접기 \]}}}}}}{{{#!wiki class="navbox_node_5 navbox-body"
@@ -16,4 +15,4 @@
 ||<class=navbox-name> 장소 || [[한성부]] · [[활빈당]] · [[율도국]] ||
 ||<class=navbox-name> 작품 || [[홍길동전(소설)]] · [[홍길동(1986년 영화)]] · [[쾌도 홍길동]] ||
 ||<class=navbox-name> 관련 인물 || [[허균]] · [[연산군]] ||
-}}}}}}}}}
+}}}}}}

@@ -1,13 +1,12 @@
 {{{#!style
-.episodes .episodes-list { border-collapse: collapse; }
-.episodes .episodes-head { background: #2f5d50; color: #fff; font-weight: bold; text-align: center; }
-.episodes .episodes-season { background: light-dark(#e3efe9, #2c3d36); font-weight: bold; text-align: center; }
-.episodes .episodes-num { text-align: center; }
-.episodes .episodes-best { color: light-dark(#c0392b, #ff7b6b); font-weight: bold; }
-.episodes .episodes-foot { background: light-dark(#f4f4f4, #2d2f34); text-align: right; font-size: 0.9em; }
+.episodes-list { border-collapse: collapse; }
+.episodes-head { background: #2f5d50; color: #fff; font-weight: bold; text-align: center; }
+.episodes-season { background: light-dark(#e3efe9, #2c3d36); font-weight: bold; text-align: center; }
+.episodes-num { text-align: center; }
+.episodes-best { color: light-dark(#c0392b, #ff7b6b); font-weight: bold; }
+.episodes-foot { background: light-dark(#f4f4f4, #2d2f34); text-align: right; font-size: 0.9em; }
 
-}}}{{{#!wiki class="episodes"
-{{{#!wiki class="episodes_node_1 episodes-episodes"
+}}}{{{#!wiki class="episodes_node_1 episodes-episodes"
 ||<tablewidth=100%><tableclass=episodes-list><rowclass=episodes-head> 시즌 || 회차 || 방영일 || 부제 || 시청률 ||
 ||<|3><class=episodes-season> 시즌 1 ||<class=episodes-num> 1화 || 2026\-01\-03 || 길을 떠나다 || 12.3% ||
 ||<class=episodes-num> 2화 || 2026\-01\-10 || 활빈당 || 9.8% ||
@@ -16,4 +15,4 @@
 ||<class=episodes-num> 5화 || 2026\-07\-11 || 마지막 잔치 || {{{#!wiki tag="span" class="episodes_node_2 episodes-best"
 18.7%}}} ||
 ||<-5><class=episodes-foot> 총 5화 · 최고 시청률 18.7% ||
-}}}}}}
+}}}
