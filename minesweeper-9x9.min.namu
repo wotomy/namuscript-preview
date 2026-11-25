@@ -1,0 +1,344 @@
+{{{#!if d='class="c92" onclick="toggle-class',e='class="c91" onclick="',f='class="c88 a',g='class="c93"',q='class="c87"',c="add-class,pt,c",b=";add-class,pt,c",a=time()%2147483646+1,aS=a*48271%2147483647,cE=a*48271%2147483647%81,D=cE,aJ=D<27?0|1<<D:0,aK=D>26&&D<54?0|1<<D-27:0,aL=D>53?0|1<<D-54:0,cz=aS*48271%2147483647,ax=aS*48271%2147483647%81,E=(ax<27?aJ:ax<54?aK:aL)>>ax%27&1?(ax+1)%81:ax,aG=E<27?aJ|1<<E:aJ,aH=E>26&&E<54?aK|1<<E-27:aK,aI=E>53?aL|1<<E-54:aL,cA=cz*48271%2147483647,ay=cz*48271%2147483647%81,az=(ay<27?aG:ay<54?aH:aI)>>ay%27&1?(ay+1)%81:ay,F=(az<27?aG:az<54?aH:aI)>>az%27&1?(az+1)%81:az,aA=F<27?aG|1<<F:aG,aB=F>26&&F<54?aH|1<<F-27:aH,aC=F>53?aI|1<<F-54:aI,aM=cA*48271%2147483647,aD=cA*48271%2147483647%81,aE=(aD<27?aA:aD<54?aB:aC)>>aD%27&1?(aD+1)%81:aD,aF=(aE<27?aA:aE<54?aB:aC)>>aE%27&1?(aE+1)%81:aE,G=(aF<27?aA:aF<54?aB:aC)>>aF%27&1?(aF+1)%81:aF,I=G<27?aA|1<<G:aA,J=G>26&&G<54?aB|1<<G-27:aB,H=G>53?aC|1<<G-54:aC,aN=aM*48271%2147483647,K=aM*48271%2147483647%81,L=(K<27?I:K<54?J:H)>>K%27&1?(K+1)%81:K,M=(L<27?I:L<54?J:H)>>L%27&1?(L+1)%81:L,N=(M<27?I:M<54?J:H)>>M%27&1?(M+1)%81:M,u=(N<27?I:N<54?J:H)>>N%27&1?(N+1)%81:N,v=u<27?I|1<<u:I,w=u>26&&u<54?J|1<<u-27:J,x=u>53?H|1<<u-54:H,aO=aN*48271%2147483647,O=aN*48271%2147483647%81,P=(O<27?v:O<54?w:x)>>O%27&1?(O+1)%81:O,Q=(P<27?v:P<54?w:x)>>P%27&1?(P+1)%81:P,R=(Q<27?v:Q<54?w:x)>>Q%27&1?(Q+1)%81:Q,S=(R<27?v:R<54?w:x)>>R%27&1?(R+1)%81:R,y=(S<27?v:S<54?w:x)>>S%27&1?(S+1)%81:S,r=y<27?v|1<<y:v,s=y>26&&y<54?w|1<<y-27:w,t=y>53?x|1<<y-54:x,aQ=aO*48271%2147483647,T=aO*48271%2147483647%81,U=(T<27?r:T<54?s:t)>>T%27&1?(T+1)%81:T,V=(U<27?r:U<54?s:t)>>U%27&1?(U+1)%81:U,W=(V<27?r:V<54?s:t)>>V%27&1?(V+1)%81:V,X=(W<27?r:W<54?s:t)>>W%27&1?(W+1)%81:W,ah=(X<27?r:X<54?s:t)>>X%27&1?(X+1)%81:X,B=(ah<27?r:ah<54?s:t)>>ah%27&1?(ah+1)%81:ah,n=B<27?r|1<<B:r,o=B>26&&B<54?s|1<<B-27:s,p=B>53?t|1<<B-54:t,aR=aQ*48271%2147483647,ai=aQ*48271%2147483647%81,aj=(ai<27?n:ai<54?o:p)>>ai%27&1?(ai+1)%81:ai,ak=(aj<27?n:aj<54?o:p)>>aj%27&1?(aj+1)%81:aj,al=(ak<27?n:ak<54?o:p)>>ak%27&1?(ak+1)%81:ak,am=(al<27?n:al<54?o:p)>>al%27&1?(al+1)%81:al,an=(am<27?n:am<54?o:p)>>am%27&1?(am+1)%81:am,ao=(an<27?n:an<54?o:p)>>an%27&1?(an+1)%81:an,C=(ao<27?n:ao<54?o:p)>>ao%27&1?(ao+1)%81:ao,k=C<27?n|1<<C:n,l=C>26&&C<54?o|1<<C-27:o,m=C>53?p|1<<C-54:p,aP=aR*48271%2147483647,ap=aR*48271%2147483647%81,aq=(ap<27?k:ap<54?l:m)>>ap%27&1?(ap+1)%81:ap,ar=(aq<27?k:aq<54?l:m)>>aq%27&1?(aq+1)%81:aq,as=(ar<27?k:ar<54?l:m)>>ar%27&1?(ar+1)%81:ar,at=(as<27?k:as<54?l:m)>>as%27&1?(as+1)%81:as,au=(at<27?k:at<54?l:m)>>at%27&1?(at+1)%81:at,av=(au<27?k:au<54?l:m)>>au%27&1?(au+1)%81:au,aw=(av<27?k:av<54?l:m)>>av%27&1?(av+1)%81:av,z=(aw<27?k:aw<54?l:m)>>aw%27&1?(aw+1)%81:aw,h=z<27?k|1<<z:k,i=z>26&&z<54?l|1<<z-27:l,j=z>53?m|1<<z-54:m,nV=aP*48271%2147483647,Y=aP*48271%2147483647%81,Z=(Y<27?h:Y<54?i:j)>>Y%27&1?(Y+1)%81:Y,aa=(Z<27?h:Z<54?i:j)>>Z%27&1?(Z+1)%81:Z,ab=(aa<27?h:aa<54?i:j)>>aa%27&1?(aa+1)%81:aa,ac=(ab<27?h:ab<54?i:j)>>ab%27&1?(ab+1)%81:ab,ad=(ac<27?h:ac<54?i:j)>>ac%27&1?(ac+1)%81:ac,ae=(ad<27?h:ad<54?i:j)>>ad%27&1?(ad+1)%81:ad,af=(ae<27?h:ae<54?i:j)>>ae%27&1?(ae+1)%81:ae,ag=(af<27?h:af<54?i:j)>>af%27&1?(af+1)%81:af,A=(ag<27?h:ag<54?i:j)>>ag%27&1?(ag+1)%81:ag,cB=A<27?h|1<<A:h,cC=A>26&&A<54?i|1<<A-27:i,cD=A>53?j|1<<A-54:j,aT=cB,aU=cC,aV=cD,aW=aT>>0&1,aX=aT>>1&1,aY=aT>>2&1,aZ=aT>>3&1,ba=aT>>4&1,bb=aT>>5&1,bc=aT>>6&1,bd=aT>>7&1,be=aT>>8&1,bf=aT>>9&1,bg=aT>>10&1,bh=aT>>11&1,bi=aT>>12&1,bj=aT>>13&1,bk=aT>>14&1,bl=aT>>15&1,bm=aT>>16&1,bn=aT>>17&1,bo=aT>>18&1,bp=aT>>19&1,bq=aT>>20&1,br=aT>>21&1,bs=aT>>22&1,bt=aT>>23&1,bu=aT>>24&1,bv=aT>>25&1,bw=aT>>26&1,bx=aU>>0&1,by=aU>>1&1,bz=aU>>2&1,bA=aU>>3&1,bB=aU>>4&1,bC=aU>>5&1,bD=aU>>6&1,bE=aU>>7&1,bF=aU>>8&1,bG=aU>>9&1,bH=aU>>10&1,bI=aU>>11&1,bJ=aU>>12&1,bK=aU>>13&1,bL=aU>>14&1,bM=aU>>15&1,bN=aU>>16&1,bO=aU>>17&1,bP=aU>>18&1,bQ=aU>>19&1,bR=aU>>20&1,bS=aU>>21&1,bT=aU>>22&1,bU=aU>>23&1,bV=aU>>24&1,bW=aU>>25&1,bX=aU>>26&1,bY=aV>>0&1,bZ=aV>>1&1,ca=aV>>2&1,cb=aV>>3&1,cc=aV>>4&1,cd=aV>>5&1,ce=aV>>6&1,cf=aV>>7&1,cg=aV>>8&1,ch=aV>>9&1,ci=aV>>10&1,cj=aV>>11&1,ck=aV>>12&1,cl=aV>>13&1,cm=aV>>14&1,cn=aV>>15&1,co=aV>>16&1,cp=aV>>17&1,cq=aV>>18&1,cr=aV>>19&1,cs=aV>>20&1,ct=aV>>21&1,cu=aV>>22&1,cv=aV>>23&1,cw=aV>>24&1,cx=aV>>25&1,cy=aV>>26&1,df=0+aW*1,cF=df+aX*16,cG=cF+aY*256,cH=cG+aZ*4096,cI=cH+ba*65536,cJ=cI+bb*1048576,cK=cJ+bc*16777216,cL=cK+bd*268435456,dU=cL+be*4294967296,cM=0+bf*1,cN=cM+bg*16,cO=cN+bh*256,cP=cO+bi*4096,cQ=cP+bj*65536,cR=cQ+bk*1048576,cS=cR+bl*16777216,cT=cS+bm*268435456,dV=cT+bn*4294967296,cU=0+bo*1,cV=cU+bp*16,cW=cV+bq*256,cX=cW+br*4096,cY=cX+bs*65536,cZ=cY+bt*1048576,da=cZ+bu*16777216,db=da+bv*268435456,dW=db+bw*4294967296,dc=0+bx*1,dd=dc+by*16,de=dd+bz*256,dB=de+bA*4096,dC=dB+bB*65536,dD=dC+bC*1048576,dE=dD+bD*16777216,dF=dE+bE*268435456,dX=dF+bF*4294967296,dG=0+bG*1,dH=dG+bH*16,dI=dH+bI*256,dJ=dI+bJ*4096,dK=dJ+bK*65536,dL=dK+bL*1048576,dM=dL+bM*16777216,dN=dM+bN*268435456,dY=dN+bO*4294967296,dO=0+bP*1,dP=dO+bQ*16,dQ=dP+bR*256,dR=dQ+bS*4096,dS=dR+bT*65536,dT=dS+bU*1048576,jg=dT+bV*16777216,jh=jg+bW*268435456,dZ=jh+bX*4294967296,ji=0+bY*1,jj=ji+bZ*16,jk=jj+ca*256,jl=jk+cb*4096,dg=jl+cc*65536,dh=dg+cd*1048576,di=dh+ce*16777216,dj=di+cf*268435456,ea=dj+cg*4294967296,dk=0+ch*1,dl=dk+ci*16,dm=dl+cj*256,dn=dm+ck*4096,dp=dn+cl*65536,dq=dp+cm*1048576,dr=dq+cn*16777216,ds=dr+co*268435456,eb=ds+cp*4294967296,dt=0+cq*1,du=dt+cr*16,dv=du+cs*256,dw=dv+ct*4096,dx=dw+cu*65536,dy=dx+cv*1048576,dz=dy+cw*16777216,dA=dz+cx*268435456,ec=dA+cy*4294967296,ed=0+dU+dV,ee=dU+dV+dW,ef=dV+dW+dX,eg=dW+dX+dY,eh=dX+dY+dZ,ei=dY+dZ+ea,ej=dZ+ea+eb,ek=ea+eb+ec,el=eb+ec+0,em=ed*17+(ed-ed%16)/16,en=ee*17+(ee-ee%16)/16,eo=ef*17+(ef-ef%16)/16,ep=eg*17+(eg-eg%16)/16,eq=eh*17+(eh-eh%16)/16,er=ei*17+(ei-ei%16)/16,es=ej*17+(ej-ej%16)/16,et=ek*17+(ek-ek%16)/16,eu=el*17+(el-el%16)/16,ev=(em-em%1)/1%16,ew=(em-em%16)/16%16,ex=(em-em%256)/256%16,ey=(em-em%4096)/4096%16,ez=(em-em%65536)/65536%16,eA=(em-em%1048576)/1048576%16,eB=(em-em%16777216)/16777216%16,eC=(em-em%268435456)/268435456%16,eD=(em-em%4294967296)/4294967296%16,eE=(en-en%1)/1%16,eF=(en-en%16)/16%16,eG=(en-en%256)/256%16,eH=(en-en%4096)/4096%16,eI=(en-en%65536)/65536%16,eJ=(en-en%1048576)/1048576%16,eK=(en-en%16777216)/16777216%16,eL=(en-en%268435456)/268435456%16,eM=(en-en%4294967296)/4294967296%16,eN=(eo-eo%1)/1%16,eO=(eo-eo%16)/16%16,eP=(eo-eo%256)/256%16,eQ=(eo-eo%4096)/4096%16,eR=(eo-eo%65536)/65536%16,eS=(eo-eo%1048576)/1048576%16,eT=(eo-eo%16777216)/16777216%16,eU=(eo-eo%268435456)/268435456%16,eV=(eo-eo%4294967296)/4294967296%16,eW=(ep-ep%1)/1%16,eX=(ep-ep%16)/16%16,eY=(ep-ep%256)/256%16,eZ=(ep-ep%4096)/4096%16,fa=(ep-ep%65536)/65536%16,fb=(ep-ep%1048576)/1048576%16,fc=(ep-ep%16777216)/16777216%16,fd=(ep-ep%268435456)/268435456%16,fe=(ep-ep%4294967296)/4294967296%16,ff=(eq-eq%1)/1%16,fg=(eq-eq%16)/16%16,fh=(eq-eq%256)/256%16,fi=(eq-eq%4096)/4096%16,fj=(eq-eq%65536)/65536%16,fk=(eq-eq%1048576)/1048576%16,fl=(eq-eq%16777216)/16777216%16,fm=(eq-eq%268435456)/268435456%16,fn=(eq-eq%4294967296)/4294967296%16,fo=(er-er%1)/1%16,fp=(er-er%16)/16%16,fq=(er-er%256)/256%16,fr=(er-er%4096)/4096%16,fs=(er-er%65536)/65536%16,ft=(er-er%1048576)/1048576%16,fu=(er-er%16777216)/16777216%16,fv=(er-er%268435456)/268435456%16,fw=(er-er%4294967296)/4294967296%16,fx=(es-es%1)/1%16,fy=(es-es%16)/16%16,fz=(es-es%256)/256%16,fA=(es-es%4096)/4096%16,fB=(es-es%65536)/65536%16,fC=(es-es%1048576)/1048576%16,fD=(es-es%16777216)/16777216%16,fE=(es-es%268435456)/268435456%16,fF=(es-es%4294967296)/4294967296%16,fG=(et-et%1)/1%16,fH=(et-et%16)/16%16,fI=(et-et%256)/256%16,fJ=(et-et%4096)/4096%16,fK=(et-et%65536)/65536%16,fL=(et-et%1048576)/1048576%16,fM=(et-et%16777216)/16777216%16,fN=(et-et%268435456)/268435456%16,fO=(et-et%4294967296)/4294967296%16,fP=(eu-eu%1)/1%16,fQ=(eu-eu%16)/16%16,fR=(eu-eu%256)/256%16,fS=(eu-eu%4096)/4096%16,fT=(eu-eu%65536)/65536%16,fU=(eu-eu%1048576)/1048576%16,fV=(eu-eu%16777216)/16777216%16,fW=(eu-eu%268435456)/268435456%16,fX=(eu-eu%4294967296)/4294967296%16,fY=aW?9:ev,fZ=aX?9:ew,ga=aY?9:ex,gb=aZ?9:ey,gc=ba?9:ez,gd=bb?9:eA,ge=bc?9:eB,gf=bd?9:eC,gg=be?9:eD,gh=bf?9:eE,gi=bg?9:eF,gj=bh?9:eG,gk=bi?9:eH,gl=bj?9:eI,gm=bk?9:eJ,gn=bl?9:eK,go=bm?9:eL,gp=bn?9:eM,gq=bo?9:eN,gr=bp?9:eO,gs=bq?9:eP,gt=br?9:eQ,gu=bs?9:eR,gv=bt?9:eS,gw=bu?9:eT,gx=bv?9:eU,gy=bw?9:eV,gz=bx?9:eW,gA=by?9:eX,gB=bz?9:eY,gC=bA?9:eZ,gD=bB?9:fa,gE=bC?9:fb,gF=bD?9:fc,gG=bE?9:fd,gH=bF?9:fe,gI=bG?9:ff,gJ=bH?9:fg,gK=bI?9:fh,gL=bJ?9:fi,gM=bK?9:fj,gN=bL?9:fk,gO=bM?9:fl,gP=bN?9:fm,gQ=bO?9:fn,gR=bP?9:fo,gS=bQ?9:fp,gT=bR?9:fq,gU=bS?9:fr,gV=bT?9:fs,gW=bU?9:ft,gX=bV?9:fu,gY=bW?9:fv,gZ=bX?9:fw,ha=bY?9:fx,hb=bZ?9:fy,hc=ca?9:fz,hd=cb?9:fA,he=cc?9:fB,hf=cd?9:fC,hg=ce?9:fD,hh=cf?9:fE,hi=cg?9:fF,hj=ch?9:fG,hk=ci?9:fH,hl=cj?9:fI,hm=ck?9:fJ,hn=cl?9:fK,ho=cm?9:fL,hp=cn?9:fM,hq=co?9:fN,hr=cp?9:fO,hs=cq?9:fP,ht=cr?9:fQ,hu=cs?9:fR,hv=ct?9:fS,hw=cu?9:fT,hx=cv?9:fU,hy=cw?9:fV,hz=cx?9:fW,hA=cy?9:fX,hB=aW?"💣":ev,hC=aX?"💣":ew,hD=aY?"💣":ex,hE=aZ?"💣":ey,hF=ba?"💣":ez,hG=bb?"💣":eA,hH=bc?"💣":eB,hI=bd?"💣":eC,hJ=be?"💣":eD,hK=bf?"💣":eE,hL=bg?"💣":eF,hM=bh?"💣":eG,hN=bi?"💣":eH,hO=bj?"💣":eI,hP=bk?"💣":eJ,hQ=bl?"💣":eK,hR=bm?"💣":eL,hS=bn?"💣":eM,hT=bo?"💣":eN,hU=bp?"💣":eO,hV=bq?"💣":eP,hW=br?"💣":eQ,hX=bs?"💣":eR,hY=bt?"💣":eS,hZ=bu?"💣":eT,ia=bv?"💣":eU,ib=bw?"💣":eV,ic=bx?"💣":eW,id=by?"💣":eX,ie=bz?"💣":eY,ig=bA?"💣":eZ,ih=bB?"💣":fa,ii=bC?"💣":fb,ij=bD?"💣":fc,ik=bE?"💣":fd,il=bF?"💣":fe,im=bG?"💣":ff,io=bH?"💣":fg,ip=bI?"💣":fh,iq=bJ?"💣":fi,ir=bK?"💣":fj,is=bL?"💣":fk,it=bM?"💣":fl,iu=bN?"💣":fm,iv=bO?"💣":fn,iw=bP?"💣":fo,ix=bQ?"💣":fp,iy=bR?"💣":fq,iz=bS?"💣":fr,iA=bT?"💣":fs,iB=bU?"💣":ft,iC=bV?"💣":fu,iD=bW?"💣":fv,iE=bX?"💣":fw,iF=bY?"💣":fx,iG=bZ?"💣":fy,iH=ca?"💣":fz,iI=cb?"💣":fA,iJ=cc?"💣":fB,iK=cd?"💣":fC,iL=ce?"💣":fD,iM=cf?"💣":fE,iN=cg?"💣":fF,iO=ch?"💣":fG,iP=ci?"💣":fH,iQ=cj?"💣":fI,iR=ck?"💣":fJ,iS=cl?"💣":fK,iT=cm?"💣":fL,iU=cn?"💣":fM,iV=co?"💣":fN,iW=cp?"💣":fO,iX=cq?"💣":fP,iY=cr?"💣":fQ,iZ=cs?"💣":fR,ja=ct?"💣":fS,jb=cu?"💣":fT,jc=cv?"💣":fU,jd=cw?"💣":fV,je=cx?"💣":fW,jf=cy?"💣":fX,jm=aW==1,jn=aX==1,jo=aY==1,jp=aZ==1,jq=ba==1,jr=bb==1,js=bc==1,jt=bd==1,ju=be==1,jI=bf==1,jJ=bg==1,jK=bh==1,jL=bi==1,jM=bj==1,jN=bk==1,jO=bl==1,jP=bm==1,jQ=bn==1,jR=bo==1,jS=bp==1,jT=bq==1,jU=br==1,jv=bs==1,jw=bt==1,jx=bu==1,jy=bv==1,jz=bw==1,jA=bx==1,jB=by==1,jC=bz==1,jD=bA==1,jE=bB==1,jF=bC==1,jG=bD==1,jH=bE==1,ki=bF==1,kj=bG==1,kk=bH==1,kl=bI==1,km=bJ==1,kn=bK==1,ko=bL==1,kp=bM==1,kq=bN==1,kr=bO==1,ks=bP==1,kt=bQ==1,ku=bR==1,jV=bS==1,jW=bT==1,jX=bU==1,jY=bV==1,jZ=bW==1,ka=bX==1,kb=bY==1,kc=bZ==1,kd=ca==1,ke=cb==1,kf=cc==1,kg=cd==1,kh=ce==1,kM=cf==1,kN=cg==1,kO=ch==1,kP=ci==1,kQ=cj==1,kR=ck==1,kS=cl==1,kT=cm==1,kU=cn==1,kV=co==1,kW=cp==1,kX=cq==1,kY=cr==1,kv=cs==1,kw=ct==1,kx=cu==1,ky=cv==1,kz=cw==1,kA=cx==1,kB=cy==1,mF=aW?c+"1":ev?c+"2":c+"2"+b+"3"+b+"11"+b+"12",mG=aX?c+"1":ew?c+"3":c+"2"+b+"3"+b+"4"+b+"11"+b+"12"+b+"13",mH=aY?c+"1":ex?c+"4":c+"3"+b+"4"+b+"5"+b+"12"+b+"13"+b+"14",lZ=aZ?c+"1":ey?c+"5":c+"4"+b+"5"+b+"6"+b+"13"+b+"14"+b+"15",ma=ba?c+"1":ez?c+"6":c+"5"+b+"6"+b+"7"+b+"14"+b+"15"+b+"16",mb=bb?c+"1":eA?c+"7":c+"6"+b+"7"+b+"8"+b+"15"+b+"16"+b+"17",mc=bc?c+"1":eB?c+"8":c+"7"+b+"8"+b+"9"+b+"16"+b+"17"+b+"18",md=bd?c+"1":eC?c+"9":c+"8"+b+"9"+b+"10"+b+"17"+b+"18"+b+"19",me=be?c+"1":eD?c+"10":c+"9"+b+"10"+b+"18"+b+"19",mf=bf?c+"1":eE?c+"11":c+"2"+b+"3"+b+"11"+b+"12"+b+"20"+b+"21",mg=bg?c+"1":eF?c+"12":c+"2"+b+"3"+b+"4"+b+"11"+b+"12"+b+"13"+b+"20"+b+"21"+b+"22",mh=bh?c+"1":eG?c+"13":c+"3"+b+"4"+b+"5"+b+"12"+b+"13"+b+"14"+b+"21"+b+"22"+b+"23",mi=bi?c+"1":eH?c+"14":c+"4"+b+"5"+b+"6"+b+"13"+b+"14"+b+"15"+b+"22"+b+"23"+b+"24",mj=bj?c+"1":eI?c+"15":c+"5"+b+"6"+b+"7"+b+"14"+b+"15"+b+"16"+b+"23"+b+"24"+b+"25",mk=bk?c+"1":eJ?c+"16":c+"6"+b+"7"+b+"8"+b+"15"+b+"16"+b+"17"+b+"24"+b+"25"+b+"26",ml=bl?c+"1":eK?c+"17":c+"7"+b+"8"+b+"9"+b+"16"+b+"17"+b+"18"+b+"25"+b+"26"+b+"27",mV=bm?c+"1":eL?c+"18":c+"8"+b+"9"+b+"10"+b+"17"+b+"18"+b+"19"+b+"26"+b+"27"+b+"28",mW=bn?c+"1":eM?c+"19":c+"9"+b+"10"+b+"18"+b+"19"+b+"27"+b+"28",mX=bo?c+"1":eN?c+"20":c+"11"+b+"12"+b+"20"+b+"21"+b+"29"+b+"30",mY=bp?c+"1":eO?c+"21":c+"11"+b+"12"+b+"13"+b+"20"+b+"21"+b+"22"+b+"29"+b+"30"+b+"31",mZ=bq?c+"1":eP?c+"22":c+"12"+b+"13"+b+"14"+b+"21"+b+"22"+b+"23"+b+"30"+b+"31"+b+"32",na=br?c+"1":eQ?c+"23":c+"13"+b+"14"+b+"15"+b+"22"+b+"23"+b+"24"+b+"31"+b+"32"+b+"33",nb=bs?c+"1":eR?c+"24":c+"14"+b+"15"+b+"16"+b+"23"+b+"24"+b+"25"+b+"32"+b+"33"+b+"34",nc=bt?c+"1":eS?c+"25":c+"15"+b+"16"+b+"17"+b+"24"+b+"25"+b+"26"+b+"33"+b+"34"+b+"35",nd=bu?c+"1":eT?c+"26":c+"16"+b+"17"+b+"18"+b+"25"+b+"26"+b+"27"+b+"34"+b+"35"+b+"36",ne=bv?c+"1":eU?c+"27":c+"17"+b+"18"+b+"19"+b+"26"+b+"27"+b+"28"+b+"35"+b+"36"+b+"37",nf=bw?c+"1":eV?c+"28":c+"18"+b+"19"+b+"27"+b+"28"+b+"36"+b+"37",ng=bx?c+"1":eW?c+"29":c+"20"+b+"21"+b+"29"+b+"30"+b+"38"+b+"39",nh=by?c+"1":eX?c+"30":c+"20"+b+"21"+b+"22"+b+"29"+b+"30"+b+"31"+b+"38"+b+"39"+b+"40",mI=bz?c+"1":eY?c+"31":c+"21"+b+"22"+b+"23"+b+"30"+b+"31"+b+"32"+b+"39"+b+"40"+b+"41",mJ=bA?c+"1":eZ?c+"32":c+"22"+b+"23"+b+"24"+b+"31"+b+"32"+b+"33"+b+"40"+b+"41"+b+"42",mK=bB?c+"1":fa?c+"33":c+"23"+b+"24"+b+"25"+b+"32"+b+"33"+b+"34"+b+"41"+b+"42"+b+"43",mL=bC?c+"1":fb?c+"34":c+"24"+b+"25"+b+"26"+b+"33"+b+"34"+b+"35"+b+"42"+b+"43"+b+"44",mM=bD?c+"1":fc?c+"35":c+"25"+b+"26"+b+"27"+b+"34"+b+"35"+b+"36"+b+"43"+b+"44"+b+"45",mN=bE?c+"1":fd?c+"36":c+"26"+b+"27"+b+"28"+b+"35"+b+"36"+b+"37"+b+"44"+b+"45"+b+"46",mO=bF?c+"1":fe?c+"37":c+"27"+b+"28"+b+"36"+b+"37"+b+"45"+b+"46",mP=bG?c+"1":ff?c+"38":c+"29"+b+"30"+b+"38"+b+"39"+b+"47"+b+"48",mQ=bH?c+"1":fg?c+"39":c+"29"+b+"30"+b+"31"+b+"38"+b+"39"+b+"40"+b+"47"+b+"48"+b+"49",mR=bI?c+"1":fh?c+"40":c+"30"+b+"31"+b+"32"+b+"39"+b+"40"+b+"41"+b+"48"+b+"49"+b+"50",mS=bJ?c+"1":fi?c+"41":c+"31"+b+"32"+b+"33"+b+"40"+b+"41"+b+"42"+b+"49"+b+"50"+b+"51",mT=bK?c+"1":fj?c+"42":c+"32"+b+"33"+b+"34"+b+"41"+b+"42"+b+"43"+b+"50"+b+"51"+b+"52",mU=bL?c+"1":fk?c+"43":c+"33"+b+"34"+b+"35"+b+"42"+b+"43"+b+"44"+b+"51"+b+"52"+b+"53",nv=bM?c+"1":fl?c+"44":c+"34"+b+"35"+b+"36"+b+"43"+b+"44"+b+"45"+b+"52"+b+"53"+b+"54",nw=bN?c+"1":fm?c+"45":c+"35"+b+"36"+b+"37"+b+"44"+b+"45"+b+"46"+b+"53"+b+"54"+b+"55",nx=bO?c+"1":fn?c+"46":c+"36"+b+"37"+b+"45"+b+"46"+b+"54"+b+"55",ny=bP?c+"1":fo?c+"47":c+"38"+b+"39"+b+"47"+b+"48"+b+"56"+b+"57",nz=bQ?c+"1":fp?c+"48":c+"38"+b+"39"+b+"40"+b+"47"+b+"48"+b+"49"+b+"56"+b+"57"+b+"58",nA=bR?c+"1":fq?c+"49":c+"39"+b+"40"+b+"41"+b+"48"+b+"49"+b+"50"+b+"57"+b+"58"+b+"59",nB=bS?c+"1":fr?c+"50":c+"40"+b+"41"+b+"42"+b+"49"+b+"50"+b+"51"+b+"58"+b+"59"+b+"60",nC=bT?c+"1":fs?c+"51":c+"41"+b+"42"+b+"43"+b+"50"+b+"51"+b+"52"+b+"59"+b+"60"+b+"61",nD=bU?c+"1":ft?c+"52":c+"42"+b+"43"+b+"44"+b+"51"+b+"52"+b+"53"+b+"60"+b+"61"+b+"62",nE=bV?c+"1":fu?c+"53":c+"43"+b+"44"+b+"45"+b+"52"+b+"53"+b+"54"+b+"61"+b+"62"+b+"63",nF=bW?c+"1":fv?c+"54":c+"44"+b+"45"+b+"46"+b+"53"+b+"54"+b+"55"+b+"62"+b+"63"+b+"64",nG=bX?c+"1":fw?c+"55":c+"45"+b+"46"+b+"54"+b+"55"+b+"63"+b+"64",nH=bY?c+"1":fx?c+"56":c+"47"+b+"48"+b+"56"+b+"57"+b+"65"+b+"66",ni=bZ?c+"1":fy?c+"57":c+"47"+b+"48"+b+"49"+b+"56"+b+"57"+b+"58"+b+"65"+b+"66"+b+"67",nj=ca?c+"1":fz?c+"58":c+"48"+b+"49"+b+"50"+b+"57"+b+"58"+b+"59"+b+"66"+b+"67"+b+"68",nk=cb?c+"1":fA?c+"59":c+"49"+b+"50"+b+"51"+b+"58"+b+"59"+b+"60"+b+"67"+b+"68"+b+"69",nl=cc?c+"1":fB?c+"60":c+"50"+b+"51"+b+"52"+b+"59"+b+"60"+b+"61"+b+"68"+b+"69"+b+"70",nm=cd?c+"1":fC?c+"61":c+"51"+b+"52"+b+"53"+b+"60"+b+"61"+b+"62"+b+"69"+b+"70"+b+"71",nn=ce?c+"1":fD?c+"62":c+"52"+b+"53"+b+"54"+b+"61"+b+"62"+b+"63"+b+"70"+b+"71"+b+"72",no=cf?c+"1":fE?c+"63":c+"53"+b+"54"+b+"55"+b+"62"+b+"63"+b+"64"+b+"71"+b+"72"+b+"73",np=cg?c+"1":fF?c+"64":c+"54"+b+"55"+b+"63"+b+"64"+b+"72"+b+"73",nq=ch?c+"1":fG?c+"65":c+"56"+b+"57"+b+"65"+b+"66"+b+"74"+b+"75",nr=ci?c+"1":fH?c+"66":c+"56"+b+"57"+b+"58"+b+"65"+b+"66"+b+"67"+b+"74"+b+"75"+b+"76",ns=cj?c+"1":fI?c+"67":c+"57"+b+"58"+b+"59"+b+"66"+b+"67"+b+"68"+b+"75"+b+"76"+b+"77",nt=ck?c+"1":fJ?c+"68":c+"58"+b+"59"+b+"60"+b+"67"+b+"68"+b+"69"+b+"76"+b+"77"+b+"78",nu=cl?c+"1":fK?c+"69":c+"59"+b+"60"+b+"61"+b+"68"+b+"69"+b+"70"+b+"77"+b+"78"+b+"79",nI=cm?c+"1":fL?c+"70":c+"60"+b+"61"+b+"62"+b+"69"+b+"70"+b+"71"+b+"78"+b+"79"+b+"80",nJ=cn?c+"1":fM?c+"71":c+"61"+b+"62"+b+"63"+b+"70"+b+"71"+b+"72"+b+"79"+b+"80"+b+"81",nK=co?c+"1":fN?c+"72":c+"62"+b+"63"+b+"64"+b+"71"+b+"72"+b+"73"+b+"80"+b+"81"+b+"82",nL=cp?c+"1":fO?c+"73":c+"63"+b+"64"+b+"72"+b+"73"+b+"81"+b+"82",nM=cq?c+"1":fP?c+"74":c+"65"+b+"66"+b+"74"+b+"75",nN=cr?c+"1":fQ?c+"75":c+"65"+b+"66"+b+"67"+b+"74"+b+"75"+b+"76",nO=cs?c+"1":fR?c+"76":c+"66"+b+"67"+b+"68"+b+"75"+b+"76"+b+"77",nP=ct?c+"1":fS?c+"77":c+"67"+b+"68"+b+"69"+b+"76"+b+"77"+b+"78",nQ=cu?c+"1":fT?c+"78":c+"68"+b+"69"+b+"70"+b+"77"+b+"78"+b+"79",nR=cv?c+"1":fU?c+"79":c+"69"+b+"70"+b+"71"+b+"78"+b+"79"+b+"80",nS=cw?c+"1":fV?c+"80":c+"70"+b+"71"+b+"72"+b+"79"+b+"80"+b+"81",nT=cx?c+"1":fW?c+"81":c+"71"+b+"72"+b+"73"+b+"80"+b+"81"+b+"82",nU=cy?c+"1":fX?c+"82":c+"72"+b+"73"+b+"81"+b+"82",kC=jm?"c2":"",kD=jn?"c3":"",kE=jo?"c4":"",kF=jp?"c5":"",kG=jq?"c6":"",kH=jr?"c7":"",kI=js?"c8":"",kJ=jt?"c9":"",kK=ju?"c10":"",kL=jI?"c11":"",lz=jJ?"c12":"",lA=jK?"c13":"",lB=jL?"c14":"",lC=jM?"c15":"",lD=jN?"c16":"",lE=jO?"c17":"",lF=jP?"c18":"",lG=jQ?"c19":"",lH=jR?"c20":"",lI=jS?"c21":"",lJ=jT?"c22":"",lK=jU?"c23":"",lL=jv?"c24":"",lM=jw?"c25":"",lN=jx?"c26":"",lO=jy?"c27":"",lP=jz?"c28":"",lQ=jA?"c29":"",lR=jB?"c30":"",lS=jC?"c31":"",lT=jD?"c32":"",lU=jE?"c33":"",lV=jF?"c34":"",lW=jG?"c35":"",lX=jH?"c36":""
+}}}{{{#!if lY=ki?"c37":"",kZ=kj?"c38":"",la=kk?"c39":"",lb=kl?"c40":"",lc=km?"c41":"",ld=kn?"c42":"",le=ko?"c43":"",lf=kp?"c44":"",lg=kq?"c45":"",lh=kr?"c46":"",li=ks?"c47":"",lj=kt?"c48":"",lk=ku?"c49":"",ll=jV?"c50":"",lm=jW?"c51":"",ln=jX?"c52":"",lo=jY?"c53":"",lp=jZ?"c54":"",lq=ka?"c55":"",lr=kb?"c56":"",ls=kc?"c57":"",lt=kd?"c58":"",lu=ke?"c59":"",lv=kf?"c60":"",lw=kg?"c61":"",lx=kh?"c62":"",ly=kM?"c63":"",mm=kN?"c64":"",mn=kO?"c65":"",mo=kP?"c66":"",mp=kQ?"c67":"",mq=kR?"c68":"",mr=kS?"c69":"",ms=kT?"c70":"",mt=kU?"c71":"",mu=kV?"c72":"",mv=kW?"c73":"",mw=kX?"c74":"",mx=kY?"c75":"",my=kv?"c76":"",mz=kw?"c77":"",mA=kx?"c78":"",mB=ky?"c79":"",mC=kz?"c80":"",mD=kA?"c81":"",mE=kB?"c82":""
+}}}{{{#!style
+.c0{width:432px;max-width:100%;padding:12px;margin:12px auto;border:1px solid #b8c4d4;border-radius:12px;background:#f1f5f9;color:#17365a}.c83{font-size:20px;font-weight:bold;margin-bottom:8px}.c84,.c85,.c86,.c174{font-size:12px}.c84,.c85,.c86{margin-bottom:8px}.c87{display:flex;gap:3px;margin-top:3px}.c88{width:11.111%;height:38px;border:1px solid #b4c6df;border-radius:4px;overflow:hidden;background:#dce6f2;text-align:center}.c91,.c92,.c93{display:flex;align-items:center;justify-content:center;height:38px;padding:0;font-size:17px;font-weight:bold}.c91{background:#dce6f2;cursor:pointer}.c91:hover{background:#c9d7ea}.c92{width:15px;height:15px;margin:-37px 1px 22px auto;border-radius:3px;background:#f8fafc;font-size:9px;cursor:pointer}.c92:hover{background:#fde68a}.c93{background:#fff}.a9 .c93{background:#fee2e2}.a0 .c93{color:transparent}.a1 .c93{color:#245aff}.a2 .c93{color:#008846}.a3 .c93{color:#cc3030}.a4 .c93{color:#9a46ad}.a5 .c93{color:#b45309}.a6 .c93{color:#0e7490}.a7 .c93{color:#334155}.a8 .c93{color:#64748b}.c85,.c86,.c0 .c88.c90 .c91,.c2 .c89 .c91,.c2 .c89 .c92,.c3 .c94 .c91,.c3 .c94 .c92,.c4 .c95 .c91,.c4 .c95 .c92,.c5 .c96 .c91,.c5 .c96 .c92,.c6 .c97 .c91,.c6 .c97 .c92,.c7 .c98 .c91,.c7 .c98 .c92,.c8 .c99 .c91,.c8 .c99 .c92,.c9 .c100 .c91,.c9 .c100 .c92,.c10 .c101 .c91,.c10 .c101 .c92,.c11 .c102 .c91,.c11 .c102 .c92,.c12 .c103 .c91,.c12 .c103 .c92,.c13 .c104 .c91,.c13 .c104 .c92,.c14 .c105 .c91,.c14 .c105 .c92,.c15 .c106 .c91,.c15 .c106 .c92,.c16 .c107 .c91,.c16 .c107 .c92,.c17 .c108 .c91,.c17 .c108 .c92,.c18 .c109 .c91,.c18 .c109 .c92,.c19 .c110 .c91,.c19 .c110 .c92,.c20 .c111 .c91,.c20 .c111 .c92,.c21 .c112 .c91,.c21 .c112 .c92,.c22 .c113 .c91,.c22 .c113 .c92,.c23 .c114 .c91,.c23 .c114 .c92,.c24 .c115 .c91,.c24 .c115 .c92,.c25 .c116 .c91,.c25 .c116 .c92,.c26 .c117 .c91,.c26 .c117 .c92,.c27 .c118 .c91,.c27 .c118 .c92,.c28 .c119 .c91,.c28 .c119 .c92,.c29 .c120 .c91,.c29 .c120 .c92,.c30 .c121 .c91,.c30 .c121 .c92,.c31 .c122 .c91,.c31 .c122 .c92,.c32 .c123 .c91,.c32 .c123 .c92,.c33 .c124 .c91,.c33 .c124 .c92,.c34 .c125 .c91,.c34 .c125 .c92,.c35 .c126 .c91,.c35 .c126 .c92,.c36 .c127 .c91,.c36 .c127 .c92,.c37 .c128 .c91,.c37 .c128 .c92,.c38 .c129 .c91,.c38 .c129 .c92,.c39 .c130 .c91,.c39 .c130 .c92,.c40 .c131 .c91,.c40 .c131 .c92,.c41 .c132 .c91,.c41 .c132 .c92,.c42 .c133 .c91,.c42 .c133 .c92,.c43 .c134 .c91,.c43 .c134 .c92,.c44 .c135 .c91,.c44 .c135 .c92,.c45 .c136 .c91,.c45 .c136 .c92,.c46 .c137 .c91,.c46 .c137 .c92,.c47 .c138 .c91,.c47 .c138 .c92,.c48 .c139 .c91,.c48 .c139 .c92,.c49 .c140 .c91,.c49 .c140 .c92,.c50 .c141 .c91,.c50 .c141 .c92,.c51 .c142 .c91,.c51 .c142 .c92,.c52 .c143 .c91,.c52 .c143 .c92,.c53 .c144 .c91,.c53 .c144 .c92,.c54 .c145 .c91,.c54 .c145 .c92,.c55 .c146 .c91,.c55 .c146 .c92,.c56 .c147 .c91,.c56 .c147 .c92,.c57 .c148 .c91,.c57 .c148 .c92,.c58 .c149 .c91,.c58 .c149 .c92,.c59 .c150 .c91,.c59 .c150 .c92,.c60 .c151 .c91,.c60 .c151 .c92,.c61 .c152 .c91,.c61 .c152 .c92,.c62 .c153 .c91,.c62 .c153 .c92,.c63 .c154 .c91,.c63 .c154 .c92,.c64 .c155 .c91,.c64 .c155 .c92,.c65 .c156 .c91,.c65 .c156 .c92,.c66 .c157 .c91,.c66 .c157 .c92,.c67 .c158 .c91,.c67 .c158 .c92,.c68 .c159 .c91,.c68 .c159 .c92,.c69 .c160 .c91,.c69 .c160 .c92,.c70 .c161 .c91,.c70 .c161 .c92,.c71 .c162 .c91,.c71 .c162 .c92,.c72 .c163 .c91,.c72 .c163 .c92,.c73 .c164 .c91,.c73 .c164 .c92,.c74 .c165 .c91,.c74 .c165 .c92,.c75 .c166 .c91,.c75 .c166 .c92,.c76 .c167 .c91,.c76 .c167 .c92,.c77 .c168 .c91,.c77 .c168 .c92,.c78 .c169 .c91,.c78 .c169 .c92,.c79 .c170 .c91,.c79 .c170 .c92,.c80 .c171 .c91,.c80 .c171 .c92,.c81 .c172 .c91,.c81 .c172 .c92,.c82 .c173 .c91,.c82 .c173 .c92{display:none}.c0 .c88.c90 .c92{width:auto;height:38px;margin:0;border-radius:0;background:#dce6f2;font-size:17px}.c174{margin-top:8px}.c0 .a9 .c91,.c0 .a9 .c92{display:flex}.c0.c0.c2.c3.c4.c5.c6.c7.c8.c9.c10.c11.c12.c13.c14.c15.c16.c17.c18.c19.c20.c21.c22.c23.c24.c25.c26.c27.c28.c29.c30.c31.c32.c33.c34.c35.c36.c37.c38.c39.c40.c41.c42.c43.c44.c45.c46.c47.c48.c49.c50.c51.c52.c53.c54.c55.c56.c57.c58.c59.c60.c61.c62.c63.c64.c65.c66.c67.c68.c69.c70.c71.c72.c73.c74.c75.c76.c77.c78.c79.c80.c81.c82 .c88 .c91,.c0.c0.c2.c3.c4.c5.c6.c7.c8.c9.c10.c11.c12.c13.c14.c15.c16.c17.c18.c19.c20.c21.c22.c23.c24.c25.c26.c27.c28.c29.c30.c31.c32.c33.c34.c35.c36.c37.c38.c39.c40.c41.c42.c43.c44.c45.c46.c47.c48.c49.c50.c51.c52.c53.c54.c55.c56.c57.c58.c59.c60.c61.c62.c63.c64.c65.c66.c67.c68.c69.c70.c71.c72.c73.c74.c75.c76.c77.c78.c79.c80.c81.c82 .c88 .c92,.c0.c1 .c88 .c91,.c0.c1 .c88 .c92,.c0.c0.c2.c3.c4.c5.c6.c7.c8.c9.c10.c11.c12.c13.c14.c15.c16.c17.c18.c19.c20.c21.c22.c23.c24.c25.c26.c27.c28.c29.c30.c31.c32.c33.c34.c35.c36.c37.c38.c39.c40.c41.c42.c43.c44.c45.c46.c47.c48.c49.c50.c51.c52.c53.c54.c55.c56.c57.c58.c59.c60.c61.c62.c63.c64.c65.c66.c67.c68.c69.c70.c71.c72.c73.c74.c75.c76.c77.c78.c79.c80.c81.c82 .c84,.c0.c0.c2.c3.c4.c5.c6.c7.c8.c9.c10.c11.c12.c13.c14.c15.c16.c17.c18.c19.c20.c21.c22.c23.c24.c25.c26.c27.c28.c29.c30.c31.c32.c33.c34.c35.c36.c37.c38.c39.c40.c41.c42.c43.c44.c45.c46.c47.c48.c49.c50.c51.c52.c53.c54.c55.c56.c57.c58.c59.c60.c61.c62.c63.c64.c65.c66.c67.c68.c69.c70.c71.c72.c73.c74.c75.c76.c77.c78.c79.c80.c81.c82 .c174,.c0.c1 .c84,.c0.c1 .c174{display:none}.c0.c0.c2.c3.c4.c5.c6.c7.c8.c9.c10.c11.c12.c13.c14.c15.c16.c17.c18.c19.c20.c21.c22.c23.c24.c25.c26.c27.c28.c29.c30.c31.c32.c33.c34.c35.c36.c37.c38.c39.c40.c41.c42.c43.c44.c45.c46.c47.c48.c49.c50.c51.c52.c53.c54.c55.c56.c57.c58.c59.c60.c61.c62.c63.c64.c65.c66.c67.c68.c69.c70.c71.c72.c73.c74.c75.c76.c77.c78.c79.c80.c81.c82 .c85,.c0.c1 .c86{display:block}.c0.c1 .c85{display:none}
+}}}{{{#!wiki class="c0 @kC@ @kD@ @kE@ @kF@ @kG@ @kH@ @kI@ @kJ@ @kK@ @kL@ @lz@ @lA@ @lB@ @lC@ @lD@ @lE@ @lF@ @lG@ @lH@ @lI@ @lJ@ @lK@ @lL@ @lM@ @lN@ @lO@ @lP@ @lQ@ @lR@ @lS@ @lT@ @lU@ @lV@ @lW@ @lX@ @lY@ @kZ@ @la@ @lb@ @lc@ @ld@ @le@ @lf@ @lg@ @lh@ @li@ @lj@ @lk@ @ll@ @lm@ @ln@ @lo@ @lp@ @lq@ @lr@ @ls@ @lt@ @lu@ @lv@ @lw@ @lx@ @ly@ @mm@ @mn@ @mo@ @mp@ @mq@ @mr@ @ms@ @mt@ @mu@ @mv@ @mw@ @mx@ @my@ @mz@ @mA@ @mB@ @mC@ @mD@ @mE@ pt"
+{{{#!wiki class="c83"
+지뢰찾기 9 × 9}}}{{{#!wiki class="c84"
+지뢰 10개를 피해 안전한 71칸을 열어보세요.}}}{{{#!wiki class="c85"
+🎉 성공! 모든 안전한 칸을 열었습니다.}}}{{{#!wiki class="c86"
+💥 지뢰입니다! 다시 도전해 보세요.}}}{{{#!wiki @q@
+{{{#!wiki @f@@fY@ c89 pu"
+{{{#!wiki @e@@mF@"
+}}}{{{#!wiki @d@,pu,c90"
+🚩}}}{{{#!wiki @g@
+@hB@}}}}}}{{{#!wiki @f@@fZ@ c94 pw"
+{{{#!wiki @e@@mG@"
+}}}{{{#!wiki @d@,pw,c90"
+🚩}}}{{{#!wiki @g@
+@hC@}}}}}}{{{#!wiki @f@@ga@ c95 py"
+{{{#!wiki @e@@mH@"
+}}}{{{#!wiki @d@,py,c90"
+🚩}}}{{{#!wiki @g@
+@hD@}}}}}}{{{#!wiki @f@@gb@ c96 pA"
+{{{#!wiki @e@@lZ@"
+}}}{{{#!wiki @d@,pA,c90"
+🚩}}}{{{#!wiki @g@
+@hE@}}}}}}{{{#!wiki @f@@gc@ c97 pC"
+{{{#!wiki @e@@ma@"
+}}}{{{#!wiki @d@,pC,c90"
+🚩}}}{{{#!wiki @g@
+@hF@}}}}}}{{{#!wiki @f@@gd@ c98 pE"
+{{{#!wiki @e@@mb@"
+}}}{{{#!wiki @d@,pE,c90"
+🚩}}}{{{#!wiki @g@
+@hG@}}}}}}{{{#!wiki @f@@ge@ c99 pG"
+{{{#!wiki @e@@mc@"
+}}}{{{#!wiki @d@,pG,c90"
+🚩}}}{{{#!wiki @g@
+@hH@}}}}}}{{{#!wiki @f@@gf@ c100 pI"
+{{{#!wiki @e@@md@"
+}}}{{{#!wiki @d@,pI,c90"
+🚩}}}{{{#!wiki @g@
+@hI@}}}}}}{{{#!wiki @f@@gg@ c101 pK"
+{{{#!wiki @e@@me@"
+}}}{{{#!wiki @d@,pK,c90"
+🚩}}}{{{#!wiki @g@
+@hJ@}}}}}}}}}{{{#!wiki @q@
+{{{#!wiki @f@@gh@ c102 pM"
+{{{#!wiki @e@@mf@"
+}}}{{{#!wiki @d@,pM,c90"
+🚩}}}{{{#!wiki @g@
+@hK@}}}}}}{{{#!wiki @f@@gi@ c103 pO"
+{{{#!wiki @e@@mg@"
+}}}{{{#!wiki @d@,pO,c90"
+🚩}}}{{{#!wiki @g@
+@hL@}}}}}}{{{#!wiki @f@@gj@ c104 pQ"
+{{{#!wiki @e@@mh@"
+}}}{{{#!wiki @d@,pQ,c90"
+🚩}}}{{{#!wiki @g@
+@hM@}}}}}}{{{#!wiki @f@@gk@ c105 pS"
+{{{#!wiki @e@@mi@"
+}}}{{{#!wiki @d@,pS,c90"
+🚩}}}{{{#!wiki @g@
+@hN@}}}}}}{{{#!wiki @f@@gl@ c106 pU"
+{{{#!wiki @e@@mj@"
+}}}{{{#!wiki @d@,pU,c90"
+🚩}}}{{{#!wiki @g@
+@hO@}}}}}}{{{#!wiki @f@@gm@ c107 pW"
+{{{#!wiki @e@@mk@"
+}}}{{{#!wiki @d@,pW,c90"
+🚩}}}{{{#!wiki @g@
+@hP@}}}}}}{{{#!wiki @f@@gn@ c108 pY"
+{{{#!wiki @e@@ml@"
+}}}{{{#!wiki @d@,pY,c90"
+🚩}}}{{{#!wiki @g@
+@hQ@}}}}}}{{{#!wiki @f@@go@ c109 qa"
+{{{#!wiki @e@@mV@"
+}}}{{{#!wiki @d@,qa,c90"
+🚩}}}{{{#!wiki @g@
+@hR@}}}}}}{{{#!wiki @f@@gp@ c110 qc"
+{{{#!wiki @e@@mW@"
+}}}{{{#!wiki @d@,qc,c90"
+🚩}}}{{{#!wiki @g@
+@hS@}}}}}}}}}{{{#!wiki @q@
+{{{#!wiki @f@@gq@ c111 qe"
+{{{#!wiki @e@@mX@"
+}}}{{{#!wiki @d@,qe,c90"
+🚩}}}{{{#!wiki @g@
+@hT@}}}}}}{{{#!wiki @f@@gr@ c112 qg"
+{{{#!wiki @e@@mY@"
+}}}{{{#!wiki @d@,qg,c90"
+🚩}}}{{{#!wiki @g@
+@hU@}}}}}}{{{#!wiki @f@@gs@ c113 qi"
+{{{#!wiki @e@@mZ@"
+}}}{{{#!wiki @d@,qi,c90"
+🚩}}}{{{#!wiki @g@
+@hV@}}}}}}{{{#!wiki @f@@gt@ c114 qk"
+{{{#!wiki @e@@na@"
+}}}{{{#!wiki @d@,qk,c90"
+🚩}}}{{{#!wiki @g@
+@hW@}}}}}}{{{#!wiki @f@@gu@ c115 qm"
+{{{#!wiki @e@@nb@"
+}}}{{{#!wiki @d@,qm,c90"
+🚩}}}{{{#!wiki @g@
+@hX@}}}}}}{{{#!wiki @f@@gv@ c116 qo"
+{{{#!wiki @e@@nc@"
+}}}{{{#!wiki @d@,qo,c90"
+🚩}}}{{{#!wiki @g@
+@hY@}}}}}}{{{#!wiki @f@@gw@ c117 qq"
+{{{#!wiki @e@@nd@"
+}}}{{{#!wiki @d@,qq,c90"
+🚩}}}{{{#!wiki @g@
+@hZ@}}}}}}{{{#!wiki @f@@gx@ c118 qs"
+{{{#!wiki @e@@ne@"
+}}}{{{#!wiki @d@,qs,c90"
+🚩}}}{{{#!wiki @g@
+@ia@}}}}}}{{{#!wiki @f@@gy@ c119 qu"
+{{{#!wiki @e@@nf@"
+}}}{{{#!wiki @d@,qu,c90"
+🚩}}}{{{#!wiki @g@
+@ib@}}}}}}}}}{{{#!wiki @q@
+{{{#!wiki @f@@gz@ c120 qw"
+{{{#!wiki @e@@ng@"
+}}}{{{#!wiki @d@,qw,c90"
+🚩}}}{{{#!wiki @g@
+@ic@}}}}}}{{{#!wiki @f@@gA@ c121 qy"
+{{{#!wiki @e@@nh@"
+}}}{{{#!wiki @d@,qy,c90"
+🚩}}}{{{#!wiki @g@
+@id@}}}}}}{{{#!wiki @f@@gB@ c122 qA"
+{{{#!wiki @e@@mI@"
+}}}{{{#!wiki @d@,qA,c90"
+🚩}}}{{{#!wiki @g@
+@ie@}}}}}}{{{#!wiki @f@@gC@ c123 qC"
+{{{#!wiki @e@@mJ@"
+}}}{{{#!wiki @d@,qC,c90"
+🚩}}}{{{#!wiki @g@
+@ig@}}}}}}{{{#!wiki @f@@gD@ c124 qE"
+{{{#!wiki @e@@mK@"
+}}}{{{#!wiki @d@,qE,c90"
+🚩}}}{{{#!wiki @g@
+@ih@}}}}}}{{{#!wiki @f@@gE@ c125 qG"
+{{{#!wiki @e@@mL@"
+}}}{{{#!wiki @d@,qG,c90"
+🚩}}}{{{#!wiki @g@
+@ii@}}}}}}{{{#!wiki @f@@gF@ c126 qI"
+{{{#!wiki @e@@mM@"
+}}}{{{#!wiki @d@,qI,c90"
+🚩}}}{{{#!wiki @g@
+@ij@}}}}}}{{{#!wiki @f@@gG@ c127 qK"
+{{{#!wiki @e@@mN@"
+}}}{{{#!wiki @d@,qK,c90"
+🚩}}}{{{#!wiki @g@
+@ik@}}}}}}{{{#!wiki @f@@gH@ c128 qM"
+{{{#!wiki @e@@mO@"
+}}}{{{#!wiki @d@,qM,c90"
+🚩}}}{{{#!wiki @g@
+@il@}}}}}}}}}{{{#!wiki @q@
+{{{#!wiki @f@@gI@ c129 qO"
+{{{#!wiki @e@@mP@"
+}}}{{{#!wiki @d@,qO,c90"
+🚩}}}{{{#!wiki @g@
+@im@}}}}}}{{{#!wiki @f@@gJ@ c130 qQ"
+{{{#!wiki @e@@mQ@"
+}}}{{{#!wiki @d@,qQ,c90"
+🚩}}}{{{#!wiki @g@
+@io@}}}}}}{{{#!wiki @f@@gK@ c131 qS"
+{{{#!wiki @e@@mR@"
+}}}{{{#!wiki @d@,qS,c90"
+🚩}}}{{{#!wiki @g@
+@ip@}}}}}}{{{#!wiki @f@@gL@ c132 qU"
+{{{#!wiki @e@@mS@"
+}}}{{{#!wiki @d@,qU,c90"
+🚩}}}{{{#!wiki @g@
+@iq@}}}}}}{{{#!wiki @f@@gM@ c133 qW"
+{{{#!wiki @e@@mT@"
+}}}{{{#!wiki @d@,qW,c90"
+🚩}}}{{{#!wiki @g@
+@ir@}}}}}}{{{#!wiki @f@@gN@ c134 qY"
+{{{#!wiki @e@@mU@"
+}}}{{{#!wiki @d@,qY,c90"
+🚩}}}{{{#!wiki @g@
+@is@}}}}}}{{{#!wiki @f@@gO@ c135 ra"
+{{{#!wiki @e@@nv@"
+}}}{{{#!wiki @d@,ra,c90"
+🚩}}}{{{#!wiki @g@
+@it@}}}}}}{{{#!wiki @f@@gP@ c136 rc"
+{{{#!wiki @e@@nw@"
+}}}{{{#!wiki @d@,rc,c90"
+🚩}}}{{{#!wiki @g@
+@iu@}}}}}}{{{#!wiki @f@@gQ@ c137 re"
+{{{#!wiki @e@@nx@"
+}}}{{{#!wiki @d@,re,c90"
+🚩}}}{{{#!wiki @g@
+@iv@}}}}}}}}}{{{#!wiki @q@
+{{{#!wiki @f@@gR@ c138 rg"
+{{{#!wiki @e@@ny@"
+}}}{{{#!wiki @d@,rg,c90"
+🚩}}}{{{#!wiki @g@
+@iw@}}}}}}{{{#!wiki @f@@gS@ c139 ri"
+{{{#!wiki @e@@nz@"
+}}}{{{#!wiki @d@,ri,c90"
+🚩}}}{{{#!wiki @g@
+@ix@}}}}}}{{{#!wiki @f@@gT@ c140 rk"
+{{{#!wiki @e@@nA@"
+}}}{{{#!wiki @d@,rk,c90"
+🚩}}}{{{#!wiki @g@
+@iy@}}}}}}{{{#!wiki @f@@gU@ c141 rm"
+{{{#!wiki @e@@nB@"
+}}}{{{#!wiki @d@,rm,c90"
+🚩}}}{{{#!wiki @g@
+@iz@}}}}}}{{{#!wiki @f@@gV@ c142 ro"
+{{{#!wiki @e@@nC@"
+}}}{{{#!wiki @d@,ro,c90"
+🚩}}}{{{#!wiki @g@
+@iA@}}}}}}{{{#!wiki @f@@gW@ c143 rq"
+{{{#!wiki @e@@nD@"
+}}}{{{#!wiki @d@,rq,c90"
+🚩}}}{{{#!wiki @g@
+@iB@}}}}}}{{{#!wiki @f@@gX@ c144 rs"
+{{{#!wiki @e@@nE@"
+}}}{{{#!wiki @d@,rs,c90"
+🚩}}}{{{#!wiki @g@
+@iC@}}}}}}{{{#!wiki @f@@gY@ c145 ru"
+{{{#!wiki @e@@nF@"
+}}}{{{#!wiki @d@,ru,c90"
+🚩}}}{{{#!wiki @g@
+@iD@}}}}}}{{{#!wiki @f@@gZ@ c146 rw"
+{{{#!wiki @e@@nG@"
+}}}{{{#!wiki @d@,rw,c90"
+🚩}}}{{{#!wiki @g@
+@iE@}}}}}}}}}{{{#!wiki @q@
+{{{#!wiki @f@@ha@ c147 ry"
+{{{#!wiki @e@@nH@"
+}}}{{{#!wiki @d@,ry,c90"
+🚩}}}{{{#!wiki @g@
+@iF@}}}}}}{{{#!wiki @f@@hb@ c148 rA"
+{{{#!wiki @e@@ni@"
+}}}{{{#!wiki @d@,rA,c90"
+🚩}}}{{{#!wiki @g@
+@iG@}}}}}}{{{#!wiki @f@@hc@ c149 rC"
+{{{#!wiki @e@@nj@"
+}}}{{{#!wiki @d@,rC,c90"
+🚩}}}{{{#!wiki @g@
+@iH@}}}}}}{{{#!wiki @f@@hd@ c150 rE"
+{{{#!wiki @e@@nk@"
+}}}{{{#!wiki @d@,rE,c90"
+🚩}}}{{{#!wiki @g@
+@iI@}}}}}}{{{#!wiki @f@@he@ c151 rG"
+{{{#!wiki @e@@nl@"
+}}}{{{#!wiki @d@,rG,c90"
+🚩}}}{{{#!wiki @g@
+@iJ@}}}}}}{{{#!wiki @f@@hf@ c152 rI"
+{{{#!wiki @e@@nm@"
+}}}{{{#!wiki @d@,rI,c90"
+🚩}}}{{{#!wiki @g@
+@iK@}}}}}}{{{#!wiki @f@@hg@ c153 rK"
+{{{#!wiki @e@@nn@"
+}}}{{{#!wiki @d@,rK,c90"
+🚩}}}{{{#!wiki @g@
+@iL@}}}}}}{{{#!wiki @f@@hh@ c154 rM"
+{{{#!wiki @e@@no@"
+}}}{{{#!wiki @d@,rM,c90"
+🚩}}}{{{#!wiki @g@
+@iM@}}}}}}{{{#!wiki @f@@hi@ c155 rO"
+{{{#!wiki @e@@np@"
+}}}{{{#!wiki @d@,rO,c90"
+🚩}}}{{{#!wiki @g@
+@iN@}}}}}}}}}{{{#!wiki @q@
+{{{#!wiki @f@@hj@ c156 rQ"
+{{{#!wiki @e@@nq@"
+}}}{{{#!wiki @d@,rQ,c90"
+🚩}}}{{{#!wiki @g@
+@iO@}}}}}}{{{#!wiki @f@@hk@ c157 rS"
+{{{#!wiki @e@@nr@"
+}}}{{{#!wiki @d@,rS,c90"
+🚩}}}{{{#!wiki @g@
+@iP@}}}}}}{{{#!wiki @f@@hl@ c158 rU"
+{{{#!wiki @e@@ns@"
+}}}{{{#!wiki @d@,rU,c90"
+🚩}}}{{{#!wiki @g@
+@iQ@}}}}}}{{{#!wiki @f@@hm@ c159 rW"
+{{{#!wiki @e@@nt@"
+}}}{{{#!wiki @d@,rW,c90"
+🚩}}}{{{#!wiki @g@
+@iR@}}}}}}{{{#!wiki @f@@hn@ c160 rY"
+{{{#!wiki @e@@nu@"
+}}}{{{#!wiki @d@,rY,c90"
+🚩}}}{{{#!wiki @g@
+@iS@}}}}}}{{{#!wiki @f@@ho@ c161 sa"
+{{{#!wiki @e@@nI@"
+}}}{{{#!wiki @d@,sa,c90"
+🚩}}}{{{#!wiki @g@
+@iT@}}}}}}{{{#!wiki @f@@hp@ c162 sc"
+{{{#!wiki @e@@nJ@"
+}}}{{{#!wiki @d@,sc,c90"
+🚩}}}{{{#!wiki @g@
+@iU@}}}}}}{{{#!wiki @f@@hq@ c163 se"
+{{{#!wiki @e@@nK@"
+}}}{{{#!wiki @d@,se,c90"
+🚩}}}{{{#!wiki @g@
+@iV@}}}}}}{{{#!wiki @f@@hr@ c164 sg"
+{{{#!wiki @e@@nL@"
+}}}{{{#!wiki @d@,sg,c90"
+🚩}}}{{{#!wiki @g@
+@iW@}}}}}}}}}{{{#!wiki @q@
+{{{#!wiki @f@@hs@ c165 si"
+{{{#!wiki @e@@nM@"
+}}}{{{#!wiki @d@,si,c90"
+🚩}}}{{{#!wiki @g@
+@iX@}}}}}}{{{#!wiki @f@@ht@ c166 sk"
+{{{#!wiki @e@@nN@"
+}}}{{{#!wiki @d@,sk,c90"
+🚩}}}{{{#!wiki @g@
+@iY@}}}}}}{{{#!wiki @f@@hu@ c167 sm"
+{{{#!wiki @e@@nO@"
+}}}{{{#!wiki @d@,sm,c90"
+🚩}}}{{{#!wiki @g@
+@iZ@}}}}}}{{{#!wiki @f@@hv@ c168 so"
+{{{#!wiki @e@@nP@"
+}}}{{{#!wiki @d@,so,c90"
+🚩}}}{{{#!wiki @g@
+@ja@}}}}}}{{{#!wiki @f@@hw@ c169 sq"
+{{{#!wiki @e@@nQ@"
+}}}{{{#!wiki @d@,sq,c90"
+🚩}}}{{{#!wiki @g@
+@jb@}}}}}}{{{#!wiki @f@@hx@ c170 ss"
+{{{#!wiki @e@@nR@"
+}}}{{{#!wiki @d@,ss,c90"
+🚩}}}{{{#!wiki @g@
+@jc@}}}}}}{{{#!wiki @f@@hy@ c171 su"
+{{{#!wiki @e@@nS@"
+}}}{{{#!wiki @d@,su,c90"
+🚩}}}{{{#!wiki @g@
+@jd@}}}}}}{{{#!wiki @f@@hz@ c172 sw"
+{{{#!wiki @e@@nT@"
+}}}{{{#!wiki @d@,sw,c90"
+🚩}}}{{{#!wiki @g@
+@je@}}}}}}{{{#!wiki @f@@hA@ c173 sy"
+{{{#!wiki @e@@nU@"
+}}}{{{#!wiki @d@,sy,c90"
+🚩}}}{{{#!wiki @g@
+@jf@}}}}}}}}}{{{#!wiki class="c174"
+칸을 누르면 열립니다. 0칸은 주변 8칸까지 열립니다(연쇄 열기 없음). 모서리의 🚩로 깃발을 꽂고, 깃발을 누르면 뽑힙니다. 깃발 칸은 열리지 않습니다.}}}}}}
