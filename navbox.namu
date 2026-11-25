@@ -5,7 +5,7 @@
 .navbox .navbox-body { display: none; }
 .navbox .navbox-navbox.navbox-opened .navbox-body { display: block; }
 .navbox .navbox-body table { width: 100%; border-collapse: collapse; }
-.navbox .navbox-name { background: #f3ead9; font-weight: bold; text-align: center; width: 20%; }
+.navbox .navbox-name { background: light-dark(#f3ead9, #3d3426); font-weight: bold; text-align: center; width: 20%; }
 
 }}}{{{#!wiki class="navbox"
 {{{#!wiki class="navbox_node_2 navbox-navbox"

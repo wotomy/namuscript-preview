@@ -1,5 +1,5 @@
 {{{#!style
-.c4{display:inline-block;padding:4px 12px;border:1px solid #ccc;border-bottom:none;cursor:pointer}.c8{display:none;border:1px solid #ccc;padding:8px}.c0.c1 .c5{background:#2f5d50;color:#fff}.c0.c1 .c9{display:block}.c0.c2 .c6{background:#2f5d50;color:#fff}.c0.c2 .c10{display:block}.c0.c3 .c7{background:#2f5d50;color:#fff}.c0.c3 .c11{display:block}.c12{border:1px solid #ddd;margin:4px 0}.c14{display:block;background:#f4f4f4;padding:4px 8px;cursor:pointer}.c15{display:none;padding:8px}.c12.c13 .c15{display:block}
+.c4{display:inline-block;padding:4px 12px;border:1px solid light-dark(#ccc, #555);border-bottom:none;cursor:pointer}.c8{display:none;border:1px solid light-dark(#ccc, #555);padding:8px}.c0.c1 .c5{background:#2f5d50;color:#fff}.c0.c1 .c9{display:block}.c0.c2 .c6{background:#2f5d50;color:#fff}.c0.c2 .c10{display:block}.c0.c3 .c7{background:#2f5d50;color:#fff}.c0.c3 .c11{display:block}.c12{border:1px solid light-dark(#ddd, #444);margin:4px 0}.c14{display:block;background:light-dark(#f4f4f4, #2d2f34);padding:4px 8px;cursor:pointer}.c15{display:none;padding:8px}.c12.c13 .c15{display:block}
 }}}[목차]
 == 개요 ==
 [[허균]]이 지었다고 전하는 [[조선]]의 [[한글 소설]].

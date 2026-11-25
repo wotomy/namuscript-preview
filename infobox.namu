@@ -3,7 +3,7 @@
 .infobox .infobox-box { border: 2px solid #1f4e79; }
 .infobox .infobox-head { background: #1f4e79; color: #fff; font-size: 1.2em; font-weight: bold; text-align: center; }
 .infobox .infobox-photo { text-align: center; }
-.infobox .infobox-label { background: #dbe7f3; font-weight: bold; text-align: center; width: 30%; }
+.infobox .infobox-label { background: light-dark(#dbe7f3, #2b3a4a); font-weight: bold; text-align: center; width: 30%; }
 
 }}}{{{#!wiki class="infobox"
 {{{#!wiki class="infobox_node_1 infobox-infobox"
