@@ -1,0 +1,27 @@
+{{{#!if e="1px solid light-dark(#",c='tag="a" class=',a='class=',d=";add-class,f,a",b="remove-class,f,a"
+}}}{{{#!style
+.c1{display:inline-block;padding:4px 12px;border:@e@ccc, #555);border-bottom:none;cursor:pointer}.c2{display:none;border:@e@ccc, #555);padding:8px}.c0.a0 .b0,.c0.a1 .b1,.c0.a2 .b2{background:#2f5d50;color:#fff}.c0.a0 .d0,.c0.a1 .d1,.c0.a2 .d2{display:block}.c3{border:@e@ddd, #444);margin:4px 0}.c6{display:block;background:light-dark(#f4f4f4, #2d2f34);padding:4px 8px;cursor:pointer}.c4{display:none;padding:8px}.c3.c5 .c4{display:block}
+}}}[목차]
+== 개요 ==
+[[허균]]이 지었다고 전하는 [[조선]]의 [[한글 소설]].
+
+== 판본 ==
+{{{#!wiki @a@"c0 a0 f"
+{{{#!wiki @c@"c1 b0" onclick="@b@1;@b@2@d@0"
+경판본}}}{{{#!wiki @c@"c1 b1" onclick="@b@0;@b@2@d@1"
+완판본}}}{{{#!wiki @c@"c1 b2" onclick="@b@0;@b@1@d@2"
+필사본}}}{{{#!wiki @a@"c2 d0"
+'''경판 24장본'''은 가장 널리 읽힌 판본이다.[* 서울에서 찍어 낸 방각본.]}}}{{{#!wiki @a@"c2 d1"
+'''완판 36장본'''은 전라도 전주에서 간행되었다. 율도국 이야기가 길다.}}}{{{#!wiki @a@"c2 d2"
+여러 필사본이 전하며 결말이 조금씩 다르다.}}}}}}
+== 줄거리 ==
+{{{#!wiki @a@"c3 g"
+{{{#!wiki @c@"c6" onclick="toggle-class,g,c5"
+결말 (스포일러)}}}{{{#!wiki @a@"c4"
+길동은 [[율도국]]의 왕이 되어 나라를 다스린다.}}}}}}{{{#!wiki @a@"c3 h"
+{{{#!wiki @c@"c6" onclick="toggle-class,h,c5"
+작가 논쟁}}}{{{#!wiki @a@"c4"
+[[허균]]이 지었다는 설이 통설이지만 이견도 있다.[* 이식의 『택당집』에 근거한다.]}}}}}}
+== 각주 ==
+[각주]
+

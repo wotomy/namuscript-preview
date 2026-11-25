@@ -1,0 +1,38 @@
+{{{#!if h=",.c0.",g=" .c2.",j='.c0.a0.a1.a2.a3.a4.a5.a6.a7.a8.a9.a10.a11.a12.a13.a14.a15.a16.a17.a18.a19.a20.a21.a22.a23.a24',f='class="c2',i='class="c5"',e="toggle-class,aB,a",b=";"+e,a=time()%2147483646+1,c=a*48271%2147483647*48271%2147483647%33554432,d=c^c<<5^c>>5^c<<1&32472030^c>>1&16236015,l=d%2==0?"a0":"",m=(d>>1)%2==0?"a1":"",n=(d>>2)%2==0?"a2":"",o=(d>>3)%2==0?"a3":"",p=(d>>4)%2==0?"a4":"",q=(d>>5)%2==0?"a5":"",r=(d>>6)%2==0?"a6":"",s=(d>>7)%2==0?"a7":"",t=(d>>8)%2==0?"a8":"",u=(d>>9)%2==0?"a9":"",v=(d>>10)%2==0?"a10":"",w=(d>>11)%2==0?"a11":"",x=(d>>12)%2==0?"a12":"",y=(d>>13)%2==0?"a13":"",z=(d>>14)%2==0?"a14":"",A=(d>>15)%2==0?"a15":"",B=(d>>16)%2==0?"a16":"",C=(d>>17)%2==0?"a17":"",D=(d>>18)%2==0?"a18":"",E=(d>>19)%2==0?"a19":"",F=(d>>20)%2==0?"a20":"",G=(d>>21)%2==0?"a21":"",H=(d>>22)%2==0?"a22":"",I=(d>>23)%2==0?"a23":"",k=(d>>24)%2==0?"a24":""
+}}}{{{#!style
+.c0{width:300px;max-width:100%;padding:12px;margin:12px auto;border:1px solid #334155;border-radius:12px;background:#0f172a;color:#e2e8f0}.c4{font-size:20px;font-weight:700;margin-bottom:8px}.c3,.c1{font-size:12px;margin-bottom:8px}.c1,@j@ .c3{display:none}.c5{display:flex;gap:6px;margin-top:6px}.c2{width:20%;height:48px;border-radius:6px;background:#facc15;cursor:pointer}.c0.a0@g@b0@h@a1@g@b1@h@a2@g@b2@h@a3@g@b3@h@a4@g@b4@h@a5@g@b5@h@a6@g@b6@h@a7@g@b7@h@a8@g@b8@h@a9@g@b9@h@a10@g@b10@h@a11@g@b11@h@a12@g@b12@h@a13@g@b13@h@a14@g@b14@h@a15@g@b15@h@a16@g@b16@h@a17@g@b17@h@a18@g@b18@h@a19@g@b19@h@a20@g@b20@h@a21@g@b21@h@a22@g@b22@h@a23@g@b23@h@a24@g@b24{background:#334155}@j@ .c1{display:block}@j@ .c2{cursor:default}
+}}}{{{#!wiki class="c0 @l@ @m@ @n@ @o@ @p@ @q@ @r@ @s@ @t@ @u@ @v@ @w@ @x@ @y@ @z@ @A@ @B@ @C@ @D@ @E@ @F@ @G@ @H@ @I@ @k@ aB"
+{{{#!wiki class="c4"
+라이츠 아웃}}}{{{#!wiki class="c3"
+칸을 누르면 그 칸과 상하좌우가 뒤집힙니다. 불을 모두 꺼 보세요.}}}{{{#!wiki class="c1"
+🎉 성공! 불을 모두 껐습니다.}}}{{{#!wiki @i@
+{{{#!wiki @f@ b0" onclick="@e@0@b@1@b@5"
+ }}}{{{#!wiki @f@ b1" onclick="@e@0@b@1@b@2@b@6"
+ }}}{{{#!wiki @f@ b2" onclick="@e@1@b@2@b@3@b@7"
+ }}}{{{#!wiki @f@ b3" onclick="@e@2@b@3@b@4@b@8"
+ }}}{{{#!wiki @f@ b4" onclick="@e@3@b@4@b@9"
+ }}}}}}{{{#!wiki @i@
+{{{#!wiki @f@ b5" onclick="@e@0@b@5@b@6@b@10"
+ }}}{{{#!wiki @f@ b6" onclick="@e@1@b@5@b@6@b@7@b@11"
+ }}}{{{#!wiki @f@ b7" onclick="@e@2@b@6@b@7@b@8@b@12"
+ }}}{{{#!wiki @f@ b8" onclick="@e@3@b@7@b@8@b@9@b@13"
+ }}}{{{#!wiki @f@ b9" onclick="@e@4@b@8@b@9@b@14"
+ }}}}}}{{{#!wiki @i@
+{{{#!wiki @f@ b10" onclick="@e@5@b@10@b@11@b@15"
+ }}}{{{#!wiki @f@ b11" onclick="@e@6@b@10@b@11@b@12@b@16"
+ }}}{{{#!wiki @f@ b12" onclick="@e@7@b@11@b@12@b@13@b@17"
+ }}}{{{#!wiki @f@ b13" onclick="@e@8@b@12@b@13@b@14@b@18"
+ }}}{{{#!wiki @f@ b14" onclick="@e@9@b@13@b@14@b@19"
+ }}}}}}{{{#!wiki @i@
+{{{#!wiki @f@ b15" onclick="@e@10@b@15@b@16@b@20"
+ }}}{{{#!wiki @f@ b16" onclick="@e@11@b@15@b@16@b@17@b@21"
+ }}}{{{#!wiki @f@ b17" onclick="@e@12@b@16@b@17@b@18@b@22"
+ }}}{{{#!wiki @f@ b18" onclick="@e@13@b@17@b@18@b@19@b@23"
+ }}}{{{#!wiki @f@ b19" onclick="@e@14@b@18@b@19@b@24"
+ }}}}}}{{{#!wiki @i@
+{{{#!wiki @f@ b20" onclick="@e@15@b@20@b@21"
+ }}}{{{#!wiki @f@ b21" onclick="@e@16@b@20@b@21@b@22"
+ }}}{{{#!wiki @f@ b22" onclick="@e@17@b@21@b@22@b@23"
+ }}}{{{#!wiki @f@ b23" onclick="@e@18@b@22@b@23@b@24"
+ }}}{{{#!wiki @f@ b24" onclick="@e@19@b@23@b@24"
+ }}}}}}}}}
