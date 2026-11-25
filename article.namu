@@ -1,0 +1,37 @@
+{{{#!style
+.article .article-tab { display: inline-block; padding: 4px 12px; border: 1px solid #ccc; border-bottom: none; cursor: pointer; }
+.article .article-panel { display: none; border: 1px solid #ccc; padding: 8px; }
+.article .article-tabs.article-t0 .article-tab0 { background: #2f5d50; color: #fff; }
+.article .article-tabs.article-t0 .article-panel0 { display: block; }
+.article .article-tabs.article-t1 .article-tab1 { background: #2f5d50; color: #fff; }
+.article .article-tabs.article-t1 .article-panel1 { display: block; }
+.article .article-tabs.article-t2 .article-tab2 { background: #2f5d50; color: #fff; }
+.article .article-tabs.article-t2 .article-panel2 { display: block; }
+.article .article-fold { border: 1px solid #ddd; margin: 4px 0; }
+.article .article-fold-title { display: block; background: #f4f4f4; padding: 4px 8px; cursor: pointer; }
+.article .article-fold-body { display: none; padding: 8px; }
+.article .article-fold.article-open .article-fold-body { display: block; }
+
+}}}{{{#!wiki class="article"
+[목차]
+== 개요 ==
+[[허균]]이 지었다고 전하는 [[조선]]의 [[한글 소설]].
+
+== 판본 ==
+{{{#!wiki class="article_node_6 article-tabs article-t0"
+{{{#!wiki tag="a" class="article_node_7 article-tab article-tab0" onclick="remove-class,article_node_6,article-t1;remove-class,article_node_6,article-t2;add-class,article_node_6,article-t0"
+경판본}}}{{{#!wiki tag="a" class="article_node_8 article-tab article-tab1" onclick="remove-class,article_node_6,article-t0;remove-class,article_node_6,article-t2;add-class,article_node_6,article-t1"
+완판본}}}{{{#!wiki tag="a" class="article_node_9 article-tab article-tab2" onclick="remove-class,article_node_6,article-t0;remove-class,article_node_6,article-t1;add-class,article_node_6,article-t2"
+필사본}}}{{{#!wiki class="article_node_10 article-panel article-panel0"
+'''경판 24장본'''은 가장 널리 읽힌 판본이다.[* 서울에서 찍어 낸 방각본.]}}}{{{#!wiki class="article_node_11 article-panel article-panel1"
+'''완판 36장본'''은 전라도 전주에서 간행되었다. 율도국 이야기가 길다.}}}{{{#!wiki class="article_node_12 article-panel article-panel2"
+여러 필사본이 전하며 결말이 조금씩 다르다.}}}}}}== 줄거리 ==
+{{{#!wiki class="article_node_13 article-fold"
+{{{#!wiki tag="a" class="article_node_14 article-fold-title" onclick="toggle-class,article_node_13,article-open"
+결말 (스포일러)}}}{{{#!wiki class="article_node_15 article-fold-body"
+길동은 [[율도국]]의 왕이 되어 나라를 다스린다.}}}}}}{{{#!wiki class="article_node_16 article-fold"
+{{{#!wiki tag="a" class="article_node_17 article-fold-title" onclick="toggle-class,article_node_16,article-open"
+작가 논쟁}}}{{{#!wiki class="article_node_18 article-fold-body"
+[[허균]]이 지었다는 설이 통설이지만 이견도 있다.[* 이식의 『택당집』에 근거한다.]}}}}}}== 각주 ==
+[각주]
+}}}

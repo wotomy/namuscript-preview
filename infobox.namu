@@ -1,0 +1,18 @@
+{{{#!style
+.infobox .infobox-infobox { float: right; width: 320px; margin: 0 0 12px 12px; }
+.infobox .infobox-box { border: 2px solid #1f4e79; }
+.infobox .infobox-head { background: #1f4e79; color: #fff; font-size: 1.2em; font-weight: bold; text-align: center; }
+.infobox .infobox-photo { text-align: center; }
+.infobox .infobox-label { background: #dbe7f3; font-weight: bold; text-align: center; width: 30%; }
+
+}}}{{{#!wiki class="infobox"
+{{{#!wiki class="infobox_node_1 infobox-infobox"
+||<tablewidth=100%><tableclass=infobox-box><-2><class=infobox-head> 홍길동[br]洪吉童 ||
+||<-2><class=infobox-photo> [[파일:홍길동 초상.jpg|width=100%]] ||
+||<class=infobox-label> 본명 || 홍길동 ||
+||<class=infobox-label> 출생 || 1443년 ([[조선]] 한성부) ||
+||<class=infobox-label> 사망 || 미상 ||
+||<class=infobox-label> 국적 || [[조선]] ||
+||<class=infobox-label> 직업 || [[의적]], [[율도국]] 왕 ||
+||<class=infobox-label> 가족 || 아버지 홍 판서[br]어머니 춘섬 ||
+}}}}}}
