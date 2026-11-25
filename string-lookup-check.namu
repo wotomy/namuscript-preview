@@ -1,0 +1,19 @@
+{{{#!if k=time()%3
+}}}{{{#!style
+
+}}}{{{#!wiki class="sl"
+{{{#!wiki class="sl_node_1"
+{{{#!wiki class="sl_node_2"
+k\=@k@ 배열: {{{#!if calc_10=["안녕","반가워","또 봐"]
+}}}{{{#!if text_3=calc_10[k]
+}}}@text_3@}}}{{{#!wiki class="sl_node_4"
+k\=@k@ 도우미: {{{#!if calc_11=["안녕","반가워","또 봐"]
+}}}{{{#!if text_5=calc_11[k]
+}}}@text_5@}}}{{{#!wiki class="sl_node_6"
+k\=@k@ 객체: {{{#!if calc_12={"0":"일","1":"월","2":"화"}
+}}}{{{#!if text_7=calc_12[k]??"없음"
+}}}@text_7@}}}{{{#!wiki class="sl_node_8"
+범위 밖: {{{#!if calc_13=["안녕","반가워","또 봐"]
+}}}{{{#!if calc_14=calc_13?.[k+5]
+}}}{{{#!if text_9=calc_14??"기본값"
+}}}@text_9@}}}}}}}}}
