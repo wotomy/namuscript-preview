@@ -1,0 +1,16 @@
+{{{#!style
+.q div,.q table,.q tbody,.q tr{display:block;margin:0;background:none}.q td{display:none;border:0;padding:0}.v3 td:nth-child(4),.v0 td:nth-child(1),.v1 td:nth-child(2),.v2 td:nth-child(3){display:block}.qr,.q{background:#ddd;margin:2px}
+}}}
+W1
+{{{#!wiki class="q v3"
+||0||1||2||3||4||}}}
+W3
+{{{#!wiki class="q v0"
+|| ||1||2||}}}
+W5
+{{{#!wiki class="q v1 sw"
+||a||b||c||}}}{{{#!wiki tag="a" onclick="remove-class,sw,v1;add-class,sw,v2"
+다음}}}
+W6
+{{{#!wiki class="qr"
+3}}}
