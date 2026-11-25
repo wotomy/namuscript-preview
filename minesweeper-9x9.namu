@@ -1,0 +1,986 @@
+{{{#!if calc_658=time()%2147483646, seed=calc_658+1
+}}}{{{#!if arg_6=seed*48271%2147483647, calc_659=seed*48271%2147483647, arg_1=calc_659%81, arg_2=arg_1
+}}}{{{#!if arg_3=arg_2<27?0|1<<arg_2:0, arg_4=arg_2>26&&arg_2<54?0|1<<arg_2-27:0
+}}}{{{#!if arg_5=arg_2>53?0|1<<arg_2-54:0, arg_12=arg_6*48271%2147483647
+}}}{{{#!if calc_660=arg_6*48271%2147483647, arg_7=calc_660%81
+}}}{{{#!if arg_8=(arg_7<27?arg_3:arg_7<54?arg_4:arg_5)>>arg_7%27&1?(arg_7+1)%81:arg_7
+}}}{{{#!if arg_9=arg_8<27?arg_3|1<<arg_8:arg_3, arg_10=arg_8>26&&arg_8<54?arg_4|1<<arg_8-27:arg_4
+}}}{{{#!if arg_11=arg_8>53?arg_5|1<<arg_8-54:arg_5, arg_19=arg_12*48271%2147483647
+}}}{{{#!if calc_661=arg_12*48271%2147483647, arg_13=calc_661%81
+}}}{{{#!if arg_14=(arg_13<27?arg_9:arg_13<54?arg_10:arg_11)>>arg_13%27&1?(arg_13+1)%81:arg_13
+}}}{{{#!if arg_15=(arg_14<27?arg_9:arg_14<54?arg_10:arg_11)>>arg_14%27&1?(arg_14+1)%81:arg_14
+}}}{{{#!if arg_16=arg_15<27?arg_9|1<<arg_15:arg_9
+}}}{{{#!if arg_17=arg_15>26&&arg_15<54?arg_10|1<<arg_15-27:arg_10
+}}}{{{#!if arg_18=arg_15>53?arg_11|1<<arg_15-54:arg_11, arg_27=arg_19*48271%2147483647
+}}}{{{#!if calc_662=arg_19*48271%2147483647, arg_20=calc_662%81
+}}}{{{#!if arg_21=(arg_20<27?arg_16:arg_20<54?arg_17:arg_18)>>arg_20%27&1?(arg_20+1)%81:arg_20
+}}}{{{#!if arg_22=(arg_21<27?arg_16:arg_21<54?arg_17:arg_18)>>arg_21%27&1?(arg_21+1)%81:arg_21
+}}}{{{#!if arg_23=(arg_22<27?arg_16:arg_22<54?arg_17:arg_18)>>arg_22%27&1?(arg_22+1)%81:arg_22
+}}}{{{#!if arg_24=arg_23<27?arg_16|1<<arg_23:arg_16
+}}}{{{#!if arg_25=arg_23>26&&arg_23<54?arg_17|1<<arg_23-27:arg_17
+}}}{{{#!if arg_26=arg_23>53?arg_18|1<<arg_23-54:arg_18, arg_36=arg_27*48271%2147483647
+}}}{{{#!if calc_663=arg_27*48271%2147483647, arg_28=calc_663%81
+}}}{{{#!if arg_29=(arg_28<27?arg_24:arg_28<54?arg_25:arg_26)>>arg_28%27&1?(arg_28+1)%81:arg_28
+}}}{{{#!if arg_30=(arg_29<27?arg_24:arg_29<54?arg_25:arg_26)>>arg_29%27&1?(arg_29+1)%81:arg_29
+}}}{{{#!if arg_31=(arg_30<27?arg_24:arg_30<54?arg_25:arg_26)>>arg_30%27&1?(arg_30+1)%81:arg_30
+}}}{{{#!if arg_32=(arg_31<27?arg_24:arg_31<54?arg_25:arg_26)>>arg_31%27&1?(arg_31+1)%81:arg_31
+}}}{{{#!if arg_33=arg_32<27?arg_24|1<<arg_32:arg_24
+}}}{{{#!if arg_34=arg_32>26&&arg_32<54?arg_25|1<<arg_32-27:arg_25
+}}}{{{#!if arg_35=arg_32>53?arg_26|1<<arg_32-54:arg_26, arg_46=arg_36*48271%2147483647
+}}}{{{#!if calc_664=arg_36*48271%2147483647, arg_37=calc_664%81
+}}}{{{#!if arg_38=(arg_37<27?arg_33:arg_37<54?arg_34:arg_35)>>arg_37%27&1?(arg_37+1)%81:arg_37
+}}}{{{#!if arg_39=(arg_38<27?arg_33:arg_38<54?arg_34:arg_35)>>arg_38%27&1?(arg_38+1)%81:arg_38
+}}}{{{#!if arg_40=(arg_39<27?arg_33:arg_39<54?arg_34:arg_35)>>arg_39%27&1?(arg_39+1)%81:arg_39
+}}}{{{#!if arg_41=(arg_40<27?arg_33:arg_40<54?arg_34:arg_35)>>arg_40%27&1?(arg_40+1)%81:arg_40
+}}}{{{#!if arg_42=(arg_41<27?arg_33:arg_41<54?arg_34:arg_35)>>arg_41%27&1?(arg_41+1)%81:arg_41
+}}}{{{#!if arg_43=arg_42<27?arg_33|1<<arg_42:arg_33
+}}}{{{#!if arg_44=arg_42>26&&arg_42<54?arg_34|1<<arg_42-27:arg_34
+}}}{{{#!if arg_45=arg_42>53?arg_35|1<<arg_42-54:arg_35, arg_57=arg_46*48271%2147483647
+}}}{{{#!if calc_665=arg_46*48271%2147483647, arg_47=calc_665%81
+}}}{{{#!if arg_48=(arg_47<27?arg_43:arg_47<54?arg_44:arg_45)>>arg_47%27&1?(arg_47+1)%81:arg_47
+}}}{{{#!if arg_49=(arg_48<27?arg_43:arg_48<54?arg_44:arg_45)>>arg_48%27&1?(arg_48+1)%81:arg_48
+}}}{{{#!if arg_50=(arg_49<27?arg_43:arg_49<54?arg_44:arg_45)>>arg_49%27&1?(arg_49+1)%81:arg_49
+}}}{{{#!if arg_51=(arg_50<27?arg_43:arg_50<54?arg_44:arg_45)>>arg_50%27&1?(arg_50+1)%81:arg_50
+}}}{{{#!if arg_52=(arg_51<27?arg_43:arg_51<54?arg_44:arg_45)>>arg_51%27&1?(arg_51+1)%81:arg_51
+}}}{{{#!if arg_53=(arg_52<27?arg_43:arg_52<54?arg_44:arg_45)>>arg_52%27&1?(arg_52+1)%81:arg_52
+}}}{{{#!if arg_54=arg_53<27?arg_43|1<<arg_53:arg_43
+}}}{{{#!if arg_55=arg_53>26&&arg_53<54?arg_44|1<<arg_53-27:arg_44
+}}}{{{#!if arg_56=arg_53>53?arg_45|1<<arg_53-54:arg_45, arg_69=arg_57*48271%2147483647
+}}}{{{#!if calc_666=arg_57*48271%2147483647, arg_58=calc_666%81
+}}}{{{#!if arg_59=(arg_58<27?arg_54:arg_58<54?arg_55:arg_56)>>arg_58%27&1?(arg_58+1)%81:arg_58
+}}}{{{#!if arg_60=(arg_59<27?arg_54:arg_59<54?arg_55:arg_56)>>arg_59%27&1?(arg_59+1)%81:arg_59
+}}}{{{#!if arg_61=(arg_60<27?arg_54:arg_60<54?arg_55:arg_56)>>arg_60%27&1?(arg_60+1)%81:arg_60
+}}}{{{#!if arg_62=(arg_61<27?arg_54:arg_61<54?arg_55:arg_56)>>arg_61%27&1?(arg_61+1)%81:arg_61
+}}}{{{#!if arg_63=(arg_62<27?arg_54:arg_62<54?arg_55:arg_56)>>arg_62%27&1?(arg_62+1)%81:arg_62
+}}}{{{#!if arg_64=(arg_63<27?arg_54:arg_63<54?arg_55:arg_56)>>arg_63%27&1?(arg_63+1)%81:arg_63
+}}}{{{#!if arg_65=(arg_64<27?arg_54:arg_64<54?arg_55:arg_56)>>arg_64%27&1?(arg_64+1)%81:arg_64
+}}}{{{#!if arg_66=arg_65<27?arg_54|1<<arg_65:arg_54
+}}}{{{#!if arg_67=arg_65>26&&arg_65<54?arg_55|1<<arg_65-27:arg_55
+}}}{{{#!if arg_68=arg_65>53?arg_56|1<<arg_65-54:arg_56, arg_82=arg_69*48271%2147483647
+}}}{{{#!if calc_667=arg_69*48271%2147483647, arg_70=calc_667%81
+}}}{{{#!if arg_71=(arg_70<27?arg_66:arg_70<54?arg_67:arg_68)>>arg_70%27&1?(arg_70+1)%81:arg_70
+}}}{{{#!if arg_72=(arg_71<27?arg_66:arg_71<54?arg_67:arg_68)>>arg_71%27&1?(arg_71+1)%81:arg_71
+}}}{{{#!if arg_73=(arg_72<27?arg_66:arg_72<54?arg_67:arg_68)>>arg_72%27&1?(arg_72+1)%81:arg_72
+}}}{{{#!if arg_74=(arg_73<27?arg_66:arg_73<54?arg_67:arg_68)>>arg_73%27&1?(arg_73+1)%81:arg_73
+}}}{{{#!if arg_75=(arg_74<27?arg_66:arg_74<54?arg_67:arg_68)>>arg_74%27&1?(arg_74+1)%81:arg_74
+}}}{{{#!if arg_76=(arg_75<27?arg_66:arg_75<54?arg_67:arg_68)>>arg_75%27&1?(arg_75+1)%81:arg_75
+}}}{{{#!if arg_77=(arg_76<27?arg_66:arg_76<54?arg_67:arg_68)>>arg_76%27&1?(arg_76+1)%81:arg_76
+}}}{{{#!if arg_78=(arg_77<27?arg_66:arg_77<54?arg_67:arg_68)>>arg_77%27&1?(arg_77+1)%81:arg_77
+}}}{{{#!if arg_79=arg_78<27?arg_66|1<<arg_78:arg_66
+}}}{{{#!if arg_80=arg_78>26&&arg_78<54?arg_67|1<<arg_78-27:arg_67
+}}}{{{#!if arg_81=arg_78>53?arg_68|1<<arg_78-54:arg_68, arg_96=arg_82*48271%2147483647
+}}}{{{#!if calc_668=arg_82*48271%2147483647, arg_83=calc_668%81
+}}}{{{#!if arg_84=(arg_83<27?arg_79:arg_83<54?arg_80:arg_81)>>arg_83%27&1?(arg_83+1)%81:arg_83
+}}}{{{#!if arg_85=(arg_84<27?arg_79:arg_84<54?arg_80:arg_81)>>arg_84%27&1?(arg_84+1)%81:arg_84
+}}}{{{#!if arg_86=(arg_85<27?arg_79:arg_85<54?arg_80:arg_81)>>arg_85%27&1?(arg_85+1)%81:arg_85
+}}}{{{#!if arg_87=(arg_86<27?arg_79:arg_86<54?arg_80:arg_81)>>arg_86%27&1?(arg_86+1)%81:arg_86
+}}}{{{#!if arg_88=(arg_87<27?arg_79:arg_87<54?arg_80:arg_81)>>arg_87%27&1?(arg_87+1)%81:arg_87
+}}}{{{#!if arg_89=(arg_88<27?arg_79:arg_88<54?arg_80:arg_81)>>arg_88%27&1?(arg_88+1)%81:arg_88
+}}}{{{#!if arg_90=(arg_89<27?arg_79:arg_89<54?arg_80:arg_81)>>arg_89%27&1?(arg_89+1)%81:arg_89
+}}}{{{#!if arg_91=(arg_90<27?arg_79:arg_90<54?arg_80:arg_81)>>arg_90%27&1?(arg_90+1)%81:arg_90
+}}}{{{#!if arg_92=(arg_91<27?arg_79:arg_91<54?arg_80:arg_81)>>arg_91%27&1?(arg_91+1)%81:arg_91
+}}}{{{#!if arg_93=arg_92<27?arg_79|1<<arg_92:arg_79
+}}}{{{#!if arg_94=arg_92>26&&arg_92<54?arg_80|1<<arg_92-27:arg_80
+}}}{{{#!if arg_95=arg_92>53?arg_81|1<<arg_92-54:arg_81, placed_0=arg_93, placed_1=arg_94
+}}}{{{#!if placed_2=arg_95
+}}}{{{#!if mines_0=placed_0>>0&1, mines_1=placed_0>>1&1, mines_2=placed_0>>2&1, mines_3=placed_0>>3&1
+}}}{{{#!if mines_4=placed_0>>4&1, mines_5=placed_0>>5&1, mines_6=placed_0>>6&1, mines_7=placed_0>>7&1
+}}}{{{#!if mines_8=placed_0>>8&1
+}}}{{{#!if mines_9=placed_0>>9&1, mines_10=placed_0>>10&1, mines_11=placed_0>>11&1
+}}}{{{#!if mines_12=placed_0>>12&1, mines_13=placed_0>>13&1, mines_14=placed_0>>14&1
+}}}{{{#!if mines_15=placed_0>>15&1, mines_16=placed_0>>16&1, mines_17=placed_0>>17&1
+}}}{{{#!if mines_18=placed_0>>18&1, mines_19=placed_0>>19&1, mines_20=placed_0>>20&1
+}}}{{{#!if mines_21=placed_0>>21&1, mines_22=placed_0>>22&1, mines_23=placed_0>>23&1
+}}}{{{#!if mines_24=placed_0>>24&1, mines_25=placed_0>>25&1, mines_26=placed_0>>26&1
+}}}{{{#!if mines_27=placed_1>>0&1, mines_28=placed_1>>1&1, mines_29=placed_1>>2&1
+}}}{{{#!if mines_30=placed_1>>3&1, mines_31=placed_1>>4&1, mines_32=placed_1>>5&1
+}}}{{{#!if mines_33=placed_1>>6&1, mines_34=placed_1>>7&1, mines_35=placed_1>>8&1
+}}}{{{#!if mines_36=placed_1>>9&1, mines_37=placed_1>>10&1, mines_38=placed_1>>11&1
+}}}{{{#!if mines_39=placed_1>>12&1, mines_40=placed_1>>13&1, mines_41=placed_1>>14&1
+}}}{{{#!if mines_42=placed_1>>15&1, mines_43=placed_1>>16&1, mines_44=placed_1>>17&1
+}}}{{{#!if mines_45=placed_1>>18&1, mines_46=placed_1>>19&1, mines_47=placed_1>>20&1
+}}}{{{#!if mines_48=placed_1>>21&1, mines_49=placed_1>>22&1, mines_50=placed_1>>23&1
+}}}{{{#!if mines_51=placed_1>>24&1, mines_52=placed_1>>25&1, mines_53=placed_1>>26&1
+}}}{{{#!if mines_54=placed_2>>0&1, mines_55=placed_2>>1&1, mines_56=placed_2>>2&1
+}}}{{{#!if mines_57=placed_2>>3&1, mines_58=placed_2>>4&1, mines_59=placed_2>>5&1
+}}}{{{#!if mines_60=placed_2>>6&1, mines_61=placed_2>>7&1, mines_62=placed_2>>8&1
+}}}{{{#!if mines_63=placed_2>>9&1, mines_64=placed_2>>10&1, mines_65=placed_2>>11&1
+}}}{{{#!if mines_66=placed_2>>12&1, mines_67=placed_2>>13&1, mines_68=placed_2>>14&1
+}}}{{{#!if mines_69=placed_2>>15&1, mines_70=placed_2>>16&1, mines_71=placed_2>>17&1
+}}}{{{#!if mines_72=placed_2>>18&1, mines_73=placed_2>>19&1, mines_74=placed_2>>20&1
+}}}{{{#!if mines_75=placed_2>>21&1, mines_76=placed_2>>22&1, mines_77=placed_2>>23&1
+}}}{{{#!if mines_78=placed_2>>24&1, mines_79=placed_2>>25&1, mines_80=placed_2>>26&1
+}}}{{{#!if arg_97=0+mines_0*1, arg_98=arg_97+mines_1*16, arg_99=arg_98+mines_2*256
+}}}{{{#!if arg_100=arg_99+mines_3*4096, arg_101=arg_100+mines_4*65536, arg_102=arg_101+mines_5*1048576
+}}}{{{#!if arg_103=arg_102+mines_6*16777216, arg_104=arg_103+mines_7*268435456
+}}}{{{#!if spread_0=arg_104+mines_8*4294967296, arg_105=0+mines_9*1, arg_106=arg_105+mines_10*16
+}}}{{{#!if arg_107=arg_106+mines_11*256, arg_108=arg_107+mines_12*4096, arg_109=arg_108+mines_13*65536
+}}}{{{#!if arg_110=arg_109+mines_14*1048576, arg_111=arg_110+mines_15*16777216
+}}}{{{#!if arg_112=arg_111+mines_16*268435456, spread_1=arg_112+mines_17*4294967296
+}}}{{{#!if arg_113=0+mines_18*1, arg_114=arg_113+mines_19*16, arg_115=arg_114+mines_20*256
+}}}{{{#!if arg_116=arg_115+mines_21*4096, arg_117=arg_116+mines_22*65536
+}}}{{{#!if arg_118=arg_117+mines_23*1048576, arg_119=arg_118+mines_24*16777216
+}}}{{{#!if arg_120=arg_119+mines_25*268435456, spread_2=arg_120+mines_26*4294967296
+}}}{{{#!if arg_121=0+mines_27*1, arg_122=arg_121+mines_28*16, arg_123=arg_122+mines_29*256
+}}}{{{#!if arg_124=arg_123+mines_30*4096, arg_125=arg_124+mines_31*65536
+}}}{{{#!if arg_126=arg_125+mines_32*1048576, arg_127=arg_126+mines_33*16777216
+}}}{{{#!if arg_128=arg_127+mines_34*268435456, spread_3=arg_128+mines_35*4294967296
+}}}{{{#!if arg_129=0+mines_36*1, arg_130=arg_129+mines_37*16, arg_131=arg_130+mines_38*256
+}}}{{{#!if arg_132=arg_131+mines_39*4096, arg_133=arg_132+mines_40*65536
+}}}{{{#!if arg_134=arg_133+mines_41*1048576, arg_135=arg_134+mines_42*16777216
+}}}{{{#!if arg_136=arg_135+mines_43*268435456, spread_4=arg_136+mines_44*4294967296
+}}}{{{#!if arg_137=0+mines_45*1, arg_138=arg_137+mines_46*16, arg_139=arg_138+mines_47*256
+}}}{{{#!if arg_140=arg_139+mines_48*4096, arg_141=arg_140+mines_49*65536
+}}}{{{#!if arg_142=arg_141+mines_50*1048576, arg_143=arg_142+mines_51*16777216
+}}}{{{#!if arg_144=arg_143+mines_52*268435456, spread_5=arg_144+mines_53*4294967296
+}}}{{{#!if arg_145=0+mines_54*1, arg_146=arg_145+mines_55*16, arg_147=arg_146+mines_56*256
+}}}{{{#!if arg_148=arg_147+mines_57*4096, arg_149=arg_148+mines_58*65536
+}}}{{{#!if arg_150=arg_149+mines_59*1048576, arg_151=arg_150+mines_60*16777216
+}}}{{{#!if arg_152=arg_151+mines_61*268435456, spread_6=arg_152+mines_62*4294967296
+}}}{{{#!if arg_153=0+mines_63*1, arg_154=arg_153+mines_64*16, arg_155=arg_154+mines_65*256
+}}}{{{#!if arg_156=arg_155+mines_66*4096, arg_157=arg_156+mines_67*65536
+}}}{{{#!if arg_158=arg_157+mines_68*1048576, arg_159=arg_158+mines_69*16777216
+}}}{{{#!if arg_160=arg_159+mines_70*268435456, spread_7=arg_160+mines_71*4294967296
+}}}{{{#!if arg_161=0+mines_72*1, arg_162=arg_161+mines_73*16, arg_163=arg_162+mines_74*256
+}}}{{{#!if arg_164=arg_163+mines_75*4096, arg_165=arg_164+mines_76*65536
+}}}{{{#!if arg_166=arg_165+mines_77*1048576, arg_167=arg_166+mines_78*16777216
+}}}{{{#!if arg_168=arg_167+mines_79*268435456, spread_8=arg_168+mines_80*4294967296
+}}}{{{#!if column_0=0+spread_0+spread_1, column_1=spread_0+spread_1+spread_2
+}}}{{{#!if column_2=spread_1+spread_2+spread_3
+}}}{{{#!if column_3=spread_2+spread_3+spread_4, column_4=spread_3+spread_4+spread_5
+}}}{{{#!if column_5=spread_4+spread_5+spread_6
+}}}{{{#!if column_6=spread_5+spread_6+spread_7, column_7=spread_6+spread_7+spread_8
+}}}{{{#!if column_8=spread_7+spread_8+0
+}}}{{{#!if calc_670=column_0*17, calc_669=column_0-column_0%16, window_0=calc_670+calc_669/16
+}}}{{{#!if calc_672=column_1*17, calc_671=column_1-column_1%16, window_1=calc_672+calc_671/16
+}}}{{{#!if calc_674=column_2*17, calc_673=column_2-column_2%16, window_2=calc_674+calc_673/16
+}}}{{{#!if calc_676=column_3*17, calc_675=column_3-column_3%16, window_3=calc_676+calc_675/16
+}}}{{{#!if calc_678=column_4*17, calc_677=column_4-column_4%16, window_4=calc_678+calc_677/16
+}}}{{{#!if calc_680=column_5*17, calc_679=column_5-column_5%16, window_5=calc_680+calc_679/16
+}}}{{{#!if calc_682=column_6*17, calc_681=column_6-column_6%16, window_6=calc_682+calc_681/16
+}}}{{{#!if calc_684=column_7*17, calc_683=column_7-column_7%16, window_7=calc_684+calc_683/16
+}}}{{{#!if calc_686=column_8*17, calc_685=column_8-column_8%16, window_8=calc_686+calc_685/16
+}}}{{{#!if calc_687=window_0-window_0%1, counts_0=calc_687/1%16, calc_688=window_0-window_0%16
+}}}{{{#!if counts_1=calc_688/16%16, calc_689=window_0-window_0%256, counts_2=calc_689/256%16
+}}}{{{#!if calc_690=window_0-window_0%4096, counts_3=calc_690/4096%16, calc_691=window_0-window_0%65536
+}}}{{{#!if counts_4=calc_691/65536%16, calc_692=window_0-window_0%1048576, counts_5=calc_692/1048576%16
+}}}{{{#!if calc_693=window_0-window_0%16777216, counts_6=calc_693/16777216%16
+}}}{{{#!if calc_694=window_0-window_0%268435456, counts_7=calc_694/268435456%16
+}}}{{{#!if calc_695=window_0-window_0%4294967296, counts_8=calc_695/4294967296%16
+}}}{{{#!if calc_696=window_1-window_1%1, counts_9=calc_696/1%16, calc_697=window_1-window_1%16
+}}}{{{#!if counts_10=calc_697/16%16, calc_698=window_1-window_1%256, counts_11=calc_698/256%16
+}}}{{{#!if calc_699=window_1-window_1%4096, counts_12=calc_699/4096%16
+}}}{{{#!if calc_700=window_1-window_1%65536, counts_13=calc_700/65536%16
+}}}{{{#!if calc_701=window_1-window_1%1048576, counts_14=calc_701/1048576%16
+}}}{{{#!if calc_702=window_1-window_1%16777216, counts_15=calc_702/16777216%16
+}}}{{{#!if calc_703=window_1-window_1%268435456, counts_16=calc_703/268435456%16
+}}}{{{#!if calc_704=window_1-window_1%4294967296, counts_17=calc_704/4294967296%16
+}}}{{{#!if calc_705=window_2-window_2%1, counts_18=calc_705/1%16, calc_706=window_2-window_2%16
+}}}{{{#!if counts_19=calc_706/16%16, calc_707=window_2-window_2%256, counts_20=calc_707/256%16
+}}}{{{#!if calc_708=window_2-window_2%4096, counts_21=calc_708/4096%16
+}}}{{{#!if calc_709=window_2-window_2%65536, counts_22=calc_709/65536%16
+}}}{{{#!if calc_710=window_2-window_2%1048576, counts_23=calc_710/1048576%16
+}}}{{{#!if calc_711=window_2-window_2%16777216, counts_24=calc_711/16777216%16
+}}}{{{#!if calc_712=window_2-window_2%268435456, counts_25=calc_712/268435456%16
+}}}{{{#!if calc_713=window_2-window_2%4294967296, counts_26=calc_713/4294967296%16
+}}}{{{#!if calc_714=window_3-window_3%1, counts_27=calc_714/1%16, calc_715=window_3-window_3%16
+}}}{{{#!if counts_28=calc_715/16%16, calc_716=window_3-window_3%256, counts_29=calc_716/256%16
+}}}{{{#!if calc_717=window_3-window_3%4096, counts_30=calc_717/4096%16
+}}}{{{#!if calc_718=window_3-window_3%65536, counts_31=calc_718/65536%16
+}}}{{{#!if calc_719=window_3-window_3%1048576, counts_32=calc_719/1048576%16
+}}}{{{#!if calc_720=window_3-window_3%16777216, counts_33=calc_720/16777216%16
+}}}{{{#!if calc_721=window_3-window_3%268435456, counts_34=calc_721/268435456%16
+}}}{{{#!if calc_722=window_3-window_3%4294967296, counts_35=calc_722/4294967296%16
+}}}{{{#!if calc_723=window_4-window_4%1, counts_36=calc_723/1%16, calc_724=window_4-window_4%16
+}}}{{{#!if counts_37=calc_724/16%16, calc_725=window_4-window_4%256, counts_38=calc_725/256%16
+}}}{{{#!if calc_726=window_4-window_4%4096, counts_39=calc_726/4096%16
+}}}{{{#!if calc_727=window_4-window_4%65536, counts_40=calc_727/65536%16
+}}}{{{#!if calc_728=window_4-window_4%1048576, counts_41=calc_728/1048576%16
+}}}{{{#!if calc_729=window_4-window_4%16777216, counts_42=calc_729/16777216%16
+}}}{{{#!if calc_730=window_4-window_4%268435456, counts_43=calc_730/268435456%16
+}}}{{{#!if calc_731=window_4-window_4%4294967296, counts_44=calc_731/4294967296%16
+}}}{{{#!if calc_732=window_5-window_5%1, counts_45=calc_732/1%16, calc_733=window_5-window_5%16
+}}}{{{#!if counts_46=calc_733/16%16, calc_734=window_5-window_5%256, counts_47=calc_734/256%16
+}}}{{{#!if calc_735=window_5-window_5%4096, counts_48=calc_735/4096%16
+}}}{{{#!if calc_736=window_5-window_5%65536, counts_49=calc_736/65536%16
+}}}{{{#!if calc_737=window_5-window_5%1048576, counts_50=calc_737/1048576%16
+}}}{{{#!if calc_738=window_5-window_5%16777216, counts_51=calc_738/16777216%16
+}}}{{{#!if calc_739=window_5-window_5%268435456, counts_52=calc_739/268435456%16
+}}}{{{#!if calc_740=window_5-window_5%4294967296, counts_53=calc_740/4294967296%16
+}}}{{{#!if calc_741=window_6-window_6%1, counts_54=calc_741/1%16, calc_742=window_6-window_6%16
+}}}{{{#!if counts_55=calc_742/16%16, calc_743=window_6-window_6%256, counts_56=calc_743/256%16
+}}}{{{#!if calc_744=window_6-window_6%4096, counts_57=calc_744/4096%16
+}}}{{{#!if calc_745=window_6-window_6%65536, counts_58=calc_745/65536%16
+}}}{{{#!if calc_746=window_6-window_6%1048576, counts_59=calc_746/1048576%16
+}}}{{{#!if calc_747=window_6-window_6%16777216, counts_60=calc_747/16777216%16
+}}}{{{#!if calc_748=window_6-window_6%268435456, counts_61=calc_748/268435456%16
+}}}{{{#!if calc_749=window_6-window_6%4294967296, counts_62=calc_749/4294967296%16
+}}}{{{#!if calc_750=window_7-window_7%1, counts_63=calc_750/1%16, calc_751=window_7-window_7%16
+}}}{{{#!if counts_64=calc_751/16%16, calc_752=window_7-window_7%256, counts_65=calc_752/256%16
+}}}{{{#!if calc_753=window_7-window_7%4096, counts_66=calc_753/4096%16
+}}}{{{#!if calc_754=window_7-window_7%65536, counts_67=calc_754/65536%16
+}}}{{{#!if calc_755=window_7-window_7%1048576, counts_68=calc_755/1048576%16
+}}}{{{#!if calc_756=window_7-window_7%16777216, counts_69=calc_756/16777216%16
+}}}{{{#!if calc_757=window_7-window_7%268435456, counts_70=calc_757/268435456%16
+}}}{{{#!if calc_758=window_7-window_7%4294967296, counts_71=calc_758/4294967296%16
+}}}{{{#!if calc_759=window_8-window_8%1, counts_72=calc_759/1%16, calc_760=window_8-window_8%16
+}}}{{{#!if counts_73=calc_760/16%16, calc_761=window_8-window_8%256, counts_74=calc_761/256%16
+}}}{{{#!if calc_762=window_8-window_8%4096, counts_75=calc_762/4096%16
+}}}{{{#!if calc_763=window_8-window_8%65536, counts_76=calc_763/65536%16
+}}}{{{#!if calc_764=window_8-window_8%1048576, counts_77=calc_764/1048576%16
+}}}{{{#!if calc_765=window_8-window_8%16777216, counts_78=calc_765/16777216%16
+}}}{{{#!if calc_766=window_8-window_8%268435456, counts_79=calc_766/268435456%16
+}}}{{{#!if calc_767=window_8-window_8%4294967296, counts_80=calc_767/4294967296%16
+}}}{{{#!if kind_0=mines_0?9:counts_0, kind_1=mines_1?9:counts_1, kind_2=mines_2?9:counts_2
+}}}{{{#!if kind_3=mines_3?9:counts_3, kind_4=mines_4?9:counts_4, kind_5=mines_5?9:counts_5
+}}}{{{#!if kind_6=mines_6?9:counts_6, kind_7=mines_7?9:counts_7, kind_8=mines_8?9:counts_8
+}}}{{{#!if kind_9=mines_9?9:counts_9, kind_10=mines_10?9:counts_10, kind_11=mines_11?9:counts_11
+}}}{{{#!if kind_12=mines_12?9:counts_12, kind_13=mines_13?9:counts_13, kind_14=mines_14?9:counts_14
+}}}{{{#!if kind_15=mines_15?9:counts_15, kind_16=mines_16?9:counts_16, kind_17=mines_17?9:counts_17
+}}}{{{#!if kind_18=mines_18?9:counts_18, kind_19=mines_19?9:counts_19, kind_20=mines_20?9:counts_20
+}}}{{{#!if kind_21=mines_21?9:counts_21, kind_22=mines_22?9:counts_22, kind_23=mines_23?9:counts_23
+}}}{{{#!if kind_24=mines_24?9:counts_24, kind_25=mines_25?9:counts_25, kind_26=mines_26?9:counts_26
+}}}{{{#!if kind_27=mines_27?9:counts_27, kind_28=mines_28?9:counts_28, kind_29=mines_29?9:counts_29
+}}}{{{#!if kind_30=mines_30?9:counts_30, kind_31=mines_31?9:counts_31, kind_32=mines_32?9:counts_32
+}}}{{{#!if kind_33=mines_33?9:counts_33, kind_34=mines_34?9:counts_34, kind_35=mines_35?9:counts_35
+}}}{{{#!if kind_36=mines_36?9:counts_36, kind_37=mines_37?9:counts_37, kind_38=mines_38?9:counts_38
+}}}{{{#!if kind_39=mines_39?9:counts_39, kind_40=mines_40?9:counts_40, kind_41=mines_41?9:counts_41
+}}}{{{#!if kind_42=mines_42?9:counts_42, kind_43=mines_43?9:counts_43, kind_44=mines_44?9:counts_44
+}}}{{{#!if kind_45=mines_45?9:counts_45, kind_46=mines_46?9:counts_46, kind_47=mines_47?9:counts_47
+}}}{{{#!if kind_48=mines_48?9:counts_48, kind_49=mines_49?9:counts_49, kind_50=mines_50?9:counts_50
+}}}{{{#!if kind_51=mines_51?9:counts_51, kind_52=mines_52?9:counts_52, kind_53=mines_53?9:counts_53
+}}}{{{#!if kind_54=mines_54?9:counts_54, kind_55=mines_55?9:counts_55, kind_56=mines_56?9:counts_56
+}}}{{{#!if kind_57=mines_57?9:counts_57, kind_58=mines_58?9:counts_58, kind_59=mines_59?9:counts_59
+}}}{{{#!if kind_60=mines_60?9:counts_60, kind_61=mines_61?9:counts_61, kind_62=mines_62?9:counts_62
+}}}{{{#!if kind_63=mines_63?9:counts_63, kind_64=mines_64?9:counts_64, kind_65=mines_65?9:counts_65
+}}}{{{#!if kind_66=mines_66?9:counts_66, kind_67=mines_67?9:counts_67, kind_68=mines_68?9:counts_68
+}}}{{{#!if kind_69=mines_69?9:counts_69, kind_70=mines_70?9:counts_70, kind_71=mines_71?9:counts_71
+}}}{{{#!if kind_72=mines_72?9:counts_72, kind_73=mines_73?9:counts_73, kind_74=mines_74?9:counts_74
+}}}{{{#!if kind_75=mines_75?9:counts_75, kind_76=mines_76?9:counts_76, kind_77=mines_77?9:counts_77
+}}}{{{#!if kind_78=mines_78?9:counts_78, kind_79=mines_79?9:counts_79, kind_80=mines_80?9:counts_80
+}}}{{{#!if labels_0=mines_0?"💣":counts_0, labels_1=mines_1?"💣":counts_1
+}}}{{{#!if labels_2=mines_2?"💣":counts_2, labels_3=mines_3?"💣":counts_3
+}}}{{{#!if labels_4=mines_4?"💣":counts_4, labels_5=mines_5?"💣":counts_5
+}}}{{{#!if labels_6=mines_6?"💣":counts_6, labels_7=mines_7?"💣":counts_7
+}}}{{{#!if labels_8=mines_8?"💣":counts_8
+}}}{{{#!if labels_9=mines_9?"💣":counts_9, labels_10=mines_10?"💣":counts_10
+}}}{{{#!if labels_11=mines_11?"💣":counts_11, labels_12=mines_12?"💣":counts_12
+}}}{{{#!if labels_13=mines_13?"💣":counts_13, labels_14=mines_14?"💣":counts_14
+}}}{{{#!if labels_15=mines_15?"💣":counts_15, labels_16=mines_16?"💣":counts_16
+}}}{{{#!if labels_17=mines_17?"💣":counts_17
+}}}{{{#!if labels_18=mines_18?"💣":counts_18, labels_19=mines_19?"💣":counts_19
+}}}{{{#!if labels_20=mines_20?"💣":counts_20, labels_21=mines_21?"💣":counts_21
+}}}{{{#!if labels_22=mines_22?"💣":counts_22, labels_23=mines_23?"💣":counts_23
+}}}{{{#!if labels_24=mines_24?"💣":counts_24, labels_25=mines_25?"💣":counts_25
+}}}{{{#!if labels_26=mines_26?"💣":counts_26
+}}}{{{#!if labels_27=mines_27?"💣":counts_27, labels_28=mines_28?"💣":counts_28
+}}}{{{#!if labels_29=mines_29?"💣":counts_29, labels_30=mines_30?"💣":counts_30
+}}}{{{#!if labels_31=mines_31?"💣":counts_31, labels_32=mines_32?"💣":counts_32
+}}}{{{#!if labels_33=mines_33?"💣":counts_33, labels_34=mines_34?"💣":counts_34
+}}}{{{#!if labels_35=mines_35?"💣":counts_35
+}}}{{{#!if labels_36=mines_36?"💣":counts_36, labels_37=mines_37?"💣":counts_37
+}}}{{{#!if labels_38=mines_38?"💣":counts_38, labels_39=mines_39?"💣":counts_39
+}}}{{{#!if labels_40=mines_40?"💣":counts_40, labels_41=mines_41?"💣":counts_41
+}}}{{{#!if labels_42=mines_42?"💣":counts_42, labels_43=mines_43?"💣":counts_43
+}}}{{{#!if labels_44=mines_44?"💣":counts_44
+}}}{{{#!if labels_45=mines_45?"💣":counts_45, labels_46=mines_46?"💣":counts_46
+}}}{{{#!if labels_47=mines_47?"💣":counts_47, labels_48=mines_48?"💣":counts_48
+}}}{{{#!if labels_49=mines_49?"💣":counts_49, labels_50=mines_50?"💣":counts_50
+}}}{{{#!if labels_51=mines_51?"💣":counts_51, labels_52=mines_52?"💣":counts_52
+}}}{{{#!if labels_53=mines_53?"💣":counts_53
+}}}{{{#!if labels_54=mines_54?"💣":counts_54, labels_55=mines_55?"💣":counts_55
+}}}{{{#!if labels_56=mines_56?"💣":counts_56, labels_57=mines_57?"💣":counts_57
+}}}{{{#!if labels_58=mines_58?"💣":counts_58, labels_59=mines_59?"💣":counts_59
+}}}{{{#!if labels_60=mines_60?"💣":counts_60, labels_61=mines_61?"💣":counts_61
+}}}{{{#!if labels_62=mines_62?"💣":counts_62
+}}}{{{#!if labels_63=mines_63?"💣":counts_63, labels_64=mines_64?"💣":counts_64
+}}}{{{#!if labels_65=mines_65?"💣":counts_65, labels_66=mines_66?"💣":counts_66
+}}}{{{#!if labels_67=mines_67?"💣":counts_67, labels_68=mines_68?"💣":counts_68
+}}}{{{#!if labels_69=mines_69?"💣":counts_69, labels_70=mines_70?"💣":counts_70
+}}}{{{#!if labels_71=mines_71?"💣":counts_71
+}}}{{{#!if labels_72=mines_72?"💣":counts_72, labels_73=mines_73?"💣":counts_73
+}}}{{{#!if labels_74=mines_74?"💣":counts_74, labels_75=mines_75?"💣":counts_75
+}}}{{{#!if labels_76=mines_76?"💣":counts_76, labels_77=mines_77?"💣":counts_77
+}}}{{{#!if labels_78=mines_78?"💣":counts_78, labels_79=mines_79?"💣":counts_79
+}}}{{{#!if labels_80=mines_80?"💣":counts_80
+}}}{{{#!if value_250=mines_0==1, value_252=mines_1==1, value_254=mines_2==1, value_256=mines_3==1
+}}}{{{#!if value_258=mines_4==1, value_260=mines_5==1, value_262=mines_6==1, value_264=mines_7==1
+}}}{{{#!if value_266=mines_8==1, value_268=mines_9==1, value_270=mines_10==1, value_272=mines_11==1
+}}}{{{#!if value_274=mines_12==1, value_276=mines_13==1, value_278=mines_14==1, value_280=mines_15==1
+}}}{{{#!if value_282=mines_16==1, value_284=mines_17==1, value_286=mines_18==1, value_288=mines_19==1
+}}}{{{#!if value_290=mines_20==1, value_292=mines_21==1, value_294=mines_22==1, value_296=mines_23==1
+}}}{{{#!if value_298=mines_24==1, value_300=mines_25==1, value_302=mines_26==1, value_304=mines_27==1
+}}}{{{#!if value_306=mines_28==1, value_308=mines_29==1, value_310=mines_30==1, value_312=mines_31==1
+}}}{{{#!if value_314=mines_32==1, value_316=mines_33==1, value_318=mines_34==1, value_320=mines_35==1
+}}}{{{#!if value_322=mines_36==1, value_324=mines_37==1, value_326=mines_38==1, value_328=mines_39==1
+}}}{{{#!if value_330=mines_40==1, value_332=mines_41==1, value_334=mines_42==1, value_336=mines_43==1
+}}}{{{#!if value_338=mines_44==1, value_340=mines_45==1, value_342=mines_46==1, value_344=mines_47==1
+}}}{{{#!if value_346=mines_48==1, value_348=mines_49==1, value_350=mines_50==1, value_352=mines_51==1
+}}}{{{#!if value_354=mines_52==1, value_356=mines_53==1, value_358=mines_54==1, value_360=mines_55==1
+}}}{{{#!if value_362=mines_56==1, value_364=mines_57==1, value_366=mines_58==1, value_368=mines_59==1
+}}}{{{#!if value_370=mines_60==1, value_372=mines_61==1, value_374=mines_62==1, value_376=mines_63==1
+}}}{{{#!if value_378=mines_64==1, value_380=mines_65==1, value_382=mines_66==1, value_384=mines_67==1
+}}}{{{#!if value_386=mines_68==1, value_388=mines_69==1, value_390=mines_70==1, value_392=mines_71==1
+}}}{{{#!if value_394=mines_72==1, value_396=mines_73==1, value_398=mines_74==1, value_400=mines_75==1
+}}}{{{#!if value_402=mines_76==1, value_404=mines_77==1, value_406=mines_78==1, value_408=mines_79==1
+}}}{{{#!if value_410=mines_80==1
+}}}{{{#!if commands_657=";add-class,minesweeper_9x9_node_494,minesweeper_9x9-lost"
+}}}{{{#!style
+.minesweeper_9x9-game { width: 432px; max-width: 100%; padding: 12px; margin: 12px auto; border: 1px solid #b8c4d4; border-radius: 12px; background: #f1f5f9; color: #17365a; }
+.minesweeper_9x9-title { font-size: 20px; font-weight: bold; margin-bottom: 8px; }
+.minesweeper_9x9-playing, .minesweeper_9x9-won, .minesweeper_9x9-lost-message, .minesweeper_9x9-help { font-size: 12px; }
+.minesweeper_9x9-playing, .minesweeper_9x9-won, .minesweeper_9x9-lost-message { margin-bottom: 8px; }
+.minesweeper_9x9-row { display: flex; gap: 3px; margin-top: 3px; }
+.minesweeper_9x9-cell { width: 11.111%; height: 38px; border: 1px solid #b4c6df; border-radius: 4px; overflow: hidden; background: #dce6f2; text-align: center; }
+.minesweeper_9x9-cover, .minesweeper_9x9-flag, .minesweeper_9x9-answer { display: flex; align-items: center; justify-content: center; height: 38px; padding: 0; font-size: 17px; font-weight: bold; }
+.minesweeper_9x9-cover { background: #dce6f2; cursor: pointer; }
+.minesweeper_9x9-cover:hover { background: #c9d7ea; }
+.minesweeper_9x9-flag { width: 15px; height: 15px; margin: -37px 1px 22px auto; border-radius: 3px; background: #f8fafc; font-size: 9px; cursor: pointer; }
+.minesweeper_9x9-flag:hover { background: #fde68a; }
+.minesweeper_9x9-answer { background: #fff; }
+.minesweeper_9x9-n9 .minesweeper_9x9-answer { background: #fee2e2; }
+.minesweeper_9x9-n0 .minesweeper_9x9-answer { color: transparent; }
+.minesweeper_9x9-n1 .minesweeper_9x9-answer { color: #245aff; }
+.minesweeper_9x9-n2 .minesweeper_9x9-answer { color: #008846; }
+.minesweeper_9x9-n3 .minesweeper_9x9-answer { color: #cc3030; }
+.minesweeper_9x9-n4 .minesweeper_9x9-answer { color: #9a46ad; }
+.minesweeper_9x9-n5 .minesweeper_9x9-answer { color: #b45309; }
+.minesweeper_9x9-n6 .minesweeper_9x9-answer { color: #0e7490; }
+.minesweeper_9x9-n7 .minesweeper_9x9-answer { color: #334155; }
+.minesweeper_9x9-n8 .minesweeper_9x9-answer { color: #64748b; }
+/* 답은 버튼 아래에 있어 칸 높이(overflow: hidden) 밖에 가려지고, 버튼을 숨기면 올라와 보입니다. */
+.minesweeper_9x9-won, .minesweeper_9x9-lost-message { display: none; }
+.minesweeper_9x9-game .minesweeper_9x9-cell.minesweeper_9x9-flagged .minesweeper_9x9-cover { display: none; }
+.minesweeper_9x9-game .minesweeper_9x9-cell.minesweeper_9x9-flagged .minesweeper_9x9-flag { width: auto; height: 38px; margin: 0; border-radius: 0; background: #dce6f2; font-size: 17px; }
+.minesweeper_9x9-help { margin-top: 8px; }
+.minesweeper_9x9-w0 .minesweeper_9x9-s0 .minesweeper_9x9-cover, .minesweeper_9x9-w0 .minesweeper_9x9-s0 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w1 .minesweeper_9x9-s1 .minesweeper_9x9-cover, .minesweeper_9x9-w1 .minesweeper_9x9-s1 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w2 .minesweeper_9x9-s2 .minesweeper_9x9-cover, .minesweeper_9x9-w2 .minesweeper_9x9-s2 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w3 .minesweeper_9x9-s3 .minesweeper_9x9-cover, .minesweeper_9x9-w3 .minesweeper_9x9-s3 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w4 .minesweeper_9x9-s4 .minesweeper_9x9-cover, .minesweeper_9x9-w4 .minesweeper_9x9-s4 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w5 .minesweeper_9x9-s5 .minesweeper_9x9-cover, .minesweeper_9x9-w5 .minesweeper_9x9-s5 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w6 .minesweeper_9x9-s6 .minesweeper_9x9-cover, .minesweeper_9x9-w6 .minesweeper_9x9-s6 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w7 .minesweeper_9x9-s7 .minesweeper_9x9-cover, .minesweeper_9x9-w7 .minesweeper_9x9-s7 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w8 .minesweeper_9x9-s8 .minesweeper_9x9-cover, .minesweeper_9x9-w8 .minesweeper_9x9-s8 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w9 .minesweeper_9x9-s9 .minesweeper_9x9-cover, .minesweeper_9x9-w9 .minesweeper_9x9-s9 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w10 .minesweeper_9x9-s10 .minesweeper_9x9-cover, .minesweeper_9x9-w10 .minesweeper_9x9-s10 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w11 .minesweeper_9x9-s11 .minesweeper_9x9-cover, .minesweeper_9x9-w11 .minesweeper_9x9-s11 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w12 .minesweeper_9x9-s12 .minesweeper_9x9-cover, .minesweeper_9x9-w12 .minesweeper_9x9-s12 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w13 .minesweeper_9x9-s13 .minesweeper_9x9-cover, .minesweeper_9x9-w13 .minesweeper_9x9-s13 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w14 .minesweeper_9x9-s14 .minesweeper_9x9-cover, .minesweeper_9x9-w14 .minesweeper_9x9-s14 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w15 .minesweeper_9x9-s15 .minesweeper_9x9-cover, .minesweeper_9x9-w15 .minesweeper_9x9-s15 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w16 .minesweeper_9x9-s16 .minesweeper_9x9-cover, .minesweeper_9x9-w16 .minesweeper_9x9-s16 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w17 .minesweeper_9x9-s17 .minesweeper_9x9-cover, .minesweeper_9x9-w17 .minesweeper_9x9-s17 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w18 .minesweeper_9x9-s18 .minesweeper_9x9-cover, .minesweeper_9x9-w18 .minesweeper_9x9-s18 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w19 .minesweeper_9x9-s19 .minesweeper_9x9-cover, .minesweeper_9x9-w19 .minesweeper_9x9-s19 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w20 .minesweeper_9x9-s20 .minesweeper_9x9-cover, .minesweeper_9x9-w20 .minesweeper_9x9-s20 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w21 .minesweeper_9x9-s21 .minesweeper_9x9-cover, .minesweeper_9x9-w21 .minesweeper_9x9-s21 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w22 .minesweeper_9x9-s22 .minesweeper_9x9-cover, .minesweeper_9x9-w22 .minesweeper_9x9-s22 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w23 .minesweeper_9x9-s23 .minesweeper_9x9-cover, .minesweeper_9x9-w23 .minesweeper_9x9-s23 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w24 .minesweeper_9x9-s24 .minesweeper_9x9-cover, .minesweeper_9x9-w24 .minesweeper_9x9-s24 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w25 .minesweeper_9x9-s25 .minesweeper_9x9-cover, .minesweeper_9x9-w25 .minesweeper_9x9-s25 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w26 .minesweeper_9x9-s26 .minesweeper_9x9-cover, .minesweeper_9x9-w26 .minesweeper_9x9-s26 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w27 .minesweeper_9x9-s27 .minesweeper_9x9-cover, .minesweeper_9x9-w27 .minesweeper_9x9-s27 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w28 .minesweeper_9x9-s28 .minesweeper_9x9-cover, .minesweeper_9x9-w28 .minesweeper_9x9-s28 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w29 .minesweeper_9x9-s29 .minesweeper_9x9-cover, .minesweeper_9x9-w29 .minesweeper_9x9-s29 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w30 .minesweeper_9x9-s30 .minesweeper_9x9-cover, .minesweeper_9x9-w30 .minesweeper_9x9-s30 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w31 .minesweeper_9x9-s31 .minesweeper_9x9-cover, .minesweeper_9x9-w31 .minesweeper_9x9-s31 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w32 .minesweeper_9x9-s32 .minesweeper_9x9-cover, .minesweeper_9x9-w32 .minesweeper_9x9-s32 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w33 .minesweeper_9x9-s33 .minesweeper_9x9-cover, .minesweeper_9x9-w33 .minesweeper_9x9-s33 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w34 .minesweeper_9x9-s34 .minesweeper_9x9-cover, .minesweeper_9x9-w34 .minesweeper_9x9-s34 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w35 .minesweeper_9x9-s35 .minesweeper_9x9-cover, .minesweeper_9x9-w35 .minesweeper_9x9-s35 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w36 .minesweeper_9x9-s36 .minesweeper_9x9-cover, .minesweeper_9x9-w36 .minesweeper_9x9-s36 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w37 .minesweeper_9x9-s37 .minesweeper_9x9-cover, .minesweeper_9x9-w37 .minesweeper_9x9-s37 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w38 .minesweeper_9x9-s38 .minesweeper_9x9-cover, .minesweeper_9x9-w38 .minesweeper_9x9-s38 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w39 .minesweeper_9x9-s39 .minesweeper_9x9-cover, .minesweeper_9x9-w39 .minesweeper_9x9-s39 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w40 .minesweeper_9x9-s40 .minesweeper_9x9-cover, .minesweeper_9x9-w40 .minesweeper_9x9-s40 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w41 .minesweeper_9x9-s41 .minesweeper_9x9-cover, .minesweeper_9x9-w41 .minesweeper_9x9-s41 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w42 .minesweeper_9x9-s42 .minesweeper_9x9-cover, .minesweeper_9x9-w42 .minesweeper_9x9-s42 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w43 .minesweeper_9x9-s43 .minesweeper_9x9-cover, .minesweeper_9x9-w43 .minesweeper_9x9-s43 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w44 .minesweeper_9x9-s44 .minesweeper_9x9-cover, .minesweeper_9x9-w44 .minesweeper_9x9-s44 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w45 .minesweeper_9x9-s45 .minesweeper_9x9-cover, .minesweeper_9x9-w45 .minesweeper_9x9-s45 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w46 .minesweeper_9x9-s46 .minesweeper_9x9-cover, .minesweeper_9x9-w46 .minesweeper_9x9-s46 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w47 .minesweeper_9x9-s47 .minesweeper_9x9-cover, .minesweeper_9x9-w47 .minesweeper_9x9-s47 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w48 .minesweeper_9x9-s48 .minesweeper_9x9-cover, .minesweeper_9x9-w48 .minesweeper_9x9-s48 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w49 .minesweeper_9x9-s49 .minesweeper_9x9-cover, .minesweeper_9x9-w49 .minesweeper_9x9-s49 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w50 .minesweeper_9x9-s50 .minesweeper_9x9-cover, .minesweeper_9x9-w50 .minesweeper_9x9-s50 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w51 .minesweeper_9x9-s51 .minesweeper_9x9-cover, .minesweeper_9x9-w51 .minesweeper_9x9-s51 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w52 .minesweeper_9x9-s52 .minesweeper_9x9-cover, .minesweeper_9x9-w52 .minesweeper_9x9-s52 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w53 .minesweeper_9x9-s53 .minesweeper_9x9-cover, .minesweeper_9x9-w53 .minesweeper_9x9-s53 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w54 .minesweeper_9x9-s54 .minesweeper_9x9-cover, .minesweeper_9x9-w54 .minesweeper_9x9-s54 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w55 .minesweeper_9x9-s55 .minesweeper_9x9-cover, .minesweeper_9x9-w55 .minesweeper_9x9-s55 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w56 .minesweeper_9x9-s56 .minesweeper_9x9-cover, .minesweeper_9x9-w56 .minesweeper_9x9-s56 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w57 .minesweeper_9x9-s57 .minesweeper_9x9-cover, .minesweeper_9x9-w57 .minesweeper_9x9-s57 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w58 .minesweeper_9x9-s58 .minesweeper_9x9-cover, .minesweeper_9x9-w58 .minesweeper_9x9-s58 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w59 .minesweeper_9x9-s59 .minesweeper_9x9-cover, .minesweeper_9x9-w59 .minesweeper_9x9-s59 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w60 .minesweeper_9x9-s60 .minesweeper_9x9-cover, .minesweeper_9x9-w60 .minesweeper_9x9-s60 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w61 .minesweeper_9x9-s61 .minesweeper_9x9-cover, .minesweeper_9x9-w61 .minesweeper_9x9-s61 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w62 .minesweeper_9x9-s62 .minesweeper_9x9-cover, .minesweeper_9x9-w62 .minesweeper_9x9-s62 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w63 .minesweeper_9x9-s63 .minesweeper_9x9-cover, .minesweeper_9x9-w63 .minesweeper_9x9-s63 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w64 .minesweeper_9x9-s64 .minesweeper_9x9-cover, .minesweeper_9x9-w64 .minesweeper_9x9-s64 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w65 .minesweeper_9x9-s65 .minesweeper_9x9-cover, .minesweeper_9x9-w65 .minesweeper_9x9-s65 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w66 .minesweeper_9x9-s66 .minesweeper_9x9-cover, .minesweeper_9x9-w66 .minesweeper_9x9-s66 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w67 .minesweeper_9x9-s67 .minesweeper_9x9-cover, .minesweeper_9x9-w67 .minesweeper_9x9-s67 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w68 .minesweeper_9x9-s68 .minesweeper_9x9-cover, .minesweeper_9x9-w68 .minesweeper_9x9-s68 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w69 .minesweeper_9x9-s69 .minesweeper_9x9-cover, .minesweeper_9x9-w69 .minesweeper_9x9-s69 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w70 .minesweeper_9x9-s70 .minesweeper_9x9-cover, .minesweeper_9x9-w70 .minesweeper_9x9-s70 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w71 .minesweeper_9x9-s71 .minesweeper_9x9-cover, .minesweeper_9x9-w71 .minesweeper_9x9-s71 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w72 .minesweeper_9x9-s72 .minesweeper_9x9-cover, .minesweeper_9x9-w72 .minesweeper_9x9-s72 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w73 .minesweeper_9x9-s73 .minesweeper_9x9-cover, .minesweeper_9x9-w73 .minesweeper_9x9-s73 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w74 .minesweeper_9x9-s74 .minesweeper_9x9-cover, .minesweeper_9x9-w74 .minesweeper_9x9-s74 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w75 .minesweeper_9x9-s75 .minesweeper_9x9-cover, .minesweeper_9x9-w75 .minesweeper_9x9-s75 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w76 .minesweeper_9x9-s76 .minesweeper_9x9-cover, .minesweeper_9x9-w76 .minesweeper_9x9-s76 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w77 .minesweeper_9x9-s77 .minesweeper_9x9-cover, .minesweeper_9x9-w77 .minesweeper_9x9-s77 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w78 .minesweeper_9x9-s78 .minesweeper_9x9-cover, .minesweeper_9x9-w78 .minesweeper_9x9-s78 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w79 .minesweeper_9x9-s79 .minesweeper_9x9-cover, .minesweeper_9x9-w79 .minesweeper_9x9-s79 .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-w80 .minesweeper_9x9-s80 .minesweeper_9x9-cover, .minesweeper_9x9-w80 .minesweeper_9x9-s80 .minesweeper_9x9-flag { display: none; }
+/* 지뢰 칸의 w는 처음부터 붙어 있으므로 버튼을 다시 보입니다. 깃발·패배·승리 규칙이 더 구체적이라 그쪽이 이깁니다. */
+.minesweeper_9x9-game .minesweeper_9x9-n9 .minesweeper_9x9-cover, .minesweeper_9x9-game .minesweeper_9x9-n9 .minesweeper_9x9-flag { display: flex; }
+.minesweeper_9x9-game.minesweeper_9x9-game.minesweeper_9x9-w0.minesweeper_9x9-w1.minesweeper_9x9-w2.minesweeper_9x9-w3.minesweeper_9x9-w4.minesweeper_9x9-w5.minesweeper_9x9-w6.minesweeper_9x9-w7.minesweeper_9x9-w8.minesweeper_9x9-w9.minesweeper_9x9-w10.minesweeper_9x9-w11.minesweeper_9x9-w12.minesweeper_9x9-w13.minesweeper_9x9-w14.minesweeper_9x9-w15.minesweeper_9x9-w16.minesweeper_9x9-w17.minesweeper_9x9-w18.minesweeper_9x9-w19.minesweeper_9x9-w20.minesweeper_9x9-w21.minesweeper_9x9-w22.minesweeper_9x9-w23.minesweeper_9x9-w24.minesweeper_9x9-w25.minesweeper_9x9-w26.minesweeper_9x9-w27.minesweeper_9x9-w28.minesweeper_9x9-w29.minesweeper_9x9-w30.minesweeper_9x9-w31.minesweeper_9x9-w32.minesweeper_9x9-w33.minesweeper_9x9-w34.minesweeper_9x9-w35.minesweeper_9x9-w36.minesweeper_9x9-w37.minesweeper_9x9-w38.minesweeper_9x9-w39.minesweeper_9x9-w40.minesweeper_9x9-w41.minesweeper_9x9-w42.minesweeper_9x9-w43.minesweeper_9x9-w44.minesweeper_9x9-w45.minesweeper_9x9-w46.minesweeper_9x9-w47.minesweeper_9x9-w48.minesweeper_9x9-w49.minesweeper_9x9-w50.minesweeper_9x9-w51.minesweeper_9x9-w52.minesweeper_9x9-w53.minesweeper_9x9-w54.minesweeper_9x9-w55.minesweeper_9x9-w56.minesweeper_9x9-w57.minesweeper_9x9-w58.minesweeper_9x9-w59.minesweeper_9x9-w60.minesweeper_9x9-w61.minesweeper_9x9-w62.minesweeper_9x9-w63.minesweeper_9x9-w64.minesweeper_9x9-w65.minesweeper_9x9-w66.minesweeper_9x9-w67.minesweeper_9x9-w68.minesweeper_9x9-w69.minesweeper_9x9-w70.minesweeper_9x9-w71.minesweeper_9x9-w72.minesweeper_9x9-w73.minesweeper_9x9-w74.minesweeper_9x9-w75.minesweeper_9x9-w76.minesweeper_9x9-w77.minesweeper_9x9-w78.minesweeper_9x9-w79.minesweeper_9x9-w80 .minesweeper_9x9-cell .minesweeper_9x9-cover, .minesweeper_9x9-game.minesweeper_9x9-game.minesweeper_9x9-w0.minesweeper_9x9-w1.minesweeper_9x9-w2.minesweeper_9x9-w3.minesweeper_9x9-w4.minesweeper_9x9-w5.minesweeper_9x9-w6.minesweeper_9x9-w7.minesweeper_9x9-w8.minesweeper_9x9-w9.minesweeper_9x9-w10.minesweeper_9x9-w11.minesweeper_9x9-w12.minesweeper_9x9-w13.minesweeper_9x9-w14.minesweeper_9x9-w15.minesweeper_9x9-w16.minesweeper_9x9-w17.minesweeper_9x9-w18.minesweeper_9x9-w19.minesweeper_9x9-w20.minesweeper_9x9-w21.minesweeper_9x9-w22.minesweeper_9x9-w23.minesweeper_9x9-w24.minesweeper_9x9-w25.minesweeper_9x9-w26.minesweeper_9x9-w27.minesweeper_9x9-w28.minesweeper_9x9-w29.minesweeper_9x9-w30.minesweeper_9x9-w31.minesweeper_9x9-w32.minesweeper_9x9-w33.minesweeper_9x9-w34.minesweeper_9x9-w35.minesweeper_9x9-w36.minesweeper_9x9-w37.minesweeper_9x9-w38.minesweeper_9x9-w39.minesweeper_9x9-w40.minesweeper_9x9-w41.minesweeper_9x9-w42.minesweeper_9x9-w43.minesweeper_9x9-w44.minesweeper_9x9-w45.minesweeper_9x9-w46.minesweeper_9x9-w47.minesweeper_9x9-w48.minesweeper_9x9-w49.minesweeper_9x9-w50.minesweeper_9x9-w51.minesweeper_9x9-w52.minesweeper_9x9-w53.minesweeper_9x9-w54.minesweeper_9x9-w55.minesweeper_9x9-w56.minesweeper_9x9-w57.minesweeper_9x9-w58.minesweeper_9x9-w59.minesweeper_9x9-w60.minesweeper_9x9-w61.minesweeper_9x9-w62.minesweeper_9x9-w63.minesweeper_9x9-w64.minesweeper_9x9-w65.minesweeper_9x9-w66.minesweeper_9x9-w67.minesweeper_9x9-w68.minesweeper_9x9-w69.minesweeper_9x9-w70.minesweeper_9x9-w71.minesweeper_9x9-w72.minesweeper_9x9-w73.minesweeper_9x9-w74.minesweeper_9x9-w75.minesweeper_9x9-w76.minesweeper_9x9-w77.minesweeper_9x9-w78.minesweeper_9x9-w79.minesweeper_9x9-w80 .minesweeper_9x9-cell .minesweeper_9x9-flag, .minesweeper_9x9-game.minesweeper_9x9-lost .minesweeper_9x9-cell .minesweeper_9x9-cover, .minesweeper_9x9-game.minesweeper_9x9-lost .minesweeper_9x9-cell .minesweeper_9x9-flag { display: none; }
+.minesweeper_9x9-game.minesweeper_9x9-game.minesweeper_9x9-w0.minesweeper_9x9-w1.minesweeper_9x9-w2.minesweeper_9x9-w3.minesweeper_9x9-w4.minesweeper_9x9-w5.minesweeper_9x9-w6.minesweeper_9x9-w7.minesweeper_9x9-w8.minesweeper_9x9-w9.minesweeper_9x9-w10.minesweeper_9x9-w11.minesweeper_9x9-w12.minesweeper_9x9-w13.minesweeper_9x9-w14.minesweeper_9x9-w15.minesweeper_9x9-w16.minesweeper_9x9-w17.minesweeper_9x9-w18.minesweeper_9x9-w19.minesweeper_9x9-w20.minesweeper_9x9-w21.minesweeper_9x9-w22.minesweeper_9x9-w23.minesweeper_9x9-w24.minesweeper_9x9-w25.minesweeper_9x9-w26.minesweeper_9x9-w27.minesweeper_9x9-w28.minesweeper_9x9-w29.minesweeper_9x9-w30.minesweeper_9x9-w31.minesweeper_9x9-w32.minesweeper_9x9-w33.minesweeper_9x9-w34.minesweeper_9x9-w35.minesweeper_9x9-w36.minesweeper_9x9-w37.minesweeper_9x9-w38.minesweeper_9x9-w39.minesweeper_9x9-w40.minesweeper_9x9-w41.minesweeper_9x9-w42.minesweeper_9x9-w43.minesweeper_9x9-w44.minesweeper_9x9-w45.minesweeper_9x9-w46.minesweeper_9x9-w47.minesweeper_9x9-w48.minesweeper_9x9-w49.minesweeper_9x9-w50.minesweeper_9x9-w51.minesweeper_9x9-w52.minesweeper_9x9-w53.minesweeper_9x9-w54.minesweeper_9x9-w55.minesweeper_9x9-w56.minesweeper_9x9-w57.minesweeper_9x9-w58.minesweeper_9x9-w59.minesweeper_9x9-w60.minesweeper_9x9-w61.minesweeper_9x9-w62.minesweeper_9x9-w63.minesweeper_9x9-w64.minesweeper_9x9-w65.minesweeper_9x9-w66.minesweeper_9x9-w67.minesweeper_9x9-w68.minesweeper_9x9-w69.minesweeper_9x9-w70.minesweeper_9x9-w71.minesweeper_9x9-w72.minesweeper_9x9-w73.minesweeper_9x9-w74.minesweeper_9x9-w75.minesweeper_9x9-w76.minesweeper_9x9-w77.minesweeper_9x9-w78.minesweeper_9x9-w79.minesweeper_9x9-w80 .minesweeper_9x9-playing, .minesweeper_9x9-game.minesweeper_9x9-game.minesweeper_9x9-w0.minesweeper_9x9-w1.minesweeper_9x9-w2.minesweeper_9x9-w3.minesweeper_9x9-w4.minesweeper_9x9-w5.minesweeper_9x9-w6.minesweeper_9x9-w7.minesweeper_9x9-w8.minesweeper_9x9-w9.minesweeper_9x9-w10.minesweeper_9x9-w11.minesweeper_9x9-w12.minesweeper_9x9-w13.minesweeper_9x9-w14.minesweeper_9x9-w15.minesweeper_9x9-w16.minesweeper_9x9-w17.minesweeper_9x9-w18.minesweeper_9x9-w19.minesweeper_9x9-w20.minesweeper_9x9-w21.minesweeper_9x9-w22.minesweeper_9x9-w23.minesweeper_9x9-w24.minesweeper_9x9-w25.minesweeper_9x9-w26.minesweeper_9x9-w27.minesweeper_9x9-w28.minesweeper_9x9-w29.minesweeper_9x9-w30.minesweeper_9x9-w31.minesweeper_9x9-w32.minesweeper_9x9-w33.minesweeper_9x9-w34.minesweeper_9x9-w35.minesweeper_9x9-w36.minesweeper_9x9-w37.minesweeper_9x9-w38.minesweeper_9x9-w39.minesweeper_9x9-w40.minesweeper_9x9-w41.minesweeper_9x9-w42.minesweeper_9x9-w43.minesweeper_9x9-w44.minesweeper_9x9-w45.minesweeper_9x9-w46.minesweeper_9x9-w47.minesweeper_9x9-w48.minesweeper_9x9-w49.minesweeper_9x9-w50.minesweeper_9x9-w51.minesweeper_9x9-w52.minesweeper_9x9-w53.minesweeper_9x9-w54.minesweeper_9x9-w55.minesweeper_9x9-w56.minesweeper_9x9-w57.minesweeper_9x9-w58.minesweeper_9x9-w59.minesweeper_9x9-w60.minesweeper_9x9-w61.minesweeper_9x9-w62.minesweeper_9x9-w63.minesweeper_9x9-w64.minesweeper_9x9-w65.minesweeper_9x9-w66.minesweeper_9x9-w67.minesweeper_9x9-w68.minesweeper_9x9-w69.minesweeper_9x9-w70.minesweeper_9x9-w71.minesweeper_9x9-w72.minesweeper_9x9-w73.minesweeper_9x9-w74.minesweeper_9x9-w75.minesweeper_9x9-w76.minesweeper_9x9-w77.minesweeper_9x9-w78.minesweeper_9x9-w79.minesweeper_9x9-w80 .minesweeper_9x9-help, .minesweeper_9x9-game.minesweeper_9x9-lost .minesweeper_9x9-playing, .minesweeper_9x9-game.minesweeper_9x9-lost .minesweeper_9x9-help { display: none; }
+.minesweeper_9x9-game.minesweeper_9x9-game.minesweeper_9x9-w0.minesweeper_9x9-w1.minesweeper_9x9-w2.minesweeper_9x9-w3.minesweeper_9x9-w4.minesweeper_9x9-w5.minesweeper_9x9-w6.minesweeper_9x9-w7.minesweeper_9x9-w8.minesweeper_9x9-w9.minesweeper_9x9-w10.minesweeper_9x9-w11.minesweeper_9x9-w12.minesweeper_9x9-w13.minesweeper_9x9-w14.minesweeper_9x9-w15.minesweeper_9x9-w16.minesweeper_9x9-w17.minesweeper_9x9-w18.minesweeper_9x9-w19.minesweeper_9x9-w20.minesweeper_9x9-w21.minesweeper_9x9-w22.minesweeper_9x9-w23.minesweeper_9x9-w24.minesweeper_9x9-w25.minesweeper_9x9-w26.minesweeper_9x9-w27.minesweeper_9x9-w28.minesweeper_9x9-w29.minesweeper_9x9-w30.minesweeper_9x9-w31.minesweeper_9x9-w32.minesweeper_9x9-w33.minesweeper_9x9-w34.minesweeper_9x9-w35.minesweeper_9x9-w36.minesweeper_9x9-w37.minesweeper_9x9-w38.minesweeper_9x9-w39.minesweeper_9x9-w40.minesweeper_9x9-w41.minesweeper_9x9-w42.minesweeper_9x9-w43.minesweeper_9x9-w44.minesweeper_9x9-w45.minesweeper_9x9-w46.minesweeper_9x9-w47.minesweeper_9x9-w48.minesweeper_9x9-w49.minesweeper_9x9-w50.minesweeper_9x9-w51.minesweeper_9x9-w52.minesweeper_9x9-w53.minesweeper_9x9-w54.minesweeper_9x9-w55.minesweeper_9x9-w56.minesweeper_9x9-w57.minesweeper_9x9-w58.minesweeper_9x9-w59.minesweeper_9x9-w60.minesweeper_9x9-w61.minesweeper_9x9-w62.minesweeper_9x9-w63.minesweeper_9x9-w64.minesweeper_9x9-w65.minesweeper_9x9-w66.minesweeper_9x9-w67.minesweeper_9x9-w68.minesweeper_9x9-w69.minesweeper_9x9-w70.minesweeper_9x9-w71.minesweeper_9x9-w72.minesweeper_9x9-w73.minesweeper_9x9-w74.minesweeper_9x9-w75.minesweeper_9x9-w76.minesweeper_9x9-w77.minesweeper_9x9-w78.minesweeper_9x9-w79.minesweeper_9x9-w80 .minesweeper_9x9-won, .minesweeper_9x9-game.minesweeper_9x9-lost .minesweeper_9x9-lost-message { display: block; }
+.minesweeper_9x9-game.minesweeper_9x9-lost .minesweeper_9x9-won { display: none; }
+
+}}}{{{#!if class_413=value_250?"minesweeper_9x9-w0":"", class_414=value_252?"minesweeper_9x9-w1":""
+}}}{{{#!if class_415=value_254?"minesweeper_9x9-w2":"", class_416=value_256?"minesweeper_9x9-w3":""
+}}}{{{#!if class_417=value_258?"minesweeper_9x9-w4":"", class_418=value_260?"minesweeper_9x9-w5":""
+}}}{{{#!if class_419=value_262?"minesweeper_9x9-w6":"", class_420=value_264?"minesweeper_9x9-w7":""
+}}}{{{#!if class_421=value_266?"minesweeper_9x9-w8":"", class_422=value_268?"minesweeper_9x9-w9":""
+}}}{{{#!if class_423=value_270?"minesweeper_9x9-w10":"", class_424=value_272?"minesweeper_9x9-w11":""
+}}}{{{#!if class_425=value_274?"minesweeper_9x9-w12":"", class_426=value_276?"minesweeper_9x9-w13":""
+}}}{{{#!if class_427=value_278?"minesweeper_9x9-w14":"", class_428=value_280?"minesweeper_9x9-w15":""
+}}}{{{#!if class_429=value_282?"minesweeper_9x9-w16":"", class_430=value_284?"minesweeper_9x9-w17":""
+}}}{{{#!if class_431=value_286?"minesweeper_9x9-w18":"", class_432=value_288?"minesweeper_9x9-w19":""
+}}}{{{#!if class_433=value_290?"minesweeper_9x9-w20":"", class_434=value_292?"minesweeper_9x9-w21":""
+}}}{{{#!if class_435=value_294?"minesweeper_9x9-w22":"", class_436=value_296?"minesweeper_9x9-w23":""
+}}}{{{#!if class_437=value_298?"minesweeper_9x9-w24":"", class_438=value_300?"minesweeper_9x9-w25":""
+}}}{{{#!if class_439=value_302?"minesweeper_9x9-w26":"", class_440=value_304?"minesweeper_9x9-w27":""
+}}}{{{#!if class_441=value_306?"minesweeper_9x9-w28":"", class_442=value_308?"minesweeper_9x9-w29":""
+}}}{{{#!if class_443=value_310?"minesweeper_9x9-w30":"", class_444=value_312?"minesweeper_9x9-w31":""
+}}}{{{#!if class_445=value_314?"minesweeper_9x9-w32":"", class_446=value_316?"minesweeper_9x9-w33":""
+}}}{{{#!if class_447=value_318?"minesweeper_9x9-w34":"", class_448=value_320?"minesweeper_9x9-w35":""
+}}}{{{#!if class_449=value_322?"minesweeper_9x9-w36":"", class_450=value_324?"minesweeper_9x9-w37":""
+}}}{{{#!if class_451=value_326?"minesweeper_9x9-w38":"", class_452=value_328?"minesweeper_9x9-w39":""
+}}}{{{#!if class_453=value_330?"minesweeper_9x9-w40":"", class_454=value_332?"minesweeper_9x9-w41":""
+}}}{{{#!if class_455=value_334?"minesweeper_9x9-w42":"", class_456=value_336?"minesweeper_9x9-w43":""
+}}}{{{#!if class_457=value_338?"minesweeper_9x9-w44":"", class_458=value_340?"minesweeper_9x9-w45":""
+}}}{{{#!if class_459=value_342?"minesweeper_9x9-w46":"", class_460=value_344?"minesweeper_9x9-w47":""
+}}}{{{#!if class_461=value_346?"minesweeper_9x9-w48":"", class_462=value_348?"minesweeper_9x9-w49":""
+}}}{{{#!if class_463=value_350?"minesweeper_9x9-w50":"", class_464=value_352?"minesweeper_9x9-w51":""
+}}}{{{#!if class_465=value_354?"minesweeper_9x9-w52":"", class_466=value_356?"minesweeper_9x9-w53":""
+}}}{{{#!if class_467=value_358?"minesweeper_9x9-w54":"", class_468=value_360?"minesweeper_9x9-w55":""
+}}}{{{#!if class_469=value_362?"minesweeper_9x9-w56":"", class_470=value_364?"minesweeper_9x9-w57":""
+}}}{{{#!if class_471=value_366?"minesweeper_9x9-w58":"", class_472=value_368?"minesweeper_9x9-w59":""
+}}}{{{#!if class_473=value_370?"minesweeper_9x9-w60":"", class_474=value_372?"minesweeper_9x9-w61":""
+}}}{{{#!if class_475=value_374?"minesweeper_9x9-w62":"", class_476=value_376?"minesweeper_9x9-w63":""
+}}}{{{#!if class_477=value_378?"minesweeper_9x9-w64":"", class_478=value_380?"minesweeper_9x9-w65":""
+}}}{{{#!if class_479=value_382?"minesweeper_9x9-w66":"", class_480=value_384?"minesweeper_9x9-w67":""
+}}}{{{#!if class_481=value_386?"minesweeper_9x9-w68":"", class_482=value_388?"minesweeper_9x9-w69":""
+}}}{{{#!if class_483=value_390?"minesweeper_9x9-w70":"", class_484=value_392?"minesweeper_9x9-w71":""
+}}}{{{#!if class_485=value_394?"minesweeper_9x9-w72":"", class_486=value_396?"minesweeper_9x9-w73":""
+}}}{{{#!if class_487=value_398?"minesweeper_9x9-w74":"", class_488=value_400?"minesweeper_9x9-w75":""
+}}}{{{#!if class_489=value_402?"minesweeper_9x9-w76":"", class_490=value_404?"minesweeper_9x9-w77":""
+}}}{{{#!if class_491=value_406?"minesweeper_9x9-w78":"", class_492=value_408?"minesweeper_9x9-w79":""
+}}}{{{#!if class_493=value_410?"minesweeper_9x9-w80":""
+}}}{{{#!wiki class="minesweeper_9x9_node_494 minesweeper_9x9-game @class_413@ @class_414@ @class_415@ @class_416@ @class_417@ @class_418@ @class_419@ @class_420@ @class_421@ @class_422@ @class_423@ @class_424@ @class_425@ @class_426@ @class_427@ @class_428@ @class_429@ @class_430@ @class_431@ @class_432@ @class_433@ @class_434@ @class_435@ @class_436@ @class_437@ @class_438@ @class_439@ @class_440@ @class_441@ @class_442@ @class_443@ @class_444@ @class_445@ @class_446@ @class_447@ @class_448@ @class_449@ @class_450@ @class_451@ @class_452@ @class_453@ @class_454@ @class_455@ @class_456@ @class_457@ @class_458@ @class_459@ @class_460@ @class_461@ @class_462@ @class_463@ @class_464@ @class_465@ @class_466@ @class_467@ @class_468@ @class_469@ @class_470@ @class_471@ @class_472@ @class_473@ @class_474@ @class_475@ @class_476@ @class_477@ @class_478@ @class_479@ @class_480@ @class_481@ @class_482@ @class_483@ @class_484@ @class_485@ @class_486@ @class_487@ @class_488@ @class_489@ @class_490@ @class_491@ @class_492@ @class_493@"
+{{{#!wiki class="minesweeper_9x9-title"
+지뢰찾기 9 × 9}}}{{{#!wiki class="minesweeper_9x9-playing"
+지뢰 10개를 피해 안전한 71칸을 열어보세요.}}}{{{#!wiki class="minesweeper_9x9-won"
+🎉 성공! 모든 안전한 칸을 열었습니다.}}}{{{#!wiki class="minesweeper_9x9-lost-message"
+💥 지뢰입니다! 다시 도전해 보세요.}}}{{{#!wiki class="minesweeper_9x9-row"
+{{{#!wiki class="minesweeper_9x9_node_495 minesweeper_9x9-cell minesweeper_9x9-n@kind_0@ minesweeper_9x9-s0"
+{{{#!if calc_768=mines_0?commands_657:counts_0?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w0":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w0"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w1"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w9"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w10"
+}}}{{{#!if click_496=calc_768.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_496@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_495,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_0@}}}}}}{{{#!wiki class="minesweeper_9x9_node_497 minesweeper_9x9-cell minesweeper_9x9-n@kind_1@ minesweeper_9x9-s1"
+{{{#!if calc_769=mines_1?commands_657:counts_1?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w1":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w0"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w1"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w2"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w9"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w10"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w11"
+}}}{{{#!if click_498=calc_769.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_498@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_497,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_1@}}}}}}{{{#!wiki class="minesweeper_9x9_node_499 minesweeper_9x9-cell minesweeper_9x9-n@kind_2@ minesweeper_9x9-s2"
+{{{#!if calc_770=mines_2?commands_657:counts_2?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w2":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w1"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w2"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w3"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w10"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w11"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w12"
+}}}{{{#!if click_500=calc_770.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_500@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_499,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_2@}}}}}}{{{#!wiki class="minesweeper_9x9_node_501 minesweeper_9x9-cell minesweeper_9x9-n@kind_3@ minesweeper_9x9-s3"
+{{{#!if calc_771=mines_3?commands_657:counts_3?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w3":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w2"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w3"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w4"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w11"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w12"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w13"
+}}}{{{#!if click_502=calc_771.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_502@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_501,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_3@}}}}}}{{{#!wiki class="minesweeper_9x9_node_503 minesweeper_9x9-cell minesweeper_9x9-n@kind_4@ minesweeper_9x9-s4"
+{{{#!if calc_772=mines_4?commands_657:counts_4?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w4":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w3"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w4"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w5"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w12"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w13"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w14"
+}}}{{{#!if click_504=calc_772.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_504@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_503,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_4@}}}}}}{{{#!wiki class="minesweeper_9x9_node_505 minesweeper_9x9-cell minesweeper_9x9-n@kind_5@ minesweeper_9x9-s5"
+{{{#!if calc_773=mines_5?commands_657:counts_5?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w5":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w4"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w5"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w6"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w13"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w14"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w15"
+}}}{{{#!if click_506=calc_773.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_506@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_505,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_5@}}}}}}{{{#!wiki class="minesweeper_9x9_node_507 minesweeper_9x9-cell minesweeper_9x9-n@kind_6@ minesweeper_9x9-s6"
+{{{#!if calc_774=mines_6?commands_657:counts_6?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w6":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w5"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w6"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w7"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w14"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w15"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w16"
+}}}{{{#!if click_508=calc_774.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_508@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_507,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_6@}}}}}}{{{#!wiki class="minesweeper_9x9_node_509 minesweeper_9x9-cell minesweeper_9x9-n@kind_7@ minesweeper_9x9-s7"
+{{{#!if calc_775=mines_7?commands_657:counts_7?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w7":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w6"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w7"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w8"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w15"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w16"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w17"
+}}}{{{#!if click_510=calc_775.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_510@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_509,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_7@}}}}}}{{{#!wiki class="minesweeper_9x9_node_511 minesweeper_9x9-cell minesweeper_9x9-n@kind_8@ minesweeper_9x9-s8"
+{{{#!if calc_776=mines_8?commands_657:counts_8?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w8":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w7"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w8"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w16"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w17"
+}}}{{{#!if click_512=calc_776.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_512@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_511,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_8@}}}}}}}}}{{{#!wiki class="minesweeper_9x9-row"
+{{{#!wiki class="minesweeper_9x9_node_513 minesweeper_9x9-cell minesweeper_9x9-n@kind_9@ minesweeper_9x9-s9"
+{{{#!if calc_777=mines_9?commands_657:counts_9?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w9":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w0"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w1"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w9"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w10"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w18"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w19"
+}}}{{{#!if click_514=calc_777.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_514@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_513,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_9@}}}}}}{{{#!wiki class="minesweeper_9x9_node_515 minesweeper_9x9-cell minesweeper_9x9-n@kind_10@ minesweeper_9x9-s10"
+{{{#!if calc_778=mines_10?commands_657:counts_10?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w10":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w0"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w1"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w2"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w9"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w10"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w11"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w18"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w19"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w20"
+}}}{{{#!if click_516=calc_778.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_516@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_515,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_10@}}}}}}{{{#!wiki class="minesweeper_9x9_node_517 minesweeper_9x9-cell minesweeper_9x9-n@kind_11@ minesweeper_9x9-s11"
+{{{#!if calc_779=mines_11?commands_657:counts_11?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w11":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w1"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w2"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w3"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w10"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w11"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w12"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w19"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w20"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w21"
+}}}{{{#!if click_518=calc_779.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_518@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_517,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_11@}}}}}}{{{#!wiki class="minesweeper_9x9_node_519 minesweeper_9x9-cell minesweeper_9x9-n@kind_12@ minesweeper_9x9-s12"
+{{{#!if calc_780=mines_12?commands_657:counts_12?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w12":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w2"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w3"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w4"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w11"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w12"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w13"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w20"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w21"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w22"
+}}}{{{#!if click_520=calc_780.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_520@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_519,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_12@}}}}}}{{{#!wiki class="minesweeper_9x9_node_521 minesweeper_9x9-cell minesweeper_9x9-n@kind_13@ minesweeper_9x9-s13"
+{{{#!if calc_781=mines_13?commands_657:counts_13?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w13":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w3"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w4"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w5"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w12"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w13"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w14"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w21"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w22"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w23"
+}}}{{{#!if click_522=calc_781.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_522@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_521,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_13@}}}}}}{{{#!wiki class="minesweeper_9x9_node_523 minesweeper_9x9-cell minesweeper_9x9-n@kind_14@ minesweeper_9x9-s14"
+{{{#!if calc_782=mines_14?commands_657:counts_14?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w14":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w4"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w5"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w6"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w13"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w14"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w15"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w22"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w23"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w24"
+}}}{{{#!if click_524=calc_782.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_524@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_523,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_14@}}}}}}{{{#!wiki class="minesweeper_9x9_node_525 minesweeper_9x9-cell minesweeper_9x9-n@kind_15@ minesweeper_9x9-s15"
+{{{#!if calc_783=mines_15?commands_657:counts_15?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w15":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w5"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w6"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w7"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w14"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w15"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w16"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w23"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w24"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w25"
+}}}{{{#!if click_526=calc_783.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_526@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_525,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_15@}}}}}}{{{#!wiki class="minesweeper_9x9_node_527 minesweeper_9x9-cell minesweeper_9x9-n@kind_16@ minesweeper_9x9-s16"
+{{{#!if calc_784=mines_16?commands_657:counts_16?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w16":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w6"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w7"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w8"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w15"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w16"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w17"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w24"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w25"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w26"
+}}}{{{#!if click_528=calc_784.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_528@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_527,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_16@}}}}}}{{{#!wiki class="minesweeper_9x9_node_529 minesweeper_9x9-cell minesweeper_9x9-n@kind_17@ minesweeper_9x9-s17"
+{{{#!if calc_785=mines_17?commands_657:counts_17?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w17":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w7"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w8"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w16"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w17"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w25"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w26"
+}}}{{{#!if click_530=calc_785.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_530@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_529,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_17@}}}}}}}}}{{{#!wiki class="minesweeper_9x9-row"
+{{{#!wiki class="minesweeper_9x9_node_531 minesweeper_9x9-cell minesweeper_9x9-n@kind_18@ minesweeper_9x9-s18"
+{{{#!if calc_786=mines_18?commands_657:counts_18?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w18":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w9"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w10"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w18"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w19"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w27"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w28"
+}}}{{{#!if click_532=calc_786.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_532@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_531,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_18@}}}}}}{{{#!wiki class="minesweeper_9x9_node_533 minesweeper_9x9-cell minesweeper_9x9-n@kind_19@ minesweeper_9x9-s19"
+{{{#!if calc_787=mines_19?commands_657:counts_19?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w19":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w9"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w10"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w11"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w18"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w19"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w20"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w27"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w28"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w29"
+}}}{{{#!if click_534=calc_787.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_534@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_533,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_19@}}}}}}{{{#!wiki class="minesweeper_9x9_node_535 minesweeper_9x9-cell minesweeper_9x9-n@kind_20@ minesweeper_9x9-s20"
+{{{#!if calc_788=mines_20?commands_657:counts_20?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w20":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w10"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w11"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w12"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w19"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w20"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w21"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w28"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w29"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w30"
+}}}{{{#!if click_536=calc_788.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_536@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_535,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_20@}}}}}}{{{#!wiki class="minesweeper_9x9_node_537 minesweeper_9x9-cell minesweeper_9x9-n@kind_21@ minesweeper_9x9-s21"
+{{{#!if calc_789=mines_21?commands_657:counts_21?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w21":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w11"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w12"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w13"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w20"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w21"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w22"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w29"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w30"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w31"
+}}}{{{#!if click_538=calc_789.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_538@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_537,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_21@}}}}}}{{{#!wiki class="minesweeper_9x9_node_539 minesweeper_9x9-cell minesweeper_9x9-n@kind_22@ minesweeper_9x9-s22"
+{{{#!if calc_790=mines_22?commands_657:counts_22?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w22":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w12"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w13"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w14"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w21"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w22"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w23"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w30"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w31"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w32"
+}}}{{{#!if click_540=calc_790.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_540@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_539,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_22@}}}}}}{{{#!wiki class="minesweeper_9x9_node_541 minesweeper_9x9-cell minesweeper_9x9-n@kind_23@ minesweeper_9x9-s23"
+{{{#!if calc_791=mines_23?commands_657:counts_23?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w23":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w13"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w14"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w15"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w22"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w23"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w24"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w31"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w32"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w33"
+}}}{{{#!if click_542=calc_791.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_542@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_541,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_23@}}}}}}{{{#!wiki class="minesweeper_9x9_node_543 minesweeper_9x9-cell minesweeper_9x9-n@kind_24@ minesweeper_9x9-s24"
+{{{#!if calc_792=mines_24?commands_657:counts_24?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w24":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w14"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w15"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w16"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w23"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w24"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w25"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w32"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w33"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w34"
+}}}{{{#!if click_544=calc_792.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_544@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_543,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_24@}}}}}}{{{#!wiki class="minesweeper_9x9_node_545 minesweeper_9x9-cell minesweeper_9x9-n@kind_25@ minesweeper_9x9-s25"
+{{{#!if calc_793=mines_25?commands_657:counts_25?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w25":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w15"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w16"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w17"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w24"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w25"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w26"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w33"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w34"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w35"
+}}}{{{#!if click_546=calc_793.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_546@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_545,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_25@}}}}}}{{{#!wiki class="minesweeper_9x9_node_547 minesweeper_9x9-cell minesweeper_9x9-n@kind_26@ minesweeper_9x9-s26"
+{{{#!if calc_794=mines_26?commands_657:counts_26?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w26":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w16"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w17"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w25"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w26"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w34"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w35"
+}}}{{{#!if click_548=calc_794.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_548@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_547,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_26@}}}}}}}}}{{{#!wiki class="minesweeper_9x9-row"
+{{{#!wiki class="minesweeper_9x9_node_549 minesweeper_9x9-cell minesweeper_9x9-n@kind_27@ minesweeper_9x9-s27"
+{{{#!if calc_795=mines_27?commands_657:counts_27?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w27":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w18"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w19"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w27"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w28"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w36"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w37"
+}}}{{{#!if click_550=calc_795.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_550@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_549,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_27@}}}}}}{{{#!wiki class="minesweeper_9x9_node_551 minesweeper_9x9-cell minesweeper_9x9-n@kind_28@ minesweeper_9x9-s28"
+{{{#!if calc_796=mines_28?commands_657:counts_28?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w28":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w18"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w19"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w20"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w27"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w28"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w29"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w36"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w37"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w38"
+}}}{{{#!if click_552=calc_796.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_552@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_551,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_28@}}}}}}{{{#!wiki class="minesweeper_9x9_node_553 minesweeper_9x9-cell minesweeper_9x9-n@kind_29@ minesweeper_9x9-s29"
+{{{#!if calc_797=mines_29?commands_657:counts_29?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w29":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w19"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w20"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w21"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w28"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w29"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w30"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w37"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w38"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w39"
+}}}{{{#!if click_554=calc_797.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_554@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_553,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_29@}}}}}}{{{#!wiki class="minesweeper_9x9_node_555 minesweeper_9x9-cell minesweeper_9x9-n@kind_30@ minesweeper_9x9-s30"
+{{{#!if calc_798=mines_30?commands_657:counts_30?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w30":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w20"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w21"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w22"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w29"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w30"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w31"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w38"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w39"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w40"
+}}}{{{#!if click_556=calc_798.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_556@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_555,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_30@}}}}}}{{{#!wiki class="minesweeper_9x9_node_557 minesweeper_9x9-cell minesweeper_9x9-n@kind_31@ minesweeper_9x9-s31"
+{{{#!if calc_799=mines_31?commands_657:counts_31?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w31":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w21"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w22"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w23"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w30"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w31"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w32"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w39"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w40"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w41"
+}}}{{{#!if click_558=calc_799.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_558@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_557,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_31@}}}}}}{{{#!wiki class="minesweeper_9x9_node_559 minesweeper_9x9-cell minesweeper_9x9-n@kind_32@ minesweeper_9x9-s32"
+{{{#!if calc_800=mines_32?commands_657:counts_32?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w32":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w22"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w23"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w24"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w31"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w32"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w33"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w40"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w41"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w42"
+}}}{{{#!if click_560=calc_800.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_560@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_559,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_32@}}}}}}{{{#!wiki class="minesweeper_9x9_node_561 minesweeper_9x9-cell minesweeper_9x9-n@kind_33@ minesweeper_9x9-s33"
+{{{#!if calc_801=mines_33?commands_657:counts_33?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w33":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w23"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w24"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w25"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w32"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w33"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w34"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w41"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w42"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w43"
+}}}{{{#!if click_562=calc_801.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_562@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_561,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_33@}}}}}}{{{#!wiki class="minesweeper_9x9_node_563 minesweeper_9x9-cell minesweeper_9x9-n@kind_34@ minesweeper_9x9-s34"
+{{{#!if calc_802=mines_34?commands_657:counts_34?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w34":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w24"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w25"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w26"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w33"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w34"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w35"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w42"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w43"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w44"
+}}}{{{#!if click_564=calc_802.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_564@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_563,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_34@}}}}}}{{{#!wiki class="minesweeper_9x9_node_565 minesweeper_9x9-cell minesweeper_9x9-n@kind_35@ minesweeper_9x9-s35"
+{{{#!if calc_803=mines_35?commands_657:counts_35?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w35":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w25"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w26"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w34"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w35"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w43"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w44"
+}}}{{{#!if click_566=calc_803.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_566@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_565,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_35@}}}}}}}}}{{{#!wiki class="minesweeper_9x9-row"
+{{{#!wiki class="minesweeper_9x9_node_567 minesweeper_9x9-cell minesweeper_9x9-n@kind_36@ minesweeper_9x9-s36"
+{{{#!if calc_804=mines_36?commands_657:counts_36?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w36":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w27"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w28"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w36"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w37"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w45"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w46"
+}}}{{{#!if click_568=calc_804.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_568@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_567,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_36@}}}}}}{{{#!wiki class="minesweeper_9x9_node_569 minesweeper_9x9-cell minesweeper_9x9-n@kind_37@ minesweeper_9x9-s37"
+{{{#!if calc_805=mines_37?commands_657:counts_37?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w37":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w27"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w28"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w29"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w36"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w37"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w38"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w45"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w46"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w47"
+}}}{{{#!if click_570=calc_805.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_570@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_569,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_37@}}}}}}{{{#!wiki class="minesweeper_9x9_node_571 minesweeper_9x9-cell minesweeper_9x9-n@kind_38@ minesweeper_9x9-s38"
+{{{#!if calc_806=mines_38?commands_657:counts_38?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w38":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w28"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w29"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w30"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w37"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w38"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w39"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w46"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w47"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w48"
+}}}{{{#!if click_572=calc_806.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_572@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_571,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_38@}}}}}}{{{#!wiki class="minesweeper_9x9_node_573 minesweeper_9x9-cell minesweeper_9x9-n@kind_39@ minesweeper_9x9-s39"
+{{{#!if calc_807=mines_39?commands_657:counts_39?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w39":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w29"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w30"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w31"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w38"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w39"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w40"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w47"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w48"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w49"
+}}}{{{#!if click_574=calc_807.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_574@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_573,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_39@}}}}}}{{{#!wiki class="minesweeper_9x9_node_575 minesweeper_9x9-cell minesweeper_9x9-n@kind_40@ minesweeper_9x9-s40"
+{{{#!if calc_808=mines_40?commands_657:counts_40?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w40":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w30"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w31"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w32"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w39"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w40"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w41"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w48"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w49"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w50"
+}}}{{{#!if click_576=calc_808.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_576@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_575,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_40@}}}}}}{{{#!wiki class="minesweeper_9x9_node_577 minesweeper_9x9-cell minesweeper_9x9-n@kind_41@ minesweeper_9x9-s41"
+{{{#!if calc_809=mines_41?commands_657:counts_41?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w41":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w31"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w32"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w33"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w40"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w41"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w42"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w49"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w50"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w51"
+}}}{{{#!if click_578=calc_809.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_578@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_577,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_41@}}}}}}{{{#!wiki class="minesweeper_9x9_node_579 minesweeper_9x9-cell minesweeper_9x9-n@kind_42@ minesweeper_9x9-s42"
+{{{#!if calc_810=mines_42?commands_657:counts_42?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w42":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w32"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w33"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w34"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w41"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w42"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w43"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w50"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w51"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w52"
+}}}{{{#!if click_580=calc_810.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_580@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_579,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_42@}}}}}}{{{#!wiki class="minesweeper_9x9_node_581 minesweeper_9x9-cell minesweeper_9x9-n@kind_43@ minesweeper_9x9-s43"
+{{{#!if calc_811=mines_43?commands_657:counts_43?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w43":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w33"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w34"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w35"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w42"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w43"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w44"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w51"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w52"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w53"
+}}}{{{#!if click_582=calc_811.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_582@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_581,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_43@}}}}}}{{{#!wiki class="minesweeper_9x9_node_583 minesweeper_9x9-cell minesweeper_9x9-n@kind_44@ minesweeper_9x9-s44"
+{{{#!if calc_812=mines_44?commands_657:counts_44?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w44":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w34"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w35"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w43"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w44"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w52"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w53"
+}}}{{{#!if click_584=calc_812.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_584@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_583,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_44@}}}}}}}}}{{{#!wiki class="minesweeper_9x9-row"
+{{{#!wiki class="minesweeper_9x9_node_585 minesweeper_9x9-cell minesweeper_9x9-n@kind_45@ minesweeper_9x9-s45"
+{{{#!if calc_813=mines_45?commands_657:counts_45?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w45":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w36"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w37"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w45"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w46"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w54"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w55"
+}}}{{{#!if click_586=calc_813.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_586@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_585,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_45@}}}}}}{{{#!wiki class="minesweeper_9x9_node_587 minesweeper_9x9-cell minesweeper_9x9-n@kind_46@ minesweeper_9x9-s46"
+{{{#!if calc_814=mines_46?commands_657:counts_46?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w46":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w36"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w37"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w38"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w45"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w46"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w47"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w54"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w55"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w56"
+}}}{{{#!if click_588=calc_814.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_588@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_587,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_46@}}}}}}{{{#!wiki class="minesweeper_9x9_node_589 minesweeper_9x9-cell minesweeper_9x9-n@kind_47@ minesweeper_9x9-s47"
+{{{#!if calc_815=mines_47?commands_657:counts_47?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w47":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w37"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w38"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w39"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w46"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w47"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w48"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w55"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w56"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w57"
+}}}{{{#!if click_590=calc_815.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_590@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_589,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_47@}}}}}}{{{#!wiki class="minesweeper_9x9_node_591 minesweeper_9x9-cell minesweeper_9x9-n@kind_48@ minesweeper_9x9-s48"
+{{{#!if calc_816=mines_48?commands_657:counts_48?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w48":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w38"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w39"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w40"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w47"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w48"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w49"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w56"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w57"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w58"
+}}}{{{#!if click_592=calc_816.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_592@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_591,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_48@}}}}}}{{{#!wiki class="minesweeper_9x9_node_593 minesweeper_9x9-cell minesweeper_9x9-n@kind_49@ minesweeper_9x9-s49"
+{{{#!if calc_817=mines_49?commands_657:counts_49?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w49":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w39"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w40"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w41"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w48"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w49"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w50"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w57"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w58"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w59"
+}}}{{{#!if click_594=calc_817.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_594@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_593,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_49@}}}}}}{{{#!wiki class="minesweeper_9x9_node_595 minesweeper_9x9-cell minesweeper_9x9-n@kind_50@ minesweeper_9x9-s50"
+{{{#!if calc_818=mines_50?commands_657:counts_50?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w50":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w40"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w41"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w42"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w49"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w50"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w51"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w58"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w59"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w60"
+}}}{{{#!if click_596=calc_818.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_596@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_595,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_50@}}}}}}{{{#!wiki class="minesweeper_9x9_node_597 minesweeper_9x9-cell minesweeper_9x9-n@kind_51@ minesweeper_9x9-s51"
+{{{#!if calc_819=mines_51?commands_657:counts_51?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w51":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w41"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w42"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w43"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w50"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w51"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w52"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w59"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w60"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w61"
+}}}{{{#!if click_598=calc_819.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_598@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_597,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_51@}}}}}}{{{#!wiki class="minesweeper_9x9_node_599 minesweeper_9x9-cell minesweeper_9x9-n@kind_52@ minesweeper_9x9-s52"
+{{{#!if calc_820=mines_52?commands_657:counts_52?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w52":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w42"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w43"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w44"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w51"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w52"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w53"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w60"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w61"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w62"
+}}}{{{#!if click_600=calc_820.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_600@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_599,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_52@}}}}}}{{{#!wiki class="minesweeper_9x9_node_601 minesweeper_9x9-cell minesweeper_9x9-n@kind_53@ minesweeper_9x9-s53"
+{{{#!if calc_821=mines_53?commands_657:counts_53?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w53":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w43"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w44"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w52"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w53"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w61"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w62"
+}}}{{{#!if click_602=calc_821.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_602@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_601,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_53@}}}}}}}}}{{{#!wiki class="minesweeper_9x9-row"
+{{{#!wiki class="minesweeper_9x9_node_603 minesweeper_9x9-cell minesweeper_9x9-n@kind_54@ minesweeper_9x9-s54"
+{{{#!if calc_822=mines_54?commands_657:counts_54?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w54":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w45"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w46"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w54"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w55"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w63"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w64"
+}}}{{{#!if click_604=calc_822.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_604@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_603,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_54@}}}}}}{{{#!wiki class="minesweeper_9x9_node_605 minesweeper_9x9-cell minesweeper_9x9-n@kind_55@ minesweeper_9x9-s55"
+{{{#!if calc_823=mines_55?commands_657:counts_55?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w55":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w45"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w46"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w47"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w54"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w55"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w56"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w63"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w64"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w65"
+}}}{{{#!if click_606=calc_823.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_606@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_605,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_55@}}}}}}{{{#!wiki class="minesweeper_9x9_node_607 minesweeper_9x9-cell minesweeper_9x9-n@kind_56@ minesweeper_9x9-s56"
+{{{#!if calc_824=mines_56?commands_657:counts_56?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w56":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w46"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w47"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w48"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w55"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w56"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w57"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w64"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w65"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w66"
+}}}{{{#!if click_608=calc_824.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_608@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_607,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_56@}}}}}}{{{#!wiki class="minesweeper_9x9_node_609 minesweeper_9x9-cell minesweeper_9x9-n@kind_57@ minesweeper_9x9-s57"
+{{{#!if calc_825=mines_57?commands_657:counts_57?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w57":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w47"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w48"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w49"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w56"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w57"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w58"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w65"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w66"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w67"
+}}}{{{#!if click_610=calc_825.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_610@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_609,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_57@}}}}}}{{{#!wiki class="minesweeper_9x9_node_611 minesweeper_9x9-cell minesweeper_9x9-n@kind_58@ minesweeper_9x9-s58"
+{{{#!if calc_826=mines_58?commands_657:counts_58?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w58":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w48"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w49"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w50"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w57"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w58"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w59"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w66"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w67"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w68"
+}}}{{{#!if click_612=calc_826.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_612@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_611,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_58@}}}}}}{{{#!wiki class="minesweeper_9x9_node_613 minesweeper_9x9-cell minesweeper_9x9-n@kind_59@ minesweeper_9x9-s59"
+{{{#!if calc_827=mines_59?commands_657:counts_59?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w59":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w49"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w50"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w51"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w58"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w59"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w60"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w67"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w68"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w69"
+}}}{{{#!if click_614=calc_827.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_614@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_613,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_59@}}}}}}{{{#!wiki class="minesweeper_9x9_node_615 minesweeper_9x9-cell minesweeper_9x9-n@kind_60@ minesweeper_9x9-s60"
+{{{#!if calc_828=mines_60?commands_657:counts_60?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w60":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w50"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w51"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w52"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w59"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w60"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w61"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w68"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w69"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w70"
+}}}{{{#!if click_616=calc_828.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_616@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_615,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_60@}}}}}}{{{#!wiki class="minesweeper_9x9_node_617 minesweeper_9x9-cell minesweeper_9x9-n@kind_61@ minesweeper_9x9-s61"
+{{{#!if calc_829=mines_61?commands_657:counts_61?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w61":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w51"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w52"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w53"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w60"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w61"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w62"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w69"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w70"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w71"
+}}}{{{#!if click_618=calc_829.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_618@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_617,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_61@}}}}}}{{{#!wiki class="minesweeper_9x9_node_619 minesweeper_9x9-cell minesweeper_9x9-n@kind_62@ minesweeper_9x9-s62"
+{{{#!if calc_830=mines_62?commands_657:counts_62?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w62":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w52"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w53"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w61"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w62"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w70"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w71"
+}}}{{{#!if click_620=calc_830.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_620@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_619,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_62@}}}}}}}}}{{{#!wiki class="minesweeper_9x9-row"
+{{{#!wiki class="minesweeper_9x9_node_621 minesweeper_9x9-cell minesweeper_9x9-n@kind_63@ minesweeper_9x9-s63"
+{{{#!if calc_831=mines_63?commands_657:counts_63?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w63":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w54"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w55"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w63"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w64"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w72"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w73"
+}}}{{{#!if click_622=calc_831.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_622@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_621,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_63@}}}}}}{{{#!wiki class="minesweeper_9x9_node_623 minesweeper_9x9-cell minesweeper_9x9-n@kind_64@ minesweeper_9x9-s64"
+{{{#!if calc_832=mines_64?commands_657:counts_64?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w64":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w54"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w55"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w56"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w63"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w64"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w65"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w72"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w73"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w74"
+}}}{{{#!if click_624=calc_832.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_624@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_623,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_64@}}}}}}{{{#!wiki class="minesweeper_9x9_node_625 minesweeper_9x9-cell minesweeper_9x9-n@kind_65@ minesweeper_9x9-s65"
+{{{#!if calc_833=mines_65?commands_657:counts_65?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w65":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w55"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w56"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w57"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w64"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w65"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w66"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w73"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w74"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w75"
+}}}{{{#!if click_626=calc_833.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_626@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_625,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_65@}}}}}}{{{#!wiki class="minesweeper_9x9_node_627 minesweeper_9x9-cell minesweeper_9x9-n@kind_66@ minesweeper_9x9-s66"
+{{{#!if calc_834=mines_66?commands_657:counts_66?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w66":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w56"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w57"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w58"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w65"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w66"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w67"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w74"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w75"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w76"
+}}}{{{#!if click_628=calc_834.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_628@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_627,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_66@}}}}}}{{{#!wiki class="minesweeper_9x9_node_629 minesweeper_9x9-cell minesweeper_9x9-n@kind_67@ minesweeper_9x9-s67"
+{{{#!if calc_835=mines_67?commands_657:counts_67?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w67":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w57"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w58"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w59"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w66"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w67"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w68"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w75"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w76"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w77"
+}}}{{{#!if click_630=calc_835.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_630@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_629,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_67@}}}}}}{{{#!wiki class="minesweeper_9x9_node_631 minesweeper_9x9-cell minesweeper_9x9-n@kind_68@ minesweeper_9x9-s68"
+{{{#!if calc_836=mines_68?commands_657:counts_68?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w68":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w58"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w59"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w60"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w67"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w68"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w69"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w76"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w77"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w78"
+}}}{{{#!if click_632=calc_836.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_632@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_631,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_68@}}}}}}{{{#!wiki class="minesweeper_9x9_node_633 minesweeper_9x9-cell minesweeper_9x9-n@kind_69@ minesweeper_9x9-s69"
+{{{#!if calc_837=mines_69?commands_657:counts_69?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w69":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w59"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w60"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w61"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w68"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w69"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w70"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w77"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w78"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w79"
+}}}{{{#!if click_634=calc_837.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_634@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_633,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_69@}}}}}}{{{#!wiki class="minesweeper_9x9_node_635 minesweeper_9x9-cell minesweeper_9x9-n@kind_70@ minesweeper_9x9-s70"
+{{{#!if calc_838=mines_70?commands_657:counts_70?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w70":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w60"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w61"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w62"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w69"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w70"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w71"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w78"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w79"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w80"
+}}}{{{#!if click_636=calc_838.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_636@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_635,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_70@}}}}}}{{{#!wiki class="minesweeper_9x9_node_637 minesweeper_9x9-cell minesweeper_9x9-n@kind_71@ minesweeper_9x9-s71"
+{{{#!if calc_839=mines_71?commands_657:counts_71?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w71":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w61"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w62"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w70"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w71"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w79"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w80"
+}}}{{{#!if click_638=calc_839.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_638@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_637,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_71@}}}}}}}}}{{{#!wiki class="minesweeper_9x9-row"
+{{{#!wiki class="minesweeper_9x9_node_639 minesweeper_9x9-cell minesweeper_9x9-n@kind_72@ minesweeper_9x9-s72"
+{{{#!if calc_840=mines_72?commands_657:counts_72?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w72":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w63"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w64"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w72"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w73"
+}}}{{{#!if click_640=calc_840.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_640@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_639,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_72@}}}}}}{{{#!wiki class="minesweeper_9x9_node_641 minesweeper_9x9-cell minesweeper_9x9-n@kind_73@ minesweeper_9x9-s73"
+{{{#!if calc_841=mines_73?commands_657:counts_73?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w73":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w63"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w64"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w65"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w72"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w73"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w74"
+}}}{{{#!if click_642=calc_841.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_642@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_641,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_73@}}}}}}{{{#!wiki class="minesweeper_9x9_node_643 minesweeper_9x9-cell minesweeper_9x9-n@kind_74@ minesweeper_9x9-s74"
+{{{#!if calc_842=mines_74?commands_657:counts_74?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w74":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w64"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w65"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w66"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w73"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w74"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w75"
+}}}{{{#!if click_644=calc_842.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_644@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_643,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_74@}}}}}}{{{#!wiki class="minesweeper_9x9_node_645 minesweeper_9x9-cell minesweeper_9x9-n@kind_75@ minesweeper_9x9-s75"
+{{{#!if calc_843=mines_75?commands_657:counts_75?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w75":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w65"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w66"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w67"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w74"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w75"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w76"
+}}}{{{#!if click_646=calc_843.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_646@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_645,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_75@}}}}}}{{{#!wiki class="minesweeper_9x9_node_647 minesweeper_9x9-cell minesweeper_9x9-n@kind_76@ minesweeper_9x9-s76"
+{{{#!if calc_844=mines_76?commands_657:counts_76?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w76":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w66"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w67"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w68"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w75"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w76"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w77"
+}}}{{{#!if click_648=calc_844.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_648@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_647,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_76@}}}}}}{{{#!wiki class="minesweeper_9x9_node_649 minesweeper_9x9-cell minesweeper_9x9-n@kind_77@ minesweeper_9x9-s77"
+{{{#!if calc_845=mines_77?commands_657:counts_77?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w77":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w67"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w68"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w69"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w76"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w77"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w78"
+}}}{{{#!if click_650=calc_845.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_650@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_649,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_77@}}}}}}{{{#!wiki class="minesweeper_9x9_node_651 minesweeper_9x9-cell minesweeper_9x9-n@kind_78@ minesweeper_9x9-s78"
+{{{#!if calc_846=mines_78?commands_657:counts_78?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w78":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w68"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w69"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w70"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w77"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w78"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w79"
+}}}{{{#!if click_652=calc_846.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_652@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_651,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_78@}}}}}}{{{#!wiki class="minesweeper_9x9_node_653 minesweeper_9x9-cell minesweeper_9x9-n@kind_79@ minesweeper_9x9-s79"
+{{{#!if calc_847=mines_79?commands_657:counts_79?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w79":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w69"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w70"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w71"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w78"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w79"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w80"
+}}}{{{#!if click_654=calc_847.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_654@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_653,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_79@}}}}}}{{{#!wiki class="minesweeper_9x9_node_655 minesweeper_9x9-cell minesweeper_9x9-n@kind_80@ minesweeper_9x9-s80"
+{{{#!if calc_848=mines_80?commands_657:counts_80?";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w80":";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w70"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w71"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w79"+";add-class,minesweeper_9x9_node_494,minesweeper_9x9-w80"
+}}}{{{#!if click_656=calc_848.substring(1)
+}}}{{{#!wiki class="minesweeper_9x9-cover" onclick="@click_656@"
+}}}{{{#!wiki class="minesweeper_9x9-flag" onclick="toggle-class,minesweeper_9x9_node_655,minesweeper_9x9-flagged"
+🚩}}}{{{#!wiki class="minesweeper_9x9-answer"
+@labels_80@}}}}}}}}}{{{#!wiki class="minesweeper_9x9-help"
+칸을 누르면 열립니다. 0칸은 주변 8칸까지 열립니다(연쇄 열기 없음). 모서리의 🚩로 깃발을 꽂고, 깃발을 누르면 뽑힙니다. 깃발 칸은 열리지 않습니다.}}}}}}
